@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainController.h"
 #import "LeftController.h"
+#import "RightController.h"
 #import "BaseNavigationController.h"
 #import "MMDrawerController.h"
 
@@ -23,10 +24,13 @@
     
     BaseNavigationController *left = [[BaseNavigationController alloc] initWithRootViewController:[[LeftController alloc] init]];
     BaseNavigationController *center = [[BaseNavigationController alloc] initWithRootViewController:[[MainController alloc] init]];
+    BaseNavigationController *right = [[BaseNavigationController alloc] initWithRootViewController:[[RightController alloc] init]];
     
     _mainController = [[MMDrawerController alloc] initWithCenterViewController:center
-                                                      leftDrawerViewController:left];
+                                                      leftDrawerViewController:left
+                                                     rightDrawerViewController:right];
     _mainController.maximumLeftDrawerWidth = 100;
+    _mainController.maximumRightDrawerWidth = 100;
     _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     _mainController.closeDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     self.window.rootViewController = _mainController;

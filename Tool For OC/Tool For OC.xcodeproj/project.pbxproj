@@ -11,7 +11,6 @@
 		172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172998F92085DB6A0026B1E9 /* ViewController.m */; };
 		172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172998FB2085DB6A0026B1E9 /* Main.storyboard */; };
 		172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172998FE2085DB6A0026B1E9 /* Assets.xcassets */; };
-		172999022085DB6A0026B1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172999002085DB6A0026B1E9 /* LaunchScreen.storyboard */; };
 		172999052085DB6A0026B1E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999042085DB6A0026B1E9 /* main.m */; };
 		172999102085DFF40026B1E9 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729990F2085DFF40026B1E9 /* MainController.m */; };
 		172999132085E0240026B1E9 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999122085E0240026B1E9 /* BaseController.m */; };
@@ -21,6 +20,7 @@
 		172999232085E1840026B1E9 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729991A2085E1840026B1E9 /* MMDrawerController.m */; };
 		172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729991F2085E1840026B1E9 /* MMDrawerVisualState.m */; };
 		172999292085E2DE0026B1E9 /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999282085E2DE0026B1E9 /* LeftController.m */; };
+		172999312085F9830026B1E9 /* RightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999302085F9830026B1E9 /* RightController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,6 @@
 		172998F92085DB6A0026B1E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		172998FC2085DB6A0026B1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		172998FE2085DB6A0026B1E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		172999012085DB6A0026B1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		172999032085DB6A0026B1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172999042085DB6A0026B1E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1729990E2085DFF40026B1E9 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
@@ -52,6 +51,8 @@
 		172999272085E2DE0026B1E9 /* LeftController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
 		172999282085E2DE0026B1E9 /* LeftController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
 		1729992A2085E5B10026B1E9 /* Tool.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.pch; sourceTree = "<group>"; };
+		1729992F2085F9830026B1E9 /* RightController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightController.h; sourceTree = "<group>"; };
+		172999302085F9830026B1E9 /* RightController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 			children = (
 				172999262085E2B80026B1E9 /* 左控制器 */,
 				1729990B2085DF680026B1E9 /* 主视图 */,
+				1729992E2085F9560026B1E9 /* 右控制器 */,
 				1729990D2085DF8D0026B1E9 /* 基础工具 */,
 				1729990C2085DF7D0026B1E9 /* 插件 */,
 				172998F52085DB6A0026B1E9 /* AppDelegate.h */,
@@ -94,7 +96,6 @@
 				172998F92085DB6A0026B1E9 /* ViewController.m */,
 				172998FB2085DB6A0026B1E9 /* Main.storyboard */,
 				172998FE2085DB6A0026B1E9 /* Assets.xcassets */,
-				172999002085DB6A0026B1E9 /* LaunchScreen.storyboard */,
 				172999032085DB6A0026B1E9 /* Info.plist */,
 				172999042085DB6A0026B1E9 /* main.m */,
 			);
@@ -155,6 +156,15 @@
 			path = "左控制器";
 			sourceTree = "<group>";
 		};
+		1729992E2085F9560026B1E9 /* 右控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				1729992F2085F9830026B1E9 /* RightController.h */,
+				172999302085F9830026B1E9 /* RightController.m */,
+			);
+			path = "右控制器";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,7 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				172999022085DB6A0026B1E9 /* LaunchScreen.storyboard in Resources */,
 				172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
 			);
@@ -232,6 +241,7 @@
 				172999162085E03C0026B1E9 /* BaseNavigationController.m in Sources */,
 				172999292085E2DE0026B1E9 /* LeftController.m in Sources */,
 				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
+				172999312085F9830026B1E9 /* RightController.m in Sources */,
 				172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */,
 				172999052085DB6A0026B1E9 /* main.m in Sources */,
 				172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */,
@@ -249,14 +259,6 @@
 				172998FC2085DB6A0026B1E9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		172999002085DB6A0026B1E9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				172999012085DB6A0026B1E9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -370,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WU3DD344F3;
 				GCC_PREFIX_HEADER = "/Users/caolaoshi/Tool-For-OC/Tool For OC/Tool For OC/基础工具/Tool.pch";
@@ -388,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WU3DD344F3;
 				GCC_PREFIX_HEADER = "/Users/caolaoshi/Tool-For-OC/Tool For OC/Tool For OC/基础工具/Tool.pch";
