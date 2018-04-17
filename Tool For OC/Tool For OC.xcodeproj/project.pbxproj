@@ -51,6 +51,7 @@
 		172999202085E1840026B1E9 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
 		172999272085E2DE0026B1E9 /* LeftController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
 		172999282085E2DE0026B1E9 /* LeftController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
+		1729992A2085E5B10026B1E9 /* Tool.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 				172999122085E0240026B1E9 /* BaseController.m */,
 				172999142085E03C0026B1E9 /* BaseNavigationController.h */,
 				172999152085E03C0026B1E9 /* BaseNavigationController.m */,
+				1729992A2085E5B10026B1E9 /* Tool.pch */,
 			);
 			path = "基础工具";
 			sourceTree = "<group>";
@@ -370,6 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WU3DD344F3;
+				GCC_PREFIX_HEADER = "/Users/caolaoshi/Tool-For-OC/Tool For OC/Tool For OC/基础工具/Tool.pch";
 				INFOPLIST_FILE = "Tool For OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -387,6 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WU3DD344F3;
+				GCC_PREFIX_HEADER = "/Users/caolaoshi/Tool-For-OC/Tool For OC/Tool For OC/基础工具/Tool.pch";
 				INFOPLIST_FILE = "Tool For OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

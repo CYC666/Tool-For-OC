@@ -1,0 +1,46 @@
+//
+//  Tool.pch
+//  Tool For OC
+//
+//  Created by 曹老师 on 2018/4/17.
+//  Copyright © 2018年 曹老师. All rights reserved.
+//
+
+#ifndef Tool_pch
+#define Tool_pch
+
+
+//-----------------长度---------------------
+#define Nav_Start_Y         (kScreenHeight == 812 ? 24 : 0)
+#define Nav_Height          (kScreenHeight == 812 ? 88 : 64)
+#define TabBar_Height       (kScreenHeight == 812 ? 83 : 49)
+#define kScreenWidth        [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight       [[UIScreen mainScreen] bounds].size.height
+
+//-----------------颜色-----------------
+#define Publie_Color        [UIColor colorWithRed:72.0/255.0f green:72.0/255.0f blue:72.0/255.0f alpha:1.0f]
+#define Background_Color    [UIColor colorWithRed:235.0/255.0f green:235.0/255.0f blue:235.0/255.0f alpha:1.0f]
+#define CRGB(R,G,B,A)       [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#define Label_Color_A       [UIColor colorWithRed:51.0/255.0f green:51.0/255.0f blue:51.0/255.0f alpha:1.0f]
+#define Label_Color_B       [UIColor colorWithRed:102.0/255.0f green:102.0/255.0f blue:102.0/255.0f alpha:1.0f]
+#define Label_Color_C       [UIColor colorWithRed:153.0/255.0f green:153.0/255.0f blue:153.0/255.0f alpha:1.0f]
+#define White_Color         [UIColor whiteColor]
+#define Black_Color         [UIColor blackColor]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif /* Tool_pch */

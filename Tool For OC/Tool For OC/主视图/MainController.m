@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"功能列表";
-    self.view.backgroundColor = [UIColor purpleColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
 }
 
