@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "MainController.h"
+#import "LeftController.h"
+#import "BaseNavigationController.h"
+#import "MMDrawerController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    BaseNavigationController *left = [[BaseNavigationController alloc] initWithRootViewController:[[LeftController alloc] init]];
+    BaseNavigationController *center = [[BaseNavigationController alloc] initWithRootViewController:[[MainController alloc] init]];
+    
+    _mainController = [[MMDrawerController alloc] initWithCenterViewController:center
+                                                      leftDrawerViewController:left];
+    _mainController.maximumLeftDrawerWidth = 100;
+    _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    _mainController.closeDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    self.window.rootViewController = _mainController;
+    
+    
+    
+    
+    
+    
     return YES;
 }
 

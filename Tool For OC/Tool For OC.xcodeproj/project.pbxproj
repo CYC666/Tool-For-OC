@@ -13,6 +13,14 @@
 		172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172998FE2085DB6A0026B1E9 /* Assets.xcassets */; };
 		172999022085DB6A0026B1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172999002085DB6A0026B1E9 /* LaunchScreen.storyboard */; };
 		172999052085DB6A0026B1E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999042085DB6A0026B1E9 /* main.m */; };
+		172999102085DFF40026B1E9 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729990F2085DFF40026B1E9 /* MainController.m */; };
+		172999132085E0240026B1E9 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999122085E0240026B1E9 /* BaseController.m */; };
+		172999162085E03C0026B1E9 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999152085E03C0026B1E9 /* BaseNavigationController.m */; };
+		172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999182085E1840026B1E9 /* MMDrawerBarButtonItem.m */; };
+		172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999192085E1840026B1E9 /* UIViewController+MMDrawerController.m */; };
+		172999232085E1840026B1E9 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729991A2085E1840026B1E9 /* MMDrawerController.m */; };
+		172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729991F2085E1840026B1E9 /* MMDrawerVisualState.m */; };
+		172999292085E2DE0026B1E9 /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999282085E2DE0026B1E9 /* LeftController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,23 @@
 		172999012085DB6A0026B1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		172999032085DB6A0026B1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172999042085DB6A0026B1E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1729990E2085DFF40026B1E9 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		1729990F2085DFF40026B1E9 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		172999112085E0240026B1E9 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		172999122085E0240026B1E9 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		172999142085E03C0026B1E9 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		172999152085E03C0026B1E9 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		172999182085E1840026B1E9 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		172999192085E1840026B1E9 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		1729991A2085E1840026B1E9 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		1729991B2085E1840026B1E9 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		1729991C2085E1840026B1E9 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		1729991D2085E1840026B1E9 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		1729991E2085E1840026B1E9 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		1729991F2085E1840026B1E9 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		172999202085E1840026B1E9 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		172999272085E2DE0026B1E9 /* LeftController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
+		172999282085E2DE0026B1E9 /* LeftController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,10 @@
 		172998F42085DB6A0026B1E9 /* Tool For OC */ = {
 			isa = PBXGroup;
 			children = (
+				172999262085E2B80026B1E9 /* 左控制器 */,
+				1729990B2085DF680026B1E9 /* 主视图 */,
+				1729990D2085DF8D0026B1E9 /* 基础工具 */,
+				1729990C2085DF7D0026B1E9 /* 插件 */,
 				172998F52085DB6A0026B1E9 /* AppDelegate.h */,
 				172998F62085DB6A0026B1E9 /* AppDelegate.m */,
 				172998F82085DB6A0026B1E9 /* ViewController.h */,
@@ -69,6 +98,59 @@
 				172999042085DB6A0026B1E9 /* main.m */,
 			);
 			path = "Tool For OC";
+			sourceTree = "<group>";
+		};
+		1729990B2085DF680026B1E9 /* 主视图 */ = {
+			isa = PBXGroup;
+			children = (
+				1729990E2085DFF40026B1E9 /* MainController.h */,
+				1729990F2085DFF40026B1E9 /* MainController.m */,
+			);
+			path = "主视图";
+			sourceTree = "<group>";
+		};
+		1729990C2085DF7D0026B1E9 /* 插件 */ = {
+			isa = PBXGroup;
+			children = (
+				172999172085E1840026B1E9 /* MMDrawerController */,
+			);
+			path = "插件";
+			sourceTree = "<group>";
+		};
+		1729990D2085DF8D0026B1E9 /* 基础工具 */ = {
+			isa = PBXGroup;
+			children = (
+				172999112085E0240026B1E9 /* BaseController.h */,
+				172999122085E0240026B1E9 /* BaseController.m */,
+				172999142085E03C0026B1E9 /* BaseNavigationController.h */,
+				172999152085E03C0026B1E9 /* BaseNavigationController.m */,
+			);
+			path = "基础工具";
+			sourceTree = "<group>";
+		};
+		172999172085E1840026B1E9 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				172999182085E1840026B1E9 /* MMDrawerBarButtonItem.m */,
+				172999192085E1840026B1E9 /* UIViewController+MMDrawerController.m */,
+				1729991A2085E1840026B1E9 /* MMDrawerController.m */,
+				1729991B2085E1840026B1E9 /* MMDrawerController+Subclass.h */,
+				1729991C2085E1840026B1E9 /* MMDrawerVisualState.h */,
+				1729991D2085E1840026B1E9 /* MMDrawerBarButtonItem.h */,
+				1729991E2085E1840026B1E9 /* UIViewController+MMDrawerController.h */,
+				1729991F2085E1840026B1E9 /* MMDrawerVisualState.m */,
+				172999202085E1840026B1E9 /* MMDrawerController.h */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		172999262085E2B80026B1E9 /* 左控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				172999272085E2DE0026B1E9 /* LeftController.h */,
+				172999282085E2DE0026B1E9 /* LeftController.m */,
+			);
+			path = "左控制器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +224,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
+				172999102085DFF40026B1E9 /* MainController.m in Sources */,
+				172999132085E0240026B1E9 /* BaseController.m in Sources */,
+				172999162085E03C0026B1E9 /* BaseNavigationController.m in Sources */,
+				172999292085E2DE0026B1E9 /* LeftController.m in Sources */,
+				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
 				172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */,
 				172999052085DB6A0026B1E9 /* main.m in Sources */,
 				172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */,
+				172999232085E1840026B1E9 /* MMDrawerController.m in Sources */,
+				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
