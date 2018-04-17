@@ -29,8 +29,8 @@
     _mainController = [[MMDrawerController alloc] initWithCenterViewController:center
                                                       leftDrawerViewController:left
                                                      rightDrawerViewController:right];
-    _mainController.maximumLeftDrawerWidth = 100;
-    _mainController.maximumRightDrawerWidth = 100;
+    _mainController.maximumLeftDrawerWidth = LeftWidth;
+    _mainController.maximumRightDrawerWidth = rightWidth;
     _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     _mainController.closeDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     self.window.rootViewController = _mainController;

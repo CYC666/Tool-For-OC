@@ -21,6 +21,24 @@
 		172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729991F2085E1840026B1E9 /* MMDrawerVisualState.m */; };
 		172999292085E2DE0026B1E9 /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999282085E2DE0026B1E9 /* LeftController.m */; };
 		172999312085F9830026B1E9 /* RightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999302085F9830026B1E9 /* RightController.m */; };
+		17299935208621330026B1E9 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17299933208621330026B1E9 /* LeftCell.m */; };
+		17299936208621330026B1E9 /* LeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17299934208621330026B1E9 /* LeftCell.xib */; };
+		1729993A208626B60026B1E9 /* RightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17299938208626B60026B1E9 /* RightCell.m */; };
+		1729993B208626B60026B1E9 /* RightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17299939208626B60026B1E9 /* RightCell.xib */; };
+		1729994620862B370026B1E9 /* SelectFontSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729993E20862B360026B1E9 /* SelectFontSizeViewController.m */; };
+		1729994720862B370026B1E9 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729993F20862B360026B1E9 /* FontViewController.m */; };
+		1729994820862B370026B1E9 /* FontFlowShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729994020862B360026B1E9 /* FontFlowShowViewController.m */; };
+		1729994920862B370026B1E9 /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1729994220862B360026B1E9 /* FontViewController.xib */; };
+		1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1729994320862B360026B1E9 /* SelectFontSizeViewController.xib */; };
+		1729994F20862C2C0026B1E9 /* SelectColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729994D20862C2C0026B1E9 /* SelectColorController.m */; };
+		1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1729994E20862C2C0026B1E9 /* SelectColorController.xib */; };
+		1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729995220862CED0026B1E9 /* FadeAlertView.m */; };
+		17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17299955208630610026B1E9 /* 迷你简胖娃.ttf */; };
+		17299959208630610026B1E9 /* 简特细等线.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17299956208630610026B1E9 /* 简特细等线.ttf */; };
+		1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 17299957208630610026B1E9 /* DFW_WW7.TTF */; };
+		1729995B208630AD0026B1E9 /* 迷你简胖娃.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 17299955208630610026B1E9 /* 迷你简胖娃.ttf */; };
+		1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 17299956208630610026B1E9 /* 简特细等线.ttf */; };
+		1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */ = {isa = PBXBuildFile; fileRef = 17299957208630610026B1E9 /* DFW_WW7.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +71,28 @@
 		1729992A2085E5B10026B1E9 /* Tool.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.pch; sourceTree = "<group>"; };
 		1729992F2085F9830026B1E9 /* RightController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightController.h; sourceTree = "<group>"; };
 		172999302085F9830026B1E9 /* RightController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightController.m; sourceTree = "<group>"; };
+		17299932208621330026B1E9 /* LeftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
+		17299933208621330026B1E9 /* LeftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
+		17299934208621330026B1E9 /* LeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftCell.xib; sourceTree = "<group>"; };
+		17299937208626B60026B1E9 /* RightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightCell.h; sourceTree = "<group>"; };
+		17299938208626B60026B1E9 /* RightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightCell.m; sourceTree = "<group>"; };
+		17299939208626B60026B1E9 /* RightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightCell.xib; sourceTree = "<group>"; };
+		1729993E20862B360026B1E9 /* SelectFontSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectFontSizeViewController.m; sourceTree = "<group>"; };
+		1729993F20862B360026B1E9 /* FontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
+		1729994020862B360026B1E9 /* FontFlowShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontFlowShowViewController.m; sourceTree = "<group>"; };
+		1729994120862B360026B1E9 /* SelectFontSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectFontSizeViewController.h; sourceTree = "<group>"; };
+		1729994220862B360026B1E9 /* FontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontViewController.xib; sourceTree = "<group>"; };
+		1729994320862B360026B1E9 /* SelectFontSizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectFontSizeViewController.xib; sourceTree = "<group>"; };
+		1729994420862B360026B1E9 /* FontFlowShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontFlowShowViewController.h; sourceTree = "<group>"; };
+		1729994520862B360026B1E9 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
+		1729994C20862C2C0026B1E9 /* SelectColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectColorController.h; sourceTree = "<group>"; };
+		1729994D20862C2C0026B1E9 /* SelectColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectColorController.m; sourceTree = "<group>"; };
+		1729994E20862C2C0026B1E9 /* SelectColorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectColorController.xib; sourceTree = "<group>"; };
+		1729995120862CED0026B1E9 /* FadeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeAlertView.h; sourceTree = "<group>"; };
+		1729995220862CED0026B1E9 /* FadeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeAlertView.m; sourceTree = "<group>"; };
+		17299955208630610026B1E9 /* 迷你简胖娃.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "迷你简胖娃.ttf"; sourceTree = "<group>"; };
+		17299956208630610026B1E9 /* 简特细等线.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "简特细等线.ttf"; sourceTree = "<group>"; };
+		17299957208630610026B1E9 /* DFW_WW7.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = DFW_WW7.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +162,8 @@
 		1729990D2085DF8D0026B1E9 /* 基础工具 */ = {
 			isa = PBXGroup;
 			children = (
+				1729995120862CED0026B1E9 /* FadeAlertView.h */,
+				1729995220862CED0026B1E9 /* FadeAlertView.m */,
 				172999112085E0240026B1E9 /* BaseController.h */,
 				172999122085E0240026B1E9 /* BaseController.m */,
 				172999142085E03C0026B1E9 /* BaseNavigationController.h */,
@@ -152,6 +194,11 @@
 			children = (
 				172999272085E2DE0026B1E9 /* LeftController.h */,
 				172999282085E2DE0026B1E9 /* LeftController.m */,
+				17299932208621330026B1E9 /* LeftCell.h */,
+				17299933208621330026B1E9 /* LeftCell.m */,
+				17299934208621330026B1E9 /* LeftCell.xib */,
+				1729994B20862C2C0026B1E9 /* 取色 */,
+				1729993D20862B360026B1E9 /* 字幕 */,
 			);
 			path = "左控制器";
 			sourceTree = "<group>";
@@ -161,8 +208,47 @@
 			children = (
 				1729992F2085F9830026B1E9 /* RightController.h */,
 				172999302085F9830026B1E9 /* RightController.m */,
+				17299937208626B60026B1E9 /* RightCell.h */,
+				17299938208626B60026B1E9 /* RightCell.m */,
+				17299939208626B60026B1E9 /* RightCell.xib */,
 			);
 			path = "右控制器";
+			sourceTree = "<group>";
+		};
+		1729993D20862B360026B1E9 /* 字幕 */ = {
+			isa = PBXGroup;
+			children = (
+				1729994520862B360026B1E9 /* FontViewController.h */,
+				1729993F20862B360026B1E9 /* FontViewController.m */,
+				1729994220862B360026B1E9 /* FontViewController.xib */,
+				1729994420862B360026B1E9 /* FontFlowShowViewController.h */,
+				1729994020862B360026B1E9 /* FontFlowShowViewController.m */,
+				1729994120862B360026B1E9 /* SelectFontSizeViewController.h */,
+				1729993E20862B360026B1E9 /* SelectFontSizeViewController.m */,
+				1729994320862B360026B1E9 /* SelectFontSizeViewController.xib */,
+				17299954208630610026B1E9 /* 字体 */,
+			);
+			path = "字幕";
+			sourceTree = "<group>";
+		};
+		1729994B20862C2C0026B1E9 /* 取色 */ = {
+			isa = PBXGroup;
+			children = (
+				1729994C20862C2C0026B1E9 /* SelectColorController.h */,
+				1729994D20862C2C0026B1E9 /* SelectColorController.m */,
+				1729994E20862C2C0026B1E9 /* SelectColorController.xib */,
+			);
+			path = "取色";
+			sourceTree = "<group>";
+		};
+		17299954208630610026B1E9 /* 字体 */ = {
+			isa = PBXGroup;
+			children = (
+				17299955208630610026B1E9 /* 迷你简胖娃.ttf */,
+				17299956208630610026B1E9 /* 简特细等线.ttf */,
+				17299957208630610026B1E9 /* DFW_WW7.TTF */,
+			);
+			path = "字体";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +309,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */,
+				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
+				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
+				17299959208630610026B1E9 /* 简特细等线.ttf in Resources */,
 				172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */,
+				17299936208621330026B1E9 /* LeftCell.xib in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
+				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
+				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
+				1729994920862B370026B1E9 /* FontViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,18 +329,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1729995B208630AD0026B1E9 /* 迷你简胖娃.ttf in Sources */,
+				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
+				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,
 				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
+				1729994820862B370026B1E9 /* FontFlowShowViewController.m in Sources */,
+				1729994620862B370026B1E9 /* SelectFontSizeViewController.m in Sources */,
 				172999102085DFF40026B1E9 /* MainController.m in Sources */,
 				172999132085E0240026B1E9 /* BaseController.m in Sources */,
+				1729994F20862C2C0026B1E9 /* SelectColorController.m in Sources */,
 				172999162085E03C0026B1E9 /* BaseNavigationController.m in Sources */,
+				1729994720862B370026B1E9 /* FontViewController.m in Sources */,
 				172999292085E2DE0026B1E9 /* LeftController.m in Sources */,
 				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
 				172999312085F9830026B1E9 /* RightController.m in Sources */,
 				172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */,
+				17299935208621330026B1E9 /* LeftCell.m in Sources */,
 				172999052085DB6A0026B1E9 /* main.m in Sources */,
 				172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */,
 				172999232085E1840026B1E9 /* MMDrawerController.m in Sources */,
+				1729993A208626B60026B1E9 /* RightCell.m in Sources */,
 				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
+				1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,5 +48,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>简特细等线.ttf</string>
+		<string>DFW_WW7.TTF</string>
+		<string>汉仪清雅体简.ttf</string>
+		<string>迷你简胖娃.ttf</string>
+	</array>
 </dict>
 </plist>

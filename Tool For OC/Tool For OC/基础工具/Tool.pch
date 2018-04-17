@@ -9,6 +9,9 @@
 #ifndef Tool_pch
 #define Tool_pch
 
+//-----------------类---------------------
+#import "FadeAlertView.h"
+
 
 //-----------------长度---------------------
 #define Nav_Start_Y         (kScreenHeight == 812 ? 24 : 0)
@@ -16,8 +19,10 @@
 #define TabBar_Height       (kScreenHeight == 812 ? 83 : 49)
 #define kScreenWidth        [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight       [[UIScreen mainScreen] bounds].size.height
+#define LeftWidth           100
+#define rightWidth          100
 
-//-----------------颜色-----------------
+//-----------------颜色-------------------
 #define Publie_Color        [UIColor colorWithRed:72.0/255.0f green:72.0/255.0f blue:72.0/255.0f alpha:1.0f]
 #define Background_Color    [UIColor colorWithRed:235.0/255.0f green:235.0/255.0f blue:235.0/255.0f alpha:1.0f]
 #define CRGB(R,G,B,A)       [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
