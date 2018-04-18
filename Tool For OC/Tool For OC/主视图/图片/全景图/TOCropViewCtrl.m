@@ -163,10 +163,10 @@
 }
 
 #pragma mark - Bar Button Items -
-- (void)showCropViewController
-{
+- (void)showCropViewController {
+    
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Crop Image", @"")
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"矩形剪裁"
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction *action) {
                                                               self.croppingStyle = TOCropViewCroppingStyleDefault;
@@ -178,7 +178,7 @@
                                                               [self presentViewController:standardPicker animated:YES completion:nil];
                                                           }];
     
-    UIAlertAction *profileAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Make Profile Picture", @"")
+    UIAlertAction *profileAction = [UIAlertAction actionWithTitle:@"正圆剪裁"
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction *action) {
                                                               self.croppingStyle = TOCropViewCroppingStyleCircular;
@@ -193,13 +193,21 @@
                                                               [self presentViewController:profilePicker animated:YES completion:nil];
                                                           }];
     
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"
+                                                            style:UIAlertActionStyleCancel
+                                                          handler:^(UIAlertAction *action) {
+                                                              
+                                                          }];
+    
     [alertController addAction:defaultAction];
     [alertController addAction:profileAction];
+    [alertController addAction:cancelAction];
     [alertController setModalPresentationStyle:UIModalPresentationPopover];
     
     UIPopoverPresentationController *popPresenter = [alertController popoverPresentationController];
     popPresenter.barButtonItem = self.navigationItem.leftBarButtonItem;
     [self presentViewController:alertController animated:YES completion:nil];
+    
 }
 
 - (void)sharePhoto
@@ -228,7 +236,7 @@
 #pragma mark - View Creation/Lifecycle -
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"TOCrop";
+//    self.title = @"TOCrop";
     
 //    self.navigationController.navigationBar.translucent = NO;
     
