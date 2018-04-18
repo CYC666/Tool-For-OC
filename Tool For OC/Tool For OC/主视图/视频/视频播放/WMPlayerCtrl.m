@@ -64,11 +64,6 @@
 
 
 
-
-
-
-
-
 #pragma mark ========================================动作响应=============================================
 
 #pragma mark - 播放
@@ -98,6 +93,14 @@
 
 #pragma mark ========================================代理方法=============================================
 
+-(void)wmplayer:(WMPlayer *)wmplayer clickedCloseButton:(UIButton *)closeBtn{
+    NSLog(@"didClickedCloseButton");
+    
+    
+}
+-(void)wmplayer:(WMPlayer *)wmplayer clickedFullScreenButton:(UIButton *)fullScreenBtn{
+    NSLog(@"clickedFullScreenButton");
+}
 
 ///播放器事件
 -(void)wmplayer:(WMPlayer *)wmplayer singleTaped:(UITapGestureRecognizer *)singleTap{
