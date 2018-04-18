@@ -1,17 +1,17 @@
 //
-//  MainController.m
+//  FunctionListController.m
 //  Tool For OC
 //
-//  Created by 曹老师 on 2018/4/17.
+//  Created by 曹老师 on 2018/4/18.
 //  Copyright © 2018年 曹老师. All rights reserved.
 //
 
-#import "MainController.h"
+#import "FunctionListController.h"
 #import "MMDrawerController.h"
 #import "MainCCell.h"
-#import "FunctionListController.h"
 
-@interface MainController () <UICollectionViewDelegate, UICollectionViewDataSource> {
+
+@interface FunctionListController () <UICollectionViewDelegate, UICollectionViewDataSource> {
     
     UICollectionView *_listCollectionView;
     NSArray *funcArray;
@@ -20,17 +20,19 @@
 
 @end
 
-@implementation MainController
+@implementation FunctionListController
 
 #pragma mark ========================================生命周期========================================
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"功能列表";
     self.view.backgroundColor = Background_Color;
+    self.navigationItem.rightBarButtonItem = nil;
     
-    funcArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"MainFunctionList.plist" ofType:nil]];
+    
+    
+    funcArray = self.funcDic[@"func"];
     
     // 集合视图
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -58,16 +60,17 @@
     
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [super viewDidAppear:animated];
-    
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
     MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
     [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    
-    
 }
-
 
 
 
@@ -113,39 +116,11 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     NSDictionary *dic = funcArray[indexPath.row];
-    FunctionListController *ctrl = [[FunctionListController alloc] init];
+    BaseController *ctrl = [[NSClassFromString([NSString stringWithFormat:@"%@Ctrl", dic[@"func"]]) alloc] init];
     ctrl.funcDic = dic;
     [self.navigationController pushViewController:ctrl animated:YES];
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

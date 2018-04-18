@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>图片</string>
+		<key>func</key>
+		<array>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>全景图</string>
+				<key>func</key>
+				<string>YQPanoramaView</string>
+				<key>url</key>
+				<string>https://github.com/976431yang/YQPanoramaView</string>
+			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>图片剪裁</string>
+				<key>func</key>
+				<string>TOCropView</string>
+				<key>url</key>
+				<string>https://github.com/TimOliver/TOCropViewController</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

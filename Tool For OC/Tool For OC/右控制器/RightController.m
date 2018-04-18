@@ -114,12 +114,12 @@
     RightCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RightCell"
                                                      forIndexPath:indexPath];
     
-    if (indexPath.row % 2 == 0) {
-        cell.colorView.backgroundColor = White_Color;
+    if (indexPath.row % 2) {
+        cell.colorView.backgroundColor = Background_Color;
         cell.nameLabel.textColor = Label_Color_A;
     } else {
         cell.colorView.backgroundColor = Label_Color_A;
-        cell.nameLabel.textColor = White_Color;
+        cell.nameLabel.textColor = Background_Color;
     }
     
     cell.nameLabel.text = funcArray[indexPath.row];

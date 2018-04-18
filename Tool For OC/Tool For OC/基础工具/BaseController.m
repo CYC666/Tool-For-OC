@@ -7,6 +7,7 @@
 //
 
 #import "BaseController.h"
+#import "MMDrawerController.h"
 
 @interface BaseController ()
 
@@ -16,22 +17,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = self.funcDic[@"name"];
+    
+    self.view.backgroundColor = Background_Color;
+    
+    // 导航栏右边的添加按钮
+    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightItem setImage:[UIImage imageNamed:@"详情"]  forState:UIControlStateNormal];
+    [rightItem setTintColor:[UIColor whiteColor]];
+    rightItem.frame = CGRectMake(0, 0, 40, 40);
+    [rightItem addTarget:self action:@selector(detialsAction) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
+    self.navigationItem.rightBarButtonItem = rightBarItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 查看详情
+- (void)detialsAction {
+    
+    
+    
 }
-*/
 
 @end

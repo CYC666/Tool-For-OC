@@ -10,4 +10,6 @@
 
 @interface BaseController : UIViewController
 
+@property (copy, nonatomic) NSDictionary *funcDic;
+
 @end

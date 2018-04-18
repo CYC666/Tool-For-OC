@@ -39,6 +39,14 @@
 		1729995B208630AD0026B1E9 /* 迷你简胖娃.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 17299955208630610026B1E9 /* 迷你简胖娃.ttf */; };
 		1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 17299956208630610026B1E9 /* 简特细等线.ttf */; };
 		1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */ = {isa = PBXBuildFile; fileRef = 17299957208630610026B1E9 /* DFW_WW7.TTF */; };
+		172999612086F5E10026B1E9 /* MainCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729995F2086F5E10026B1E9 /* MainCCell.m */; };
+		172999622086F5E10026B1E9 /* MainCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999602086F5E10026B1E9 /* MainCCell.xib */; };
+		1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1729996320871B210026B1E9 /* MainFunctionList.plist */; };
+		1729996C208724F10026B1E9 /* FunctionListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729996B208724F10026B1E9 /* FunctionListController.m */; };
+		1729997120872D210026B1E9 /* YQPanoramaViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729997020872D210026B1E9 /* YQPanoramaViewCtrl.m */; };
+		1729997520872D930026B1E9 /* TOCropViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729997420872D930026B1E9 /* TOCropViewCtrl.m */; };
+		1729997A20872E650026B1E9 /* YQPanoramaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729997920872E650026B1E9 /* YQPanoramaView.m */; };
+		1729997C20872E6B0026B1E9 /* WechatIMG72.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1729997B20872E6B0026B1E9 /* WechatIMG72.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +101,19 @@
 		17299955208630610026B1E9 /* 迷你简胖娃.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "迷你简胖娃.ttf"; sourceTree = "<group>"; };
 		17299956208630610026B1E9 /* 简特细等线.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "简特细等线.ttf"; sourceTree = "<group>"; };
 		17299957208630610026B1E9 /* DFW_WW7.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = DFW_WW7.TTF; sourceTree = "<group>"; };
+		1729995E2086F5E10026B1E9 /* MainCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCCell.h; sourceTree = "<group>"; };
+		1729995F2086F5E10026B1E9 /* MainCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCCell.m; sourceTree = "<group>"; };
+		172999602086F5E10026B1E9 /* MainCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCCell.xib; sourceTree = "<group>"; };
+		1729996320871B210026B1E9 /* MainFunctionList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MainFunctionList.plist; sourceTree = "<group>"; };
+		1729996A208724F10026B1E9 /* FunctionListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionListController.h; sourceTree = "<group>"; };
+		1729996B208724F10026B1E9 /* FunctionListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionListController.m; sourceTree = "<group>"; };
+		1729996F20872D210026B1E9 /* YQPanoramaViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQPanoramaViewCtrl.h; sourceTree = "<group>"; };
+		1729997020872D210026B1E9 /* YQPanoramaViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQPanoramaViewCtrl.m; sourceTree = "<group>"; };
+		1729997320872D930026B1E9 /* TOCropViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOCropViewCtrl.h; sourceTree = "<group>"; };
+		1729997420872D930026B1E9 /* TOCropViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOCropViewCtrl.m; sourceTree = "<group>"; };
+		1729997820872E650026B1E9 /* YQPanoramaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQPanoramaView.h; sourceTree = "<group>"; };
+		1729997920872E650026B1E9 /* YQPanoramaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQPanoramaView.m; sourceTree = "<group>"; };
+		1729997B20872E6B0026B1E9 /* WechatIMG72.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG72.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +168,13 @@
 			children = (
 				1729990E2085DFF40026B1E9 /* MainController.h */,
 				1729990F2085DFF40026B1E9 /* MainController.m */,
+				1729995E2086F5E10026B1E9 /* MainCCell.h */,
+				1729995F2086F5E10026B1E9 /* MainCCell.m */,
+				172999602086F5E10026B1E9 /* MainCCell.xib */,
+				1729996320871B210026B1E9 /* MainFunctionList.plist */,
+				1729996A208724F10026B1E9 /* FunctionListController.h */,
+				1729996B208724F10026B1E9 /* FunctionListController.m */,
+				1729996D20872CF40026B1E9 /* 图片 */,
 			);
 			path = "主视图";
 			sourceTree = "<group>";
@@ -251,6 +279,46 @@
 			path = "字体";
 			sourceTree = "<group>";
 		};
+		1729996D20872CF40026B1E9 /* 图片 */ = {
+			isa = PBXGroup;
+			children = (
+				1729997220872D450026B1E9 /* 图片剪裁 */,
+				1729996E20872CFE0026B1E9 /* 全景图 */,
+			);
+			path = "图片";
+			sourceTree = "<group>";
+		};
+		1729996E20872CFE0026B1E9 /* 全景图 */ = {
+			isa = PBXGroup;
+			children = (
+				1729996F20872D210026B1E9 /* YQPanoramaViewCtrl.h */,
+				1729997020872D210026B1E9 /* YQPanoramaViewCtrl.m */,
+				1729997720872E650026B1E9 /* YQPanoramaView */,
+			);
+			name = "全景图";
+			path = "图片剪裁";
+			sourceTree = "<group>";
+		};
+		1729997220872D450026B1E9 /* 图片剪裁 */ = {
+			isa = PBXGroup;
+			children = (
+				1729997320872D930026B1E9 /* TOCropViewCtrl.h */,
+				1729997420872D930026B1E9 /* TOCropViewCtrl.m */,
+			);
+			name = "图片剪裁";
+			path = "全景图";
+			sourceTree = "<group>";
+		};
+		1729997720872E650026B1E9 /* YQPanoramaView */ = {
+			isa = PBXGroup;
+			children = (
+				1729997820872E650026B1E9 /* YQPanoramaView.h */,
+				1729997920872E650026B1E9 /* YQPanoramaView.m */,
+				1729997B20872E6B0026B1E9 /* WechatIMG72.jpeg */,
+			);
+			path = YQPanoramaView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,12 +380,15 @@
 				1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */,
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
+				1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */,
 				17299959208630610026B1E9 /* 简特细等线.ttf in Resources */,
 				172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */,
+				1729997C20872E6B0026B1E9 /* WechatIMG72.jpeg in Resources */,
 				17299936208621330026B1E9 /* LeftCell.xib in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
 				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
 				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
+				172999622086F5E10026B1E9 /* MainCCell.xib in Resources */,
 				1729994920862B370026B1E9 /* FontViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,19 +409,24 @@
 				172999102085DFF40026B1E9 /* MainController.m in Sources */,
 				172999132085E0240026B1E9 /* BaseController.m in Sources */,
 				1729994F20862C2C0026B1E9 /* SelectColorController.m in Sources */,
+				1729997120872D210026B1E9 /* YQPanoramaViewCtrl.m in Sources */,
+				1729996C208724F10026B1E9 /* FunctionListController.m in Sources */,
 				172999162085E03C0026B1E9 /* BaseNavigationController.m in Sources */,
 				1729994720862B370026B1E9 /* FontViewController.m in Sources */,
 				172999292085E2DE0026B1E9 /* LeftController.m in Sources */,
+				1729997520872D930026B1E9 /* TOCropViewCtrl.m in Sources */,
 				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
 				172999312085F9830026B1E9 /* RightController.m in Sources */,
 				172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */,
 				17299935208621330026B1E9 /* LeftCell.m in Sources */,
 				172999052085DB6A0026B1E9 /* main.m in Sources */,
 				172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */,
+				172999612086F5E10026B1E9 /* MainCCell.m in Sources */,
 				172999232085E1840026B1E9 /* MMDrawerController.m in Sources */,
 				1729993A208626B60026B1E9 /* RightCell.m in Sources */,
 				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
 				1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */,
+				1729997A20872E650026B1E9 /* YQPanoramaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
