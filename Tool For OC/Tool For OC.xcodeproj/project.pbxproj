@@ -69,6 +69,17 @@
 		172999D3208752360026B1E9 /* NoteListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999C8208752360026B1E9 /* NoteListCell.m */; };
 		172999D4208752360026B1E9 /* NoteSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999C9208752360026B1E9 /* NoteSearchViewController.m */; };
 		172999D5208752360026B1E9 /* NoteSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999CB208752360026B1E9 /* NoteSearchViewController.xib */; };
+		172999E6208761930026B1E9 /* WCLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999D8208761920026B1E9 /* WCLineCell.xib */; };
+		172999E7208761930026B1E9 /* WCLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999D9208761920026B1E9 /* WCLineCell.m */; };
+		172999E8208761930026B1E9 /* WCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999DB208761920026B1E9 /* WCViewController.m */; };
+		172999E9208761930026B1E9 /* 11号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999DD208761930026B1E9 /* 11号线.png */; };
+		172999EA208761930026B1E9 /* 9号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999DE208761930026B1E9 /* 9号线.png */; };
+		172999EB208761930026B1E9 /* 4号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999DF208761930026B1E9 /* 4号线.png */; };
+		172999EC208761930026B1E9 /* 2号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999E0208761930026B1E9 /* 2号线.png */; };
+		172999ED208761930026B1E9 /* 7号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999E1208761930026B1E9 /* 7号线.png */; };
+		172999EE208761930026B1E9 /* 5号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999E2208761930026B1E9 /* 5号线.png */; };
+		172999EF208761930026B1E9 /* 1号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999E3208761930026B1E9 /* 1号线.png */; };
+		172999F0208761930026B1E9 /* 3号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999E4208761930026B1E9 /* 3号线.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +205,19 @@
 		172999C9208752360026B1E9 /* NoteSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteSearchViewController.m; sourceTree = "<group>"; };
 		172999CA208752360026B1E9 /* NoteListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListCell.h; sourceTree = "<group>"; };
 		172999CB208752360026B1E9 /* NoteSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteSearchViewController.xib; sourceTree = "<group>"; };
+		172999D8208761920026B1E9 /* WCLineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCLineCell.xib; sourceTree = "<group>"; };
+		172999D9208761920026B1E9 /* WCLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLineCell.m; sourceTree = "<group>"; };
+		172999DA208761920026B1E9 /* WCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCViewController.h; sourceTree = "<group>"; };
+		172999DB208761920026B1E9 /* WCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCViewController.m; sourceTree = "<group>"; };
+		172999DD208761930026B1E9 /* 11号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11号线.png"; sourceTree = "<group>"; };
+		172999DE208761930026B1E9 /* 9号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9号线.png"; sourceTree = "<group>"; };
+		172999DF208761930026B1E9 /* 4号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4号线.png"; sourceTree = "<group>"; };
+		172999E0208761930026B1E9 /* 2号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2号线.png"; sourceTree = "<group>"; };
+		172999E1208761930026B1E9 /* 7号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7号线.png"; sourceTree = "<group>"; };
+		172999E2208761930026B1E9 /* 5号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5号线.png"; sourceTree = "<group>"; };
+		172999E3208761930026B1E9 /* 1号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1号线.png"; sourceTree = "<group>"; };
+		172999E4208761930026B1E9 /* 3号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3号线.png"; sourceTree = "<group>"; };
+		172999E5208761930026B1E9 /* WCLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLineCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +329,7 @@
 				17299932208621330026B1E9 /* LeftCell.h */,
 				17299933208621330026B1E9 /* LeftCell.m */,
 				17299934208621330026B1E9 /* LeftCell.xib */,
+				172999D7208761830026B1E9 /* 地铁厕所 */,
 				172999BB2087522B0026B1E9 /* 笔记 */,
 				172999B520874C4D0026B1E9 /* 二维码 */,
 				1729994B20862C2C0026B1E9 /* 取色 */,
@@ -478,6 +503,34 @@
 			path = "笔记";
 			sourceTree = "<group>";
 		};
+		172999D7208761830026B1E9 /* 地铁厕所 */ = {
+			isa = PBXGroup;
+			children = (
+				172999DA208761920026B1E9 /* WCViewController.h */,
+				172999DB208761920026B1E9 /* WCViewController.m */,
+				172999E5208761930026B1E9 /* WCLineCell.h */,
+				172999D9208761920026B1E9 /* WCLineCell.m */,
+				172999D8208761920026B1E9 /* WCLineCell.xib */,
+				172999DC208761930026B1E9 /* images */,
+			);
+			path = "地铁厕所";
+			sourceTree = "<group>";
+		};
+		172999DC208761930026B1E9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				172999DD208761930026B1E9 /* 11号线.png */,
+				172999DE208761930026B1E9 /* 9号线.png */,
+				172999DF208761930026B1E9 /* 4号线.png */,
+				172999E0208761930026B1E9 /* 2号线.png */,
+				172999E1208761930026B1E9 /* 7号线.png */,
+				172999E2208761930026B1E9 /* 5号线.png */,
+				172999E3208761930026B1E9 /* 1号线.png */,
+				172999E4208761930026B1E9 /* 3号线.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -558,19 +611,28 @@
 				172999CD208752360026B1E9 /* ShowNoteViewController.xib in Resources */,
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
+				172999ED208761930026B1E9 /* 7号线.png in Resources */,
 				172999D0208752360026B1E9 /* AddNoteViewController.xib in Resources */,
+				172999EA208761930026B1E9 /* 9号线.png in Resources */,
+				172999EE208761930026B1E9 /* 5号线.png in Resources */,
 				172999CE208752360026B1E9 /* NoteListCell.xib in Resources */,
 				1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */,
+				172999EB208761930026B1E9 /* 4号线.png in Resources */,
 				17299959208630610026B1E9 /* 简特细等线.ttf in Resources */,
 				172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */,
+				172999E6208761930026B1E9 /* WCLineCell.xib in Resources */,
 				1729997C20872E6B0026B1E9 /* WechatIMG72.jpeg in Resources */,
+				172999F0208761930026B1E9 /* 3号线.png in Resources */,
 				17299936208621330026B1E9 /* LeftCell.xib in Resources */,
 				172999BA20874C590026B1E9 /* CodeViewController.xib in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
 				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
 				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
+				172999EC208761930026B1E9 /* 2号线.png in Resources */,
 				172999622086F5E10026B1E9 /* MainCCell.xib in Resources */,
 				1729994920862B370026B1E9 /* FontViewController.xib in Resources */,
+				172999E9208761930026B1E9 /* 11号线.png in Resources */,
+				172999EF208761930026B1E9 /* 1号线.png in Resources */,
 				172999A9208738C50026B1E9 /* TOCropViewControllerLocalizable.strings in Resources */,
 				172999D5208752360026B1E9 /* NoteSearchViewController.xib in Resources */,
 			);
@@ -583,7 +645,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172999E8208761930026B1E9 /* WCViewController.m in Sources */,
 				1729995B208630AD0026B1E9 /* 迷你简胖娃.ttf in Sources */,
+				172999E7208761930026B1E9 /* WCLineCell.m in Sources */,
 				172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */,
 				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
 				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,

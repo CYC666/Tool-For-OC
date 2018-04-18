@@ -38,7 +38,7 @@
                             @"SelectColorController",
                             @"CodeViewController",
                             @"NoteViewController",
-                            @"地铁厕所"];
+                            @"WCViewController"];
     
     
     // 创建视图
