@@ -92,6 +92,11 @@
 		174CC1852087AC9900B41FA2 /* VIPhotoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1842087AC9900B41FA2 /* VIPhotoViewCtrl.m */; };
 		174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1872087ACA800B41FA2 /* VIPhotoView.m */; };
 		174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 174CC18C2087AE3E00B41FA2 /* test.JPG */; };
+		174CC1922087B94A00B41FA2 /* HSDownloadManagerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1912087B94A00B41FA2 /* HSDownloadManagerCtrl.m */; };
+		174CC19B2087B95500B41FA2 /* HSSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1942087B95500B41FA2 /* HSSessionModel.m */; };
+		174CC19C2087B95500B41FA2 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1962087B95500B41FA2 /* NSString+Hash.m */; };
+		174CC19D2087B95500B41FA2 /* HSDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC19A2087B95500B41FA2 /* HSDownloadManager.m */; };
+		174CC19F2087B98200B41FA2 /* HSDownloadManagerCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174CC19E2087B98200B41FA2 /* HSDownloadManagerCtrl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -253,6 +258,15 @@
 		174CC1872087ACA800B41FA2 /* VIPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPhotoView.m; sourceTree = "<group>"; };
 		174CC1882087ACA800B41FA2 /* VIPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPhotoView.h; sourceTree = "<group>"; };
 		174CC18C2087AE3E00B41FA2 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
+		174CC1902087B94A00B41FA2 /* HSDownloadManagerCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSDownloadManagerCtrl.h; sourceTree = "<group>"; };
+		174CC1912087B94A00B41FA2 /* HSDownloadManagerCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSDownloadManagerCtrl.m; sourceTree = "<group>"; };
+		174CC1942087B95500B41FA2 /* HSSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSSessionModel.m; sourceTree = "<group>"; };
+		174CC1962087B95500B41FA2 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		174CC1972087B95500B41FA2 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		174CC1982087B95500B41FA2 /* HSDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDownloadManager.h; sourceTree = "<group>"; };
+		174CC1992087B95500B41FA2 /* HSSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSessionModel.h; sourceTree = "<group>"; };
+		174CC19A2087B95500B41FA2 /* HSDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDownloadManager.m; sourceTree = "<group>"; };
+		174CC19E2087B98200B41FA2 /* HSDownloadManagerCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSDownloadManagerCtrl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +327,7 @@
 				1729996320871B210026B1E9 /* MainFunctionList.plist */,
 				1729996A208724F10026B1E9 /* FunctionListController.h */,
 				1729996B208724F10026B1E9 /* FunctionListController.m */,
+				174CC18E2087B92F00B41FA2 /* 视频 */,
 				1729996D20872CF40026B1E9 /* 图片 */,
 			);
 			path = "主视图";
@@ -621,6 +636,46 @@
 			path = VIPhotoView;
 			sourceTree = "<group>";
 		};
+		174CC18E2087B92F00B41FA2 /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+				174CC18F2087B93A00B41FA2 /* 视频下载 */,
+			);
+			path = "视频";
+			sourceTree = "<group>";
+		};
+		174CC18F2087B93A00B41FA2 /* 视频下载 */ = {
+			isa = PBXGroup;
+			children = (
+				174CC1902087B94A00B41FA2 /* HSDownloadManagerCtrl.h */,
+				174CC1912087B94A00B41FA2 /* HSDownloadManagerCtrl.m */,
+				174CC19E2087B98200B41FA2 /* HSDownloadManagerCtrl.xib */,
+				174CC1932087B95500B41FA2 /* HSDownloadManager */,
+			);
+			path = "视频下载";
+			sourceTree = "<group>";
+		};
+		174CC1932087B95500B41FA2 /* HSDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				174CC1942087B95500B41FA2 /* HSSessionModel.m */,
+				174CC1952087B95500B41FA2 /* MD5 */,
+				174CC1982087B95500B41FA2 /* HSDownloadManager.h */,
+				174CC1992087B95500B41FA2 /* HSSessionModel.h */,
+				174CC19A2087B95500B41FA2 /* HSDownloadManager.m */,
+			);
+			path = HSDownloadManager;
+			sourceTree = "<group>";
+		};
+		174CC1952087B95500B41FA2 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				174CC1962087B95500B41FA2 /* NSString+Hash.m */,
+				174CC1972087B95500B41FA2 /* NSString+Hash.h */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -716,6 +771,7 @@
 				172999F0208761930026B1E9 /* 3号线.png in Resources */,
 				17299936208621330026B1E9 /* LeftCell.xib in Resources */,
 				172999BA20874C590026B1E9 /* CodeViewController.xib in Resources */,
+				174CC19F2087B98200B41FA2 /* HSDownloadManagerCtrl.xib in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
 				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
 				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
@@ -738,6 +794,7 @@
 			files = (
 				172999E8208761930026B1E9 /* WCViewController.m in Sources */,
 				1729995B208630AD0026B1E9 /* 迷你简胖娃.ttf in Sources */,
+				174CC19C2087B95500B41FA2 /* NSString+Hash.m in Sources */,
 				172999E7208761930026B1E9 /* WCLineCell.m in Sources */,
 				172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */,
 				174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */,
@@ -753,6 +810,7 @@
 				172999F42087A1310026B1E9 /* JFImagePickerCtrl.m in Sources */,
 				172999AE208738C50026B1E9 /* TOCropViewController.m in Sources */,
 				172999102085DFF40026B1E9 /* MainController.m in Sources */,
+				174CC19B2087B95500B41FA2 /* HSSessionModel.m in Sources */,
 				172999132085E0240026B1E9 /* BaseController.m in Sources */,
 				1729994F20862C2C0026B1E9 /* SelectColorController.m in Sources */,
 				1729997120872D210026B1E9 /* YQPanoramaViewCtrl.m in Sources */,
@@ -770,6 +828,7 @@
 				17299A0C2087A1C90026B1E9 /* JFPhotoView.m in Sources */,
 				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
 				172999B2208738C50026B1E9 /* TOCropToolbar.m in Sources */,
+				174CC19D2087B95500B41FA2 /* HSDownloadManager.m in Sources */,
 				172999312085F9830026B1E9 /* RightController.m in Sources */,
 				172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */,
 				172999B0208738C50026B1E9 /* TOCropView.m in Sources */,
@@ -791,6 +850,7 @@
 				172999AF208738C50026B1E9 /* TOCropScrollView.m in Sources */,
 				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
 				1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */,
+				174CC1922087B94A00B41FA2 /* HSDownloadManagerCtrl.m in Sources */,
 				1729997A20872E650026B1E9 /* YQPanoramaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

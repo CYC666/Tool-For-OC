@@ -64,8 +64,8 @@
 #pragma mark - 完成
 - (void)textViewDidEndEditing:(UITextView *)textView {
     
-    [self sureButtonAction:nil];
-    
+//    [self sureButtonAction:nil];
+    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
     
 }
 
