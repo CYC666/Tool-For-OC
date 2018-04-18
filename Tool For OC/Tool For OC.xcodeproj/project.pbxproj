@@ -59,6 +59,16 @@
 		172999B2208738C50026B1E9 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999A5208738C50026B1E9 /* TOCropToolbar.m */; };
 		172999B920874C590026B1E9 /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999B620874C590026B1E9 /* CodeViewController.m */; };
 		172999BA20874C590026B1E9 /* CodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999B820874C590026B1E9 /* CodeViewController.xib */; };
+		172999CC208752360026B1E9 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999BC208752350026B1E9 /* AddNoteViewController.m */; };
+		172999CD208752360026B1E9 /* ShowNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999BE208752350026B1E9 /* ShowNoteViewController.xib */; };
+		172999CE208752360026B1E9 /* NoteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999C0208752350026B1E9 /* NoteListCell.xib */; };
+		172999CF208752360026B1E9 /* NoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999C1208752350026B1E9 /* NoteModel.m */; };
+		172999D0208752360026B1E9 /* AddNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999C4208752360026B1E9 /* AddNoteViewController.xib */; };
+		172999D1208752360026B1E9 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999C5208752360026B1E9 /* NoteViewController.m */; };
+		172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999C7208752360026B1E9 /* ShowNoteViewController.m */; };
+		172999D3208752360026B1E9 /* NoteListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999C8208752360026B1E9 /* NoteListCell.m */; };
+		172999D4208752360026B1E9 /* NoteSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999C9208752360026B1E9 /* NoteSearchViewController.m */; };
+		172999D5208752360026B1E9 /* NoteSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999CB208752360026B1E9 /* NoteSearchViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,6 +178,22 @@
 		172999B620874C590026B1E9 /* CodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
 		172999B720874C590026B1E9 /* CodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeViewController.h; sourceTree = "<group>"; };
 		172999B820874C590026B1E9 /* CodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodeViewController.xib; sourceTree = "<group>"; };
+		172999BC208752350026B1E9 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		172999BD208752350026B1E9 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
+		172999BE208752350026B1E9 /* ShowNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowNoteViewController.xib; sourceTree = "<group>"; };
+		172999BF208752350026B1E9 /* ShowNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowNoteViewController.h; sourceTree = "<group>"; };
+		172999C0208752350026B1E9 /* NoteListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteListCell.xib; sourceTree = "<group>"; };
+		172999C1208752350026B1E9 /* NoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteModel.m; sourceTree = "<group>"; };
+		172999C2208752360026B1E9 /* NoteSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteSearchViewController.h; sourceTree = "<group>"; };
+		172999C3208752360026B1E9 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		172999C4208752360026B1E9 /* AddNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNoteViewController.xib; sourceTree = "<group>"; };
+		172999C5208752360026B1E9 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
+		172999C6208752360026B1E9 /* NoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteModel.h; sourceTree = "<group>"; };
+		172999C7208752360026B1E9 /* ShowNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowNoteViewController.m; sourceTree = "<group>"; };
+		172999C8208752360026B1E9 /* NoteListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListCell.m; sourceTree = "<group>"; };
+		172999C9208752360026B1E9 /* NoteSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteSearchViewController.m; sourceTree = "<group>"; };
+		172999CA208752360026B1E9 /* NoteListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListCell.h; sourceTree = "<group>"; };
+		172999CB208752360026B1E9 /* NoteSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteSearchViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +305,7 @@
 				17299932208621330026B1E9 /* LeftCell.h */,
 				17299933208621330026B1E9 /* LeftCell.m */,
 				17299934208621330026B1E9 /* LeftCell.xib */,
+				172999BB2087522B0026B1E9 /* 笔记 */,
 				172999B520874C4D0026B1E9 /* 二维码 */,
 				1729994B20862C2C0026B1E9 /* 取色 */,
 				1729993D20862B360026B1E9 /* 字幕 */,
@@ -428,6 +455,29 @@
 			path = "二维码";
 			sourceTree = "<group>";
 		};
+		172999BB2087522B0026B1E9 /* 笔记 */ = {
+			isa = PBXGroup;
+			children = (
+				172999BD208752350026B1E9 /* NoteViewController.h */,
+				172999C5208752360026B1E9 /* NoteViewController.m */,
+				172999C3208752360026B1E9 /* AddNoteViewController.h */,
+				172999BC208752350026B1E9 /* AddNoteViewController.m */,
+				172999C4208752360026B1E9 /* AddNoteViewController.xib */,
+				172999CA208752360026B1E9 /* NoteListCell.h */,
+				172999C8208752360026B1E9 /* NoteListCell.m */,
+				172999C0208752350026B1E9 /* NoteListCell.xib */,
+				172999C6208752360026B1E9 /* NoteModel.h */,
+				172999C1208752350026B1E9 /* NoteModel.m */,
+				172999C2208752360026B1E9 /* NoteSearchViewController.h */,
+				172999C9208752360026B1E9 /* NoteSearchViewController.m */,
+				172999CB208752360026B1E9 /* NoteSearchViewController.xib */,
+				172999BF208752350026B1E9 /* ShowNoteViewController.h */,
+				172999C7208752360026B1E9 /* ShowNoteViewController.m */,
+				172999BE208752350026B1E9 /* ShowNoteViewController.xib */,
+			);
+			path = "笔记";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -505,8 +555,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */,
+				172999CD208752360026B1E9 /* ShowNoteViewController.xib in Resources */,
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
+				172999D0208752360026B1E9 /* AddNoteViewController.xib in Resources */,
+				172999CE208752360026B1E9 /* NoteListCell.xib in Resources */,
 				1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */,
 				17299959208630610026B1E9 /* 简特细等线.ttf in Resources */,
 				172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */,
@@ -519,6 +572,7 @@
 				172999622086F5E10026B1E9 /* MainCCell.xib in Resources */,
 				1729994920862B370026B1E9 /* FontViewController.xib in Resources */,
 				172999A9208738C50026B1E9 /* TOCropViewControllerLocalizable.strings in Resources */,
+				172999D5208752360026B1E9 /* NoteSearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,11 +584,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729995B208630AD0026B1E9 /* 迷你简胖娃.ttf in Sources */,
+				172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */,
 				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
 				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,
 				172999B920874C590026B1E9 /* CodeViewController.m in Sources */,
 				172999AC208738C50026B1E9 /* TOCropViewControllerTransitioning.m in Sources */,
 				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
+				172999D3208752360026B1E9 /* NoteListCell.m in Sources */,
 				1729994820862B370026B1E9 /* FontFlowShowViewController.m in Sources */,
 				1729994620862B370026B1E9 /* SelectFontSizeViewController.m in Sources */,
 				172999AE208738C50026B1E9 /* TOCropViewController.m in Sources */,
@@ -543,7 +599,10 @@
 				1729994F20862C2C0026B1E9 /* SelectColorController.m in Sources */,
 				1729997120872D210026B1E9 /* YQPanoramaViewCtrl.m in Sources */,
 				1729996C208724F10026B1E9 /* FunctionListController.m in Sources */,
+				172999CC208752360026B1E9 /* AddNoteViewController.m in Sources */,
+				172999D4208752360026B1E9 /* NoteSearchViewController.m in Sources */,
 				172999162085E03C0026B1E9 /* BaseNavigationController.m in Sources */,
+				172999CF208752360026B1E9 /* NoteModel.m in Sources */,
 				172999AA208738C50026B1E9 /* TOActivityCroppedImageProvider.m in Sources */,
 				1729994720862B370026B1E9 /* FontViewController.m in Sources */,
 				172999292085E2DE0026B1E9 /* LeftController.m in Sources */,
@@ -555,6 +614,7 @@
 				172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */,
 				172999B0208738C50026B1E9 /* TOCropView.m in Sources */,
 				17299935208621330026B1E9 /* LeftCell.m in Sources */,
+				172999D1208752360026B1E9 /* NoteViewController.m in Sources */,
 				172999AD208738C50026B1E9 /* TOCroppedImageAttributes.m in Sources */,
 				172999052085DB6A0026B1E9 /* main.m in Sources */,
 				172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */,

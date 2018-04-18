@@ -27,7 +27,7 @@
                     <rect key="frame" x="10" y="60" width="355" height="40"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入内容" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HkK-n1-qPr">
-                            <rect key="frame" x="10" y="0.0" width="335" height="40"/>
+                            <rect key="frame" x="20" y="0.0" width="315" height="40"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" returnKeyType="go"/>
@@ -35,9 +35,9 @@
                     </subviews>
                     <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="HkK-n1-qPr" firstAttribute="leading" secondItem="DAe-Ft-yCD" secondAttribute="leading" constant="10" id="HhB-eG-cdN"/>
+                        <constraint firstItem="HkK-n1-qPr" firstAttribute="leading" secondItem="DAe-Ft-yCD" secondAttribute="leading" constant="20" id="HhB-eG-cdN"/>
                         <constraint firstItem="HkK-n1-qPr" firstAttribute="top" secondItem="DAe-Ft-yCD" secondAttribute="top" id="NnP-du-0eH"/>
-                        <constraint firstAttribute="trailing" secondItem="HkK-n1-qPr" secondAttribute="trailing" constant="10" id="eNc-MP-CJR"/>
+                        <constraint firstAttribute="trailing" secondItem="HkK-n1-qPr" secondAttribute="trailing" constant="20" id="eNc-MP-CJR"/>
                         <constraint firstAttribute="height" constant="40" id="pMR-xi-GJm"/>
                         <constraint firstAttribute="bottom" secondItem="HkK-n1-qPr" secondAttribute="bottom" id="sbS-Kz-3VY"/>
                     </constraints>

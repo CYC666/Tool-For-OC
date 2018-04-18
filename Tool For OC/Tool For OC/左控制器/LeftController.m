@@ -32,14 +32,12 @@
     funcArray = @[@"字幕",
                   @"取色",
                   @"二维码",
-                  @"照片",
                   @"笔记",
                   @"地铁厕所"];
     funcControllerArray = @[@"FontViewController",
                             @"SelectColorController",
                             @"CodeViewController",
-                            @"照片",
-                            @"笔记",
+                            @"NoteViewController",
                             @"地铁厕所"];
     
     
