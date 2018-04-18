@@ -41,7 +41,11 @@
 #pragma mark - 查看详情
 - (void)detialsAction {
     
+    NSString *path = self.funcDic[@"url"];
     
+    if (path) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:path]];
+    }
     
 }
 
