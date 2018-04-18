@@ -64,6 +64,16 @@
 				<key>url</key>
 				<string>https://github.com/HHuiHao/HSDownloadManager</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>视频播放</string>
+				<key>func</key>
+				<string>WMPlayer</string>
+				<key>url</key>
+				<string>https://github.com/zhengwenming/WMPlayer</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

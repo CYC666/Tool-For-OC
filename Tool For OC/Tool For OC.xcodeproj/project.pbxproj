@@ -97,6 +97,14 @@
 		174CC19C2087B95500B41FA2 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1962087B95500B41FA2 /* NSString+Hash.m */; };
 		174CC19D2087B95500B41FA2 /* HSDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC19A2087B95500B41FA2 /* HSDownloadManager.m */; };
 		174CC19F2087B98200B41FA2 /* HSDownloadManagerCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174CC19E2087B98200B41FA2 /* HSDownloadManagerCtrl.xib */; };
+		174CC1A32087BD8C00B41FA2 /* WMPlayerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1A22087BD8C00B41FA2 /* WMPlayerCtrl.m */; };
+		174CC1AE2087BDA500B41FA2 /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 174CC1A52087BDA500B41FA2 /* WMPlayer.bundle */; };
+		174CC1AF2087BDA500B41FA2 /* FastForwardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174CC1AA2087BDA500B41FA2 /* FastForwardView.xib */; };
+		174CC1B02087BDA500B41FA2 /* WMLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1AB2087BDA500B41FA2 /* WMLightView.m */; };
+		174CC1B12087BDA500B41FA2 /* FastForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1AC2087BDA500B41FA2 /* FastForwardView.m */; };
+		174CC1B22087BDA500B41FA2 /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1AD2087BDA500B41FA2 /* WMPlayer.m */; };
+		174CC1B42087BF2E00B41FA2 /* WMPlayerCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174CC1B32087BF2E00B41FA2 /* WMPlayerCtrl.xib */; };
+		EDBDDD6772377E47D00DAA7C /* libPods-Tool For OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 588BEE0581593BCF4595B9CF /* libPods-Tool For OC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -267,6 +275,20 @@
 		174CC1992087B95500B41FA2 /* HSSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSessionModel.h; sourceTree = "<group>"; };
 		174CC19A2087B95500B41FA2 /* HSDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDownloadManager.m; sourceTree = "<group>"; };
 		174CC19E2087B98200B41FA2 /* HSDownloadManagerCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSDownloadManagerCtrl.xib; sourceTree = "<group>"; };
+		174CC1A12087BD8C00B41FA2 /* WMPlayerCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMPlayerCtrl.h; sourceTree = "<group>"; };
+		174CC1A22087BD8C00B41FA2 /* WMPlayerCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMPlayerCtrl.m; sourceTree = "<group>"; };
+		174CC1A52087BDA500B41FA2 /* WMPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMPlayer.bundle; sourceTree = "<group>"; };
+		174CC1A62087BDA500B41FA2 /* WMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPlayer.h; sourceTree = "<group>"; };
+		174CC1A82087BDA500B41FA2 /* WMLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLightView.h; sourceTree = "<group>"; };
+		174CC1A92087BDA500B41FA2 /* FastForwardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastForwardView.h; sourceTree = "<group>"; };
+		174CC1AA2087BDA500B41FA2 /* FastForwardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FastForwardView.xib; sourceTree = "<group>"; };
+		174CC1AB2087BDA500B41FA2 /* WMLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLightView.m; sourceTree = "<group>"; };
+		174CC1AC2087BDA500B41FA2 /* FastForwardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastForwardView.m; sourceTree = "<group>"; };
+		174CC1AD2087BDA500B41FA2 /* WMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPlayer.m; sourceTree = "<group>"; };
+		174CC1B32087BF2E00B41FA2 /* WMPlayerCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMPlayerCtrl.xib; sourceTree = "<group>"; };
+		49BAF9A2AB65E95B15E4C11D /* Pods-Tool For OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool For OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC.release.xcconfig"; sourceTree = "<group>"; };
+		588BEE0581593BCF4595B9CF /* libPods-Tool For OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tool For OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57F235E2EECD715D7BBCA01 /* Pods-Tool For OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool For OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBDDD6772377E47D00DAA7C /* libPods-Tool For OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +308,8 @@
 			children = (
 				172998F42085DB6A0026B1E9 /* Tool For OC */,
 				172998F32085DB6A0026B1E9 /* Products */,
+				983156F4935B866F6CB87A64 /* Pods */,
+				2F736BBB3FA1947E26E558AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -327,8 +352,8 @@
 				1729996320871B210026B1E9 /* MainFunctionList.plist */,
 				1729996A208724F10026B1E9 /* FunctionListController.h */,
 				1729996B208724F10026B1E9 /* FunctionListController.m */,
-				174CC18E2087B92F00B41FA2 /* 视频 */,
 				1729996D20872CF40026B1E9 /* 图片 */,
+				174CC18E2087B92F00B41FA2 /* 视频 */,
 			);
 			path = "主视图";
 			sourceTree = "<group>";
@@ -379,11 +404,11 @@
 				17299932208621330026B1E9 /* LeftCell.h */,
 				17299933208621330026B1E9 /* LeftCell.m */,
 				17299934208621330026B1E9 /* LeftCell.xib */,
-				172999D7208761830026B1E9 /* 地铁厕所 */,
-				172999BB2087522B0026B1E9 /* 笔记 */,
-				172999B520874C4D0026B1E9 /* 二维码 */,
-				1729994B20862C2C0026B1E9 /* 取色 */,
 				1729993D20862B360026B1E9 /* 字幕 */,
+				1729994B20862C2C0026B1E9 /* 取色 */,
+				172999B520874C4D0026B1E9 /* 二维码 */,
+				172999BB2087522B0026B1E9 /* 笔记 */,
+				172999D7208761830026B1E9 /* 地铁厕所 */,
 			);
 			path = "左控制器";
 			sourceTree = "<group>";
@@ -639,6 +664,7 @@
 		174CC18E2087B92F00B41FA2 /* 视频 */ = {
 			isa = PBXGroup;
 			children = (
+				174CC1A02087BD7B00B41FA2 /* 视频播放 */,
 				174CC18F2087B93A00B41FA2 /* 视频下载 */,
 			);
 			path = "视频";
@@ -676,6 +702,57 @@
 			path = MD5;
 			sourceTree = "<group>";
 		};
+		174CC1A02087BD7B00B41FA2 /* 视频播放 */ = {
+			isa = PBXGroup;
+			children = (
+				174CC1A12087BD8C00B41FA2 /* WMPlayerCtrl.h */,
+				174CC1A22087BD8C00B41FA2 /* WMPlayerCtrl.m */,
+				174CC1B32087BF2E00B41FA2 /* WMPlayerCtrl.xib */,
+				174CC1A42087BDA500B41FA2 /* WMPlayer */,
+			);
+			path = "视频播放";
+			sourceTree = "<group>";
+		};
+		174CC1A42087BDA500B41FA2 /* WMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				174CC1A52087BDA500B41FA2 /* WMPlayer.bundle */,
+				174CC1A62087BDA500B41FA2 /* WMPlayer.h */,
+				174CC1A72087BDA500B41FA2 /* View */,
+				174CC1AD2087BDA500B41FA2 /* WMPlayer.m */,
+			);
+			path = WMPlayer;
+			sourceTree = "<group>";
+		};
+		174CC1A72087BDA500B41FA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				174CC1A82087BDA500B41FA2 /* WMLightView.h */,
+				174CC1A92087BDA500B41FA2 /* FastForwardView.h */,
+				174CC1AA2087BDA500B41FA2 /* FastForwardView.xib */,
+				174CC1AB2087BDA500B41FA2 /* WMLightView.m */,
+				174CC1AC2087BDA500B41FA2 /* FastForwardView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F736BBB3FA1947E26E558AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				588BEE0581593BCF4595B9CF /* libPods-Tool For OC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		983156F4935B866F6CB87A64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B57F235E2EECD715D7BBCA01 /* Pods-Tool For OC.debug.xcconfig */,
+				49BAF9A2AB65E95B15E4C11D /* Pods-Tool For OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -683,9 +760,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 172999082085DB6A0026B1E9 /* Build configuration list for PBXNativeTarget "Tool For OC" */;
 			buildPhases = (
+				A26B6102CA8755370222CAEE /* [CP] Check Pods Manifest.lock */,
 				172998EE2085DB6A0026B1E9 /* Sources */,
 				172998EF2085DB6A0026B1E9 /* Frameworks */,
 				172998F02085DB6A0026B1E9 /* Resources */,
+				5CF1116C47B95D9C4151E8E2 /* [CP] Embed Pods Frameworks */,
+				275B4C3CC9034BE0082F95E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -754,6 +834,7 @@
 			files = (
 				1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */,
 				172999CD208752360026B1E9 /* ShowNoteViewController.xib in Resources */,
+				174CC1AF2087BDA500B41FA2 /* FastForwardView.xib in Resources */,
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
 				174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
@@ -761,6 +842,7 @@
 				172999D0208752360026B1E9 /* AddNoteViewController.xib in Resources */,
 				172999EA208761930026B1E9 /* 9号线.png in Resources */,
 				172999EE208761930026B1E9 /* 5号线.png in Resources */,
+				174CC1AE2087BDA500B41FA2 /* WMPlayer.bundle in Resources */,
 				172999CE208752360026B1E9 /* NoteListCell.xib in Resources */,
 				1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */,
 				172999EB208761930026B1E9 /* 4号线.png in Resources */,
@@ -782,10 +864,62 @@
 				172999EF208761930026B1E9 /* 1号线.png in Resources */,
 				172999A9208738C50026B1E9 /* TOCropViewControllerLocalizable.strings in Resources */,
 				172999D5208752360026B1E9 /* NoteSearchViewController.xib in Resources */,
+				174CC1B42087BF2E00B41FA2 /* WMPlayerCtrl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		275B4C3CC9034BE0082F95E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CF1116C47B95D9C4151E8E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26B6102CA8755370222CAEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tool For OC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		172998EE2085DB6A0026B1E9 /* Sources */ = {
@@ -800,6 +934,7 @@
 				174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */,
 				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
 				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,
+				174CC1B12087BDA500B41FA2 /* FastForwardView.m in Sources */,
 				172999B920874C590026B1E9 /* CodeViewController.m in Sources */,
 				172999AC208738C50026B1E9 /* TOCropViewControllerTransitioning.m in Sources */,
 				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
@@ -812,6 +947,7 @@
 				172999102085DFF40026B1E9 /* MainController.m in Sources */,
 				174CC19B2087B95500B41FA2 /* HSSessionModel.m in Sources */,
 				172999132085E0240026B1E9 /* BaseController.m in Sources */,
+				174CC1A32087BD8C00B41FA2 /* WMPlayerCtrl.m in Sources */,
 				1729994F20862C2C0026B1E9 /* SelectColorController.m in Sources */,
 				1729997120872D210026B1E9 /* YQPanoramaViewCtrl.m in Sources */,
 				1729996C208724F10026B1E9 /* FunctionListController.m in Sources */,
@@ -842,7 +978,9 @@
 				172999612086F5E10026B1E9 /* MainCCell.m in Sources */,
 				17299A062087A1C90026B1E9 /* JFImagePickerViewCell.m in Sources */,
 				172999AB208738C50026B1E9 /* UIImage+CropRotate.m in Sources */,
+				174CC1B02087BDA500B41FA2 /* WMLightView.m in Sources */,
 				17299A0A2087A1C90026B1E9 /* JFImageCollectionViewController.m in Sources */,
+				174CC1B22087BDA500B41FA2 /* WMPlayer.m in Sources */,
 				172999232085E1840026B1E9 /* MMDrawerController.m in Sources */,
 				17299A092087A1C90026B1E9 /* JFImageManager.m in Sources */,
 				17299A072087A1C90026B1E9 /* JFAssetHelper.m in Sources */,
@@ -1002,6 +1140,7 @@
 		};
 		172999092085DB6A0026B1E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57F235E2EECD715D7BBCA01 /* Pods-Tool For OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1021,6 +1160,7 @@
 		};
 		1729990A2085DB6A0026B1E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49BAF9A2AB65E95B15E4C11D /* Pods-Tool For OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
