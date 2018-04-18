@@ -57,6 +57,8 @@
 		172999B0208738C50026B1E9 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999A3208738C50026B1E9 /* TOCropView.m */; };
 		172999B1208738C50026B1E9 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999A4208738C50026B1E9 /* TOCropOverlayView.m */; };
 		172999B2208738C50026B1E9 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999A5208738C50026B1E9 /* TOCropToolbar.m */; };
+		172999B920874C590026B1E9 /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999B620874C590026B1E9 /* CodeViewController.m */; };
+		172999BA20874C590026B1E9 /* CodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172999B820874C590026B1E9 /* CodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +165,9 @@
 		172999A5208738C50026B1E9 /* TOCropToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropToolbar.m; sourceTree = "<group>"; };
 		172999A6208738C50026B1E9 /* TOCropScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropScrollView.h; sourceTree = "<group>"; };
 		172999A7208738C50026B1E9 /* TOCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewController.h; sourceTree = "<group>"; };
+		172999B620874C590026B1E9 /* CodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
+		172999B720874C590026B1E9 /* CodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeViewController.h; sourceTree = "<group>"; };
+		172999B820874C590026B1E9 /* CodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +279,7 @@
 				17299932208621330026B1E9 /* LeftCell.h */,
 				17299933208621330026B1E9 /* LeftCell.m */,
 				17299934208621330026B1E9 /* LeftCell.xib */,
+				172999B520874C4D0026B1E9 /* 二维码 */,
 				1729994B20862C2C0026B1E9 /* 取色 */,
 				1729993D20862B360026B1E9 /* 字幕 */,
 			);
@@ -412,6 +418,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		172999B520874C4D0026B1E9 /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				172999B720874C590026B1E9 /* CodeViewController.h */,
+				172999B620874C590026B1E9 /* CodeViewController.m */,
+				172999B820874C590026B1E9 /* CodeViewController.xib */,
+			);
+			path = "二维码";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -496,6 +512,7 @@
 				172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */,
 				1729997C20872E6B0026B1E9 /* WechatIMG72.jpeg in Resources */,
 				17299936208621330026B1E9 /* LeftCell.xib in Resources */,
+				172999BA20874C590026B1E9 /* CodeViewController.xib in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
 				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
 				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
@@ -515,6 +532,7 @@
 				1729995B208630AD0026B1E9 /* 迷你简胖娃.ttf in Sources */,
 				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
 				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,
+				172999B920874C590026B1E9 /* CodeViewController.m in Sources */,
 				172999AC208738C50026B1E9 /* TOCropViewControllerTransitioning.m in Sources */,
 				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
 				1729994820862B370026B1E9 /* FontFlowShowViewController.m in Sources */,

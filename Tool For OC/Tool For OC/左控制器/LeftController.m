@@ -37,7 +37,7 @@
                   @"地铁厕所"];
     funcControllerArray = @[@"FontViewController",
                             @"SelectColorController",
-                            @"二维码",
+                            @"CodeViewController",
                             @"照片",
                             @"笔记",
                             @"地铁厕所"];
