@@ -37,6 +37,33 @@
 				<key>url</key>
 				<string>https://github.com/johnil/JFImagePickerController</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>图片缩放</string>
+				<key>func</key>
+				<string>VIPhotoView</string>
+				<key>url</key>
+				<string>https://github.com/vitoziv/VIPhotoView</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>视频</string>
+		<key>func</key>
+		<array>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string></string>
+				<key>func</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/CYC666</string>
+			</dict>
 		</array>
 	</dict>
 </array>

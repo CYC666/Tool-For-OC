@@ -9,6 +9,7 @@
 #import "JFImagePickerCtrl.h"
 #import "JFImagePickerController.h"
 
+
 @interface JFImagePickerCtrl () <JFImagePickerDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end
@@ -27,8 +28,11 @@
     photos = [[NSMutableArray alloc] init];
     
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(pickPhotos)];
-    self.navigationItem.rightBarButtonItem = addItem;
-    self.navigationItem.title = @"JFImagePicker";
+    NSMutableArray *items = [NSMutableArray array];
+    [items addObject:self.navigationItem.rightBarButtonItem];
+    [items addObject:addItem];
+    self.navigationItem.rightBarButtonItems = items;
+//    self.navigationItem.title = @"JFImagePicker";
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.minimumInteritemSpacing = 0;

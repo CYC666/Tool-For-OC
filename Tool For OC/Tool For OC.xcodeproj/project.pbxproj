@@ -89,6 +89,9 @@
 		17299A0B2087A1C90026B1E9 /* JFImageGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999FC2087A1C90026B1E9 /* JFImageGroupTableViewController.m */; };
 		17299A0C2087A1C90026B1E9 /* JFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999FD2087A1C90026B1E9 /* JFPhotoView.m */; };
 		17299A0D2087A1C90026B1E9 /* JFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999FE2087A1C90026B1E9 /* JFPhotoBrowserViewController.m */; };
+		174CC1852087AC9900B41FA2 /* VIPhotoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1842087AC9900B41FA2 /* VIPhotoViewCtrl.m */; };
+		174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1872087ACA800B41FA2 /* VIPhotoView.m */; };
+		174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 174CC18C2087AE3E00B41FA2 /* test.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -245,6 +248,11 @@
 		17299A032087A1C90026B1E9 /* JFImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageManager.h; sourceTree = "<group>"; };
 		17299A042087A1C90026B1E9 /* JFPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoView.h; sourceTree = "<group>"; };
 		17299A052087A1C90026B1E9 /* JFImageGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageGroupTableViewController.h; sourceTree = "<group>"; };
+		174CC1832087AC9900B41FA2 /* VIPhotoViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPhotoViewCtrl.h; sourceTree = "<group>"; };
+		174CC1842087AC9900B41FA2 /* VIPhotoViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPhotoViewCtrl.m; sourceTree = "<group>"; };
+		174CC1872087ACA800B41FA2 /* VIPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPhotoView.m; sourceTree = "<group>"; };
+		174CC1882087ACA800B41FA2 /* VIPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPhotoView.h; sourceTree = "<group>"; };
+		174CC18C2087AE3E00B41FA2 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +424,7 @@
 		1729996D20872CF40026B1E9 /* 图片 */ = {
 			isa = PBXGroup;
 			children = (
+				174CC1822087AC8400B41FA2 /* 图片缩放 */,
 				172999F12087A1150026B1E9 /* 图片选取 */,
 				1729997220872D450026B1E9 /* 图片剪裁 */,
 				1729996E20872CFE0026B1E9 /* 全景图 */,
@@ -592,6 +601,26 @@
 			path = JFImagePickerController;
 			sourceTree = "<group>";
 		};
+		174CC1822087AC8400B41FA2 /* 图片缩放 */ = {
+			isa = PBXGroup;
+			children = (
+				174CC1832087AC9900B41FA2 /* VIPhotoViewCtrl.h */,
+				174CC1842087AC9900B41FA2 /* VIPhotoViewCtrl.m */,
+				174CC1862087ACA800B41FA2 /* VIPhotoView */,
+			);
+			path = "图片缩放";
+			sourceTree = "<group>";
+		};
+		174CC1862087ACA800B41FA2 /* VIPhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				174CC18C2087AE3E00B41FA2 /* test.JPG */,
+				174CC1872087ACA800B41FA2 /* VIPhotoView.m */,
+				174CC1882087ACA800B41FA2 /* VIPhotoView.h */,
+			);
+			path = VIPhotoView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -671,6 +700,7 @@
 				1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */,
 				172999CD208752360026B1E9 /* ShowNoteViewController.xib in Resources */,
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
+				174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
 				172999ED208761930026B1E9 /* 7号线.png in Resources */,
 				172999D0208752360026B1E9 /* AddNoteViewController.xib in Resources */,
@@ -710,6 +740,7 @@
 				1729995B208630AD0026B1E9 /* 迷你简胖娃.ttf in Sources */,
 				172999E7208761930026B1E9 /* WCLineCell.m in Sources */,
 				172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */,
+				174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */,
 				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
 				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,
 				172999B920874C590026B1E9 /* CodeViewController.m in Sources */,
@@ -748,6 +779,7 @@
 				172999AD208738C50026B1E9 /* TOCroppedImageAttributes.m in Sources */,
 				172999052085DB6A0026B1E9 /* main.m in Sources */,
 				172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */,
+				174CC1852087AC9900B41FA2 /* VIPhotoViewCtrl.m in Sources */,
 				172999612086F5E10026B1E9 /* MainCCell.m in Sources */,
 				17299A062087A1C90026B1E9 /* JFImagePickerViewCell.m in Sources */,
 				172999AB208738C50026B1E9 /* UIImage+CropRotate.m in Sources */,

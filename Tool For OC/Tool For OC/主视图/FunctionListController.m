@@ -100,9 +100,9 @@
     
     if (indexPath.row % 2) {
         cell.colorView.backgroundColor = Background_Color;
-        cell.nameLabel.textColor = Label_Color_A;
+        cell.nameLabel.textColor = Publie_Color_B;
     } else {
-        cell.colorView.backgroundColor = Label_Color_A;
+        cell.colorView.backgroundColor = Publie_Color_B;
         cell.nameLabel.textColor = Background_Color;
     }
     

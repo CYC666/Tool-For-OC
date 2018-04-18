@@ -23,7 +23,8 @@
 #define rightWidth          100
 
 //-----------------颜色-------------------
-#define Publie_Color        [UIColor colorWithRed:72.0/255.0f green:72.0/255.0f blue:72.0/255.0f alpha:1.0f]
+#define Publie_Color_A      [UIColor colorWithRed:51.0/255.0f green:51.0/255.0f blue:51.0/255.0f alpha:1.0f]
+#define Publie_Color_B      [UIColor colorWithRed:72.0/255.0f green:72.0/255.0f blue:72.0/255.0f alpha:1.0f]
 #define Background_Color    [UIColor colorWithRed:235.0/255.0f green:235.0/255.0f blue:235.0/255.0f alpha:1.0f]
 #define CRGB(R,G,B,A)       [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 #define Label_Color_A       [UIColor colorWithRed:51.0/255.0f green:51.0/255.0f blue:51.0/255.0f alpha:1.0f]
