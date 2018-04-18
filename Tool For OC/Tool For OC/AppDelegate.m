@@ -24,13 +24,14 @@
     
     BaseNavigationController *left = [[BaseNavigationController alloc] initWithRootViewController:[[LeftController alloc] init]];
     BaseNavigationController *center = [[BaseNavigationController alloc] initWithRootViewController:[[MainController alloc] init]];
-    BaseNavigationController *right = [[BaseNavigationController alloc] initWithRootViewController:[[RightController alloc] init]];
+//    BaseNavigationController *right = [[BaseNavigationController alloc] initWithRootViewController:[[RightController alloc] init]];
     
     _mainController = [[MMDrawerController alloc] initWithCenterViewController:center
                                                       leftDrawerViewController:left
-                                                     rightDrawerViewController:right];
+//                                                     rightDrawerViewController:right
+                       ];
     _mainController.maximumLeftDrawerWidth = LeftWidth;
-    _mainController.maximumRightDrawerWidth = rightWidth;
+//    _mainController.maximumRightDrawerWidth = rightWidth;
     _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     _mainController.closeDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     self.window.rootViewController = _mainController;

@@ -27,6 +27,16 @@
 				<key>url</key>
 				<string>https://github.com/TimOliver/TOCropViewController</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>图片选取</string>
+				<key>func</key>
+				<string>JFImagePicker</string>
+				<key>url</key>
+				<string>https://github.com/johnil/JFImagePickerController</string>
+			</dict>
 		</array>
 	</dict>
 </array>

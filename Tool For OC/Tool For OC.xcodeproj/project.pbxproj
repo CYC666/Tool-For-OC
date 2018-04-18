@@ -80,6 +80,15 @@
 		172999EE208761930026B1E9 /* 5号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999E2208761930026B1E9 /* 5号线.png */; };
 		172999EF208761930026B1E9 /* 1号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999E3208761930026B1E9 /* 1号线.png */; };
 		172999F0208761930026B1E9 /* 3号线.png in Resources */ = {isa = PBXBuildFile; fileRef = 172999E4208761930026B1E9 /* 3号线.png */; };
+		172999F42087A1310026B1E9 /* JFImagePickerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999F32087A1310026B1E9 /* JFImagePickerCtrl.m */; };
+		17299A062087A1C90026B1E9 /* JFImagePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999F72087A1C90026B1E9 /* JFImagePickerViewCell.m */; };
+		17299A072087A1C90026B1E9 /* JFAssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999F82087A1C90026B1E9 /* JFAssetHelper.m */; };
+		17299A082087A1C90026B1E9 /* JFImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999F92087A1C90026B1E9 /* JFImagePickerController.m */; };
+		17299A092087A1C90026B1E9 /* JFImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999FA2087A1C90026B1E9 /* JFImageManager.m */; };
+		17299A0A2087A1C90026B1E9 /* JFImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999FB2087A1C90026B1E9 /* JFImageCollectionViewController.m */; };
+		17299A0B2087A1C90026B1E9 /* JFImageGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999FC2087A1C90026B1E9 /* JFImageGroupTableViewController.m */; };
+		17299A0C2087A1C90026B1E9 /* JFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999FD2087A1C90026B1E9 /* JFPhotoView.m */; };
+		17299A0D2087A1C90026B1E9 /* JFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999FE2087A1C90026B1E9 /* JFPhotoBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -218,6 +227,24 @@
 		172999E3208761930026B1E9 /* 1号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1号线.png"; sourceTree = "<group>"; };
 		172999E4208761930026B1E9 /* 3号线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3号线.png"; sourceTree = "<group>"; };
 		172999E5208761930026B1E9 /* WCLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLineCell.h; sourceTree = "<group>"; };
+		172999F22087A1310026B1E9 /* JFImagePickerCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFImagePickerCtrl.h; sourceTree = "<group>"; };
+		172999F32087A1310026B1E9 /* JFImagePickerCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerCtrl.m; sourceTree = "<group>"; };
+		172999F62087A1C90026B1E9 /* JFPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		172999F72087A1C90026B1E9 /* JFImagePickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerViewCell.m; sourceTree = "<group>"; };
+		172999F82087A1C90026B1E9 /* JFAssetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAssetHelper.m; sourceTree = "<group>"; };
+		172999F92087A1C90026B1E9 /* JFImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerController.m; sourceTree = "<group>"; };
+		172999FA2087A1C90026B1E9 /* JFImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageManager.m; sourceTree = "<group>"; };
+		172999FB2087A1C90026B1E9 /* JFImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageCollectionViewController.m; sourceTree = "<group>"; };
+		172999FC2087A1C90026B1E9 /* JFImageGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageGroupTableViewController.m; sourceTree = "<group>"; };
+		172999FD2087A1C90026B1E9 /* JFPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoView.m; sourceTree = "<group>"; };
+		172999FE2087A1C90026B1E9 /* JFPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		172999FF2087A1C90026B1E9 /* JFImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImagePickerController.h; sourceTree = "<group>"; };
+		17299A002087A1C90026B1E9 /* JFImagePickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImagePickerViewCell.h; sourceTree = "<group>"; };
+		17299A012087A1C90026B1E9 /* JFAssetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAssetHelper.h; sourceTree = "<group>"; };
+		17299A022087A1C90026B1E9 /* JFImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageCollectionViewController.h; sourceTree = "<group>"; };
+		17299A032087A1C90026B1E9 /* JFImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageManager.h; sourceTree = "<group>"; };
+		17299A042087A1C90026B1E9 /* JFPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoView.h; sourceTree = "<group>"; };
+		17299A052087A1C90026B1E9 /* JFImageGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageGroupTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +416,7 @@
 		1729996D20872CF40026B1E9 /* 图片 */ = {
 			isa = PBXGroup;
 			children = (
+				172999F12087A1150026B1E9 /* 图片选取 */,
 				1729997220872D450026B1E9 /* 图片剪裁 */,
 				1729996E20872CFE0026B1E9 /* 全景图 */,
 			);
@@ -531,6 +559,39 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		172999F12087A1150026B1E9 /* 图片选取 */ = {
+			isa = PBXGroup;
+			children = (
+				172999F22087A1310026B1E9 /* JFImagePickerCtrl.h */,
+				172999F32087A1310026B1E9 /* JFImagePickerCtrl.m */,
+				172999F52087A1C90026B1E9 /* JFImagePickerController */,
+			);
+			path = "图片选取";
+			sourceTree = "<group>";
+		};
+		172999F52087A1C90026B1E9 /* JFImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				172999F62087A1C90026B1E9 /* JFPhotoBrowserViewController.h */,
+				172999F72087A1C90026B1E9 /* JFImagePickerViewCell.m */,
+				172999F82087A1C90026B1E9 /* JFAssetHelper.m */,
+				172999F92087A1C90026B1E9 /* JFImagePickerController.m */,
+				172999FA2087A1C90026B1E9 /* JFImageManager.m */,
+				172999FB2087A1C90026B1E9 /* JFImageCollectionViewController.m */,
+				172999FC2087A1C90026B1E9 /* JFImageGroupTableViewController.m */,
+				172999FD2087A1C90026B1E9 /* JFPhotoView.m */,
+				172999FE2087A1C90026B1E9 /* JFPhotoBrowserViewController.m */,
+				172999FF2087A1C90026B1E9 /* JFImagePickerController.h */,
+				17299A002087A1C90026B1E9 /* JFImagePickerViewCell.h */,
+				17299A012087A1C90026B1E9 /* JFAssetHelper.h */,
+				17299A022087A1C90026B1E9 /* JFImageCollectionViewController.h */,
+				17299A032087A1C90026B1E9 /* JFImageManager.h */,
+				17299A042087A1C90026B1E9 /* JFPhotoView.h */,
+				17299A052087A1C90026B1E9 /* JFImageGroupTableViewController.h */,
+			);
+			path = JFImagePickerController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -655,8 +716,10 @@
 				172999AC208738C50026B1E9 /* TOCropViewControllerTransitioning.m in Sources */,
 				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
 				172999D3208752360026B1E9 /* NoteListCell.m in Sources */,
+				17299A0D2087A1C90026B1E9 /* JFPhotoBrowserViewController.m in Sources */,
 				1729994820862B370026B1E9 /* FontFlowShowViewController.m in Sources */,
 				1729994620862B370026B1E9 /* SelectFontSizeViewController.m in Sources */,
+				172999F42087A1310026B1E9 /* JFImagePickerCtrl.m in Sources */,
 				172999AE208738C50026B1E9 /* TOCropViewController.m in Sources */,
 				172999102085DFF40026B1E9 /* MainController.m in Sources */,
 				172999132085E0240026B1E9 /* BaseController.m in Sources */,
@@ -665,6 +728,7 @@
 				1729996C208724F10026B1E9 /* FunctionListController.m in Sources */,
 				172999CC208752360026B1E9 /* AddNoteViewController.m in Sources */,
 				172999D4208752360026B1E9 /* NoteSearchViewController.m in Sources */,
+				17299A0B2087A1C90026B1E9 /* JFImageGroupTableViewController.m in Sources */,
 				172999162085E03C0026B1E9 /* BaseNavigationController.m in Sources */,
 				172999CF208752360026B1E9 /* NoteModel.m in Sources */,
 				172999AA208738C50026B1E9 /* TOActivityCroppedImageProvider.m in Sources */,
@@ -672,19 +736,25 @@
 				172999292085E2DE0026B1E9 /* LeftController.m in Sources */,
 				1729997520872D930026B1E9 /* TOCropViewCtrl.m in Sources */,
 				172999B1208738C50026B1E9 /* TOCropOverlayView.m in Sources */,
+				17299A0C2087A1C90026B1E9 /* JFPhotoView.m in Sources */,
 				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
 				172999B2208738C50026B1E9 /* TOCropToolbar.m in Sources */,
 				172999312085F9830026B1E9 /* RightController.m in Sources */,
 				172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */,
 				172999B0208738C50026B1E9 /* TOCropView.m in Sources */,
 				17299935208621330026B1E9 /* LeftCell.m in Sources */,
+				17299A082087A1C90026B1E9 /* JFImagePickerController.m in Sources */,
 				172999D1208752360026B1E9 /* NoteViewController.m in Sources */,
 				172999AD208738C50026B1E9 /* TOCroppedImageAttributes.m in Sources */,
 				172999052085DB6A0026B1E9 /* main.m in Sources */,
 				172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */,
 				172999612086F5E10026B1E9 /* MainCCell.m in Sources */,
+				17299A062087A1C90026B1E9 /* JFImagePickerViewCell.m in Sources */,
 				172999AB208738C50026B1E9 /* UIImage+CropRotate.m in Sources */,
+				17299A0A2087A1C90026B1E9 /* JFImageCollectionViewController.m in Sources */,
 				172999232085E1840026B1E9 /* MMDrawerController.m in Sources */,
+				17299A092087A1C90026B1E9 /* JFImageManager.m in Sources */,
+				17299A072087A1C90026B1E9 /* JFAssetHelper.m in Sources */,
 				1729993A208626B60026B1E9 /* RightCell.m in Sources */,
 				172999AF208738C50026B1E9 /* TOCropScrollView.m in Sources */,
 				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
