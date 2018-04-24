@@ -13,7 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 
-@property (weak, nonatomic) IBOutlet UIButton *playButton;
 
 
 

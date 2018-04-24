@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17174704208EB96A00460A87 /* GIFCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17174703208EB96A00460A87 /* GIFCtrl.m */; };
+		17174706208EB9E200460A87 /* guaiqiao.gif in Resources */ = {isa = PBXBuildFile; fileRef = 17174705208EB9E200460A87 /* guaiqiao.gif */; };
+		17174708208EBA3000460A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17174707208EBA3000460A87 /* Assets.xcassets */; };
 		172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 172998F62085DB6A0026B1E9 /* AppDelegate.m */; };
 		172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172998F92085DB6A0026B1E9 /* ViewController.m */; };
 		172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172998FB2085DB6A0026B1E9 /* Main.storyboard */; };
-		172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172998FE2085DB6A0026B1E9 /* Assets.xcassets */; };
 		172999052085DB6A0026B1E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999042085DB6A0026B1E9 /* main.m */; };
 		172999102085DFF40026B1E9 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729990F2085DFF40026B1E9 /* MainController.m */; };
 		172999132085E0240026B1E9 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999122085E0240026B1E9 /* BaseController.m */; };
@@ -108,13 +110,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17174702208EB96A00460A87 /* GIFCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFCtrl.h; sourceTree = "<group>"; };
+		17174703208EB96A00460A87 /* GIFCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFCtrl.m; sourceTree = "<group>"; };
+		17174705208EB9E200460A87 /* guaiqiao.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = guaiqiao.gif; sourceTree = "<group>"; };
+		17174707208EBA3000460A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		172998F22085DB6A0026B1E9 /* Tool For OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tool For OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		172998F52085DB6A0026B1E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		172998F62085DB6A0026B1E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		172998F82085DB6A0026B1E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		172998F92085DB6A0026B1E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		172998FC2085DB6A0026B1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		172998FE2085DB6A0026B1E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		172999032085DB6A0026B1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172999042085DB6A0026B1E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1729990E2085DFF40026B1E9 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
@@ -303,6 +308,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17174701208EB95100460A87 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				17174702208EB96A00460A87 /* GIFCtrl.h */,
+				17174703208EB96A00460A87 /* GIFCtrl.m */,
+				17174705208EB9E200460A87 /* guaiqiao.gif */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
 		172998E92085DB6A0026B1E9 = {
 			isa = PBXGroup;
 			children = (
@@ -334,7 +349,7 @@
 				172998F82085DB6A0026B1E9 /* ViewController.h */,
 				172998F92085DB6A0026B1E9 /* ViewController.m */,
 				172998FB2085DB6A0026B1E9 /* Main.storyboard */,
-				172998FE2085DB6A0026B1E9 /* Assets.xcassets */,
+				17174707208EBA3000460A87 /* Assets.xcassets */,
 				172999032085DB6A0026B1E9 /* Info.plist */,
 				172999042085DB6A0026B1E9 /* main.m */,
 			);
@@ -464,6 +479,7 @@
 		1729996D20872CF40026B1E9 /* 图片 */ = {
 			isa = PBXGroup;
 			children = (
+				17174701208EB95100460A87 /* GIF */,
 				174CC1822087AC8400B41FA2 /* 图片缩放 */,
 				172999F12087A1150026B1E9 /* 图片选取 */,
 				1729997220872D450026B1E9 /* 图片剪裁 */,
@@ -838,6 +854,7 @@
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
 				174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
+				17174708208EBA3000460A87 /* Assets.xcassets in Resources */,
 				172999ED208761930026B1E9 /* 7号线.png in Resources */,
 				172999D0208752360026B1E9 /* AddNoteViewController.xib in Resources */,
 				172999EA208761930026B1E9 /* 9号线.png in Resources */,
@@ -847,7 +864,6 @@
 				1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */,
 				172999EB208761930026B1E9 /* 4号线.png in Resources */,
 				17299959208630610026B1E9 /* 简特细等线.ttf in Resources */,
-				172998FF2085DB6A0026B1E9 /* Assets.xcassets in Resources */,
 				172999E6208761930026B1E9 /* WCLineCell.xib in Resources */,
 				1729997C20872E6B0026B1E9 /* WechatIMG72.jpeg in Resources */,
 				172999F0208761930026B1E9 /* 3号线.png in Resources */,
@@ -858,6 +874,7 @@
 				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
 				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
 				172999EC208761930026B1E9 /* 2号线.png in Resources */,
+				17174706208EB9E200460A87 /* guaiqiao.gif in Resources */,
 				172999622086F5E10026B1E9 /* MainCCell.xib in Resources */,
 				1729994920862B370026B1E9 /* FontViewController.xib in Resources */,
 				172999E9208761930026B1E9 /* 11号线.png in Resources */,
@@ -988,6 +1005,7 @@
 				172999AF208738C50026B1E9 /* TOCropScrollView.m in Sources */,
 				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
 				1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */,
+				17174704208EB96A00460A87 /* GIFCtrl.m in Sources */,
 				174CC1922087B94A00B41FA2 /* HSDownloadManagerCtrl.m in Sources */,
 				1729997A20872E650026B1E9 /* YQPanoramaView.m in Sources */,
 			);

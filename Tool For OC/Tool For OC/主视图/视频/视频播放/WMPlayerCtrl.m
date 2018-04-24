@@ -25,7 +25,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [_playButton addTarget:self action:@selector(playButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    if (wmPlayer) {
+        [self releaseWMPlayer];
+    }
+    
+    wmPlayer = [[WMPlayer alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth - 20, (kScreenWidth - 20) * 0.6)];
+    wmPlayer.delegate = self;
+    wmPlayer.closeBtnStyle = CloseBtnStyleClose;
+    //关闭音量调节的手势
+    //        wmPlayer.enableVolumeGesture = NO;
+    wmPlayer.titleLabel.text = @"小黄人";
+    wmPlayer.URLString = @"http://120.25.226.186:32812/resources/videos/minion_01.mp4";
+    [_mainView addSubview:wmPlayer];
+    
+    
+    
 }
 
 
@@ -65,28 +81,6 @@
 
 
 #pragma mark ========================================动作响应=============================================
-
-#pragma mark - 播放
-- (void)playButtonAction:(UIButton *)button {
-    
-    [UIView animateWithDuration:.35 animations:^{
-        button.alpha = 0;
-    }];
-    
-    if (wmPlayer) {
-        [self releaseWMPlayer];
-    }
-    
-    wmPlayer = [[WMPlayer alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth - 20, (kScreenWidth - 20) * 0.6)];
-    wmPlayer.delegate = self;
-    wmPlayer.closeBtnStyle = CloseBtnStyleClose;
-    //关闭音量调节的手势
-    //        wmPlayer.enableVolumeGesture = NO;
-    wmPlayer.titleLabel.text = @"小黄人";
-    wmPlayer.URLString = @"http://120.25.226.186:32812/resources/videos/minion_01.mp4";
-    [_mainView addSubview:wmPlayer];
-    
-}
 
 #pragma mark ========================================网络请求=============================================
 

@@ -45,6 +45,7 @@
           forCellWithReuseIdentifier:@"MainCCell"];
     _listCollectionView.delegate = self;
     _listCollectionView.dataSource = self;
+    _listCollectionView.alwaysBounceVertical = YES;
     [self.view addSubview:_listCollectionView];
     
 #ifdef __IPHONE_11_0

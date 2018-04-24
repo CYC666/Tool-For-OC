@@ -55,6 +55,7 @@
     _listTableView.pagingEnabled = YES;
     _listTableView.delegate = self;
     _listTableView.dataSource = self;
+    _listTableView.alwaysBounceVertical = YES;
     [_listTableView registerNib:[UINib nibWithNibName:@"RightCell" bundle:[NSBundle mainBundle]]
          forCellReuseIdentifier:@"RightCell"];
     [self.view addSubview:_listTableView];

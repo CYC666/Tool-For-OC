@@ -47,6 +47,16 @@
 				<key>url</key>
 				<string>https://github.com/vitoziv/VIPhotoView</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>播放GIF</string>
+				<key>func</key>
+				<string>GIF</string>
+				<key>url</key>
+				<string>https://github.com/rs/SDWebImage</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
