@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A28DCB74906DC5A23A425B72A26BE7AF'
-               BlueprintName = 'Pods-Tool For OC'
+               BlueprintIdentifier = 'B2CA2A683BE599A018EFF3EF5C5FAF03'
+               BlueprintName = 'LCActionSheet'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-Tool For OC.a'>
+               BuildableName = 'libLCActionSheet.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

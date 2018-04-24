@@ -1,17 +1,21 @@
 PODS:
+  - LCActionSheet (3.4.0):
+    - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
   - SDWebImage (4.2.3):
     - SDWebImage/Core (= 4.2.3)
   - SDWebImage/Core (4.2.3)
 
 DEPENDENCIES:
+  - LCActionSheet
   - Masonry
   - SDWebImage
 
 SPEC CHECKSUMS:
+  LCActionSheet: af918d2f3f1c4c97f5f6f62cb099e745447aff96
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
 
-PODFILE CHECKSUM: ff3fe0f7591f205976c63e1c1d140db75f7f8c5e
+PODFILE CHECKSUM: 463e0e6e5fb42f787c4ce9f1ff49f41cc162b6eb
 
 COCOAPODS: 1.4.0

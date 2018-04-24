@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCActionSheetCtrl">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="6GG-kD-nFd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlZ-pe-SXF">
+                    <rect key="frame" x="119" y="218.5" width="137" height="30"/>
+                    <state key="normal" title="Default ActionSheet"/>
+                    <connections>
+                        <action selector="showDefaultActionSheet" destination="-1" eventType="touchUpInside" id="sGu-yD-UOL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yc-TN-Mym">
+                    <rect key="frame" x="117" y="268.5" width="141" height="30"/>
+                    <state key="normal" title="Custom ActionSheet"/>
+                    <connections>
+                        <action selector="showCustomActionSheet" destination="-1" eventType="touchUpInside" id="E9V-C8-9HL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jU9-YR-Kdc">
+                    <rect key="frame" x="124.5" y="318.5" width="126" height="30"/>
+                    <state key="normal" title="Block ActionSheet"/>
+                    <connections>
+                        <action selector="showBlockActionSheet" destination="-1" eventType="touchUpInside" id="6Wg-EL-d3p"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zB-Cg-JxT">
+                    <rect key="frame" x="141.5" y="368.5" width="92" height="30"/>
+                    <state key="normal" title="Change Style"/>
+                    <connections>
+                        <action selector="onChangeStyleAction" destination="-1" eventType="touchUpInside" id="OYb-RN-ZVH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8zB-Cg-JxT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1BQ-aI-wal"/>
+                <constraint firstItem="9Yc-TN-Mym" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KON-dW-rAX"/>
+                <constraint firstItem="jU9-YR-Kdc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MDB-mZ-PjE"/>
+                <constraint firstItem="jU9-YR-Kdc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UXb-YT-lhH"/>
+                <constraint firstItem="8zB-Cg-JxT" firstAttribute="top" secondItem="jU9-YR-Kdc" secondAttribute="bottom" constant="20" id="Z1L-ly-WWs"/>
+                <constraint firstItem="VlZ-pe-SXF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bLk-Hi-b9K"/>
+                <constraint firstItem="jU9-YR-Kdc" firstAttribute="top" secondItem="9Yc-TN-Mym" secondAttribute="bottom" constant="20" id="l43-zx-Jhb"/>
+                <constraint firstItem="9Yc-TN-Mym" firstAttribute="top" secondItem="VlZ-pe-SXF" secondAttribute="bottom" constant="20" id="zVS-zY-VsF"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

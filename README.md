@@ -22,3 +22,4 @@
 
 04.24
 1、播放GIF
+2、LCActionSheet
