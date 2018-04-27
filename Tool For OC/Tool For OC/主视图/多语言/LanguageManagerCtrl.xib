@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguageManagerCtrl">
+            <connections>
+                <outlet property="labelA" destination="4mb-p0-rOb" id="xNq-Dz-CQV"/>
+                <outlet property="labelB" destination="spd-nP-lZk" id="oxl-i0-nb5"/>
+                <outlet property="labelC" destination="CaY-qf-35W" id="L6l-It-CaI"/>
+                <outlet property="labelD" destination="v87-bV-Sb9" id="lrP-ZZ-vhx"/>
+                <outlet property="picker" destination="oTL-WG-lut" id="WYV-ZR-bMn"/>
+                <outlet property="top" destination="OCn-gV-gYo" id="65i-6S-Gkp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奥巴马" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mb-p0-rOb">
+                    <rect key="frame" x="20" y="80" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iFl-GY-QSC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奥巴马" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spd-nP-lZk">
+                    <rect key="frame" x="20" y="120" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CHi-5g-Aqd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奥巴马" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaY-qf-35W">
+                    <rect key="frame" x="20" y="160" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="GWO-MM-f8x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奥巴马" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v87-bV-Sb9">
+                    <rect key="frame" x="20" y="200" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="y4F-MR-hLA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTL-WG-lut">
+                    <rect key="frame" x="20" y="280" width="335" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="9lI-aq-3qi"/>
+                    </constraints>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="spd-nP-lZk" firstAttribute="top" secondItem="4mb-p0-rOb" secondAttribute="bottom" id="8Tf-Q6-m1p"/>
+                <constraint firstAttribute="trailing" secondItem="spd-nP-lZk" secondAttribute="trailing" constant="20" id="FqZ-Fd-IYn"/>
+                <constraint firstItem="v87-bV-Sb9" firstAttribute="top" secondItem="CaY-qf-35W" secondAttribute="bottom" id="JOQ-bA-IU1"/>
+                <constraint firstItem="4mb-p0-rOb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="OCn-gV-gYo"/>
+                <constraint firstAttribute="trailing" secondItem="4mb-p0-rOb" secondAttribute="trailing" constant="20" id="RMb-5i-FwS"/>
+                <constraint firstAttribute="trailing" secondItem="oTL-WG-lut" secondAttribute="trailing" constant="20" id="Vgw-sE-5cO"/>
+                <constraint firstItem="CaY-qf-35W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="YXG-tI-c94"/>
+                <constraint firstAttribute="trailing" secondItem="v87-bV-Sb9" secondAttribute="trailing" constant="20" id="ZdZ-9m-1QG"/>
+                <constraint firstItem="spd-nP-lZk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="jCF-7u-T4C"/>
+                <constraint firstItem="v87-bV-Sb9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="jzE-m5-gU2"/>
+                <constraint firstItem="4mb-p0-rOb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="pKr-h7-cVV"/>
+                <constraint firstItem="CaY-qf-35W" firstAttribute="top" secondItem="spd-nP-lZk" secondAttribute="bottom" id="tbb-r0-OnM"/>
+                <constraint firstItem="oTL-WG-lut" firstAttribute="top" secondItem="v87-bV-Sb9" secondAttribute="bottom" constant="40" id="yPj-A9-2EC"/>
+                <constraint firstAttribute="trailing" secondItem="CaY-qf-35W" secondAttribute="trailing" constant="20" id="zMY-gq-w3e"/>
+                <constraint firstItem="oTL-WG-lut" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="zVg-nF-RsT"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

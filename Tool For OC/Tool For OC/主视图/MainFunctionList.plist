@@ -101,6 +101,16 @@
 				<key>url</key>
 				<string>https://github.com/iTofu/LCActionSheet</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>DQAlertView</string>
+				<key>func</key>
+				<string>DQAlertView</string>
+				<key>url</key>
+				<string>https://github.com/dinhquan/DQAlertView</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -112,11 +122,11 @@
 				<key>status</key>
 				<false/>
 				<key>name</key>
-				<string></string>
+				<string>中英粤</string>
 				<key>func</key>
-				<string></string>
+				<string>LanguageManager</string>
 				<key>url</key>
-				<string>https://github.com/CYC666</string>
+				<string>https://github.com/huangxuan518/HXInternationalizationDemo</string>
 			</dict>
 		</array>
 	</dict>

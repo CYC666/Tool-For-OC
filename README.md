@@ -23,3 +23,7 @@
 04.24
 1、播放GIF
 2、LCActionSheet
+3、DQAlertView
+
+04-27
+1、多语言

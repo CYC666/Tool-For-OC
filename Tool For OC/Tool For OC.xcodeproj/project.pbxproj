@@ -12,6 +12,11 @@
 		17174708208EBA3000460A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17174707208EBA3000460A87 /* Assets.xcassets */; };
 		1717470D208F20B100460A87 /* LCActionSheetCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1717470C208F20B100460A87 /* LCActionSheetCtrl.m */; };
 		1717470F208F20D900460A87 /* LCActionSheetCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1717470E208F20D900460A87 /* LCActionSheetCtrl.xib */; };
+		17174713208F259F00460A87 /* DQAlertViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17174712208F259F00460A87 /* DQAlertViewCtrl.m */; };
+		17174717208F25EA00460A87 /* DQAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17174715208F25EA00460A87 /* DQAlertView.m */; };
+		17174719208F266800460A87 /* DQAlertViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17174718208F266800460A87 /* DQAlertViewCtrl.xib */; };
+		1717471C208F278500460A87 /* alert-box.png in Resources */ = {isa = PBXBuildFile; fileRef = 1717471A208F278500460A87 /* alert-box.png */; };
+		1717471D208F278500460A87 /* alert-box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1717471B208F278500460A87 /* alert-box@2x.png */; };
 		172998F72085DB6A0026B1E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 172998F62085DB6A0026B1E9 /* AppDelegate.m */; };
 		172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172998F92085DB6A0026B1E9 /* ViewController.m */; };
 		172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172998FB2085DB6A0026B1E9 /* Main.storyboard */; };
@@ -108,6 +113,10 @@
 		174CC1B12087BDA500B41FA2 /* FastForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1AC2087BDA500B41FA2 /* FastForwardView.m */; };
 		174CC1B22087BDA500B41FA2 /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1AD2087BDA500B41FA2 /* WMPlayer.m */; };
 		174CC1B42087BF2E00B41FA2 /* WMPlayerCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174CC1B32087BF2E00B41FA2 /* WMPlayerCtrl.xib */; };
+		17B48D0F209320FE0018B6EF /* LanguageBaba.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B48D11209320FE0018B6EF /* LanguageBaba.strings */; };
+		17BADF0120931AB8004D1312 /* LanguageManagerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BADEFF20931AB8004D1312 /* LanguageManagerCtrl.m */; };
+		17BADF0220931AB8004D1312 /* LanguageManagerCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BADF0020931AB8004D1312 /* LanguageManagerCtrl.xib */; };
+		17BADF0820931D81004D1312 /* HXLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BADF0620931D81004D1312 /* HXLanguageManager.m */; };
 		EDBDDD6772377E47D00DAA7C /* libPods-Tool For OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 588BEE0581593BCF4595B9CF /* libPods-Tool For OC.a */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +128,13 @@
 		1717470B208F20B100460A87 /* LCActionSheetCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCActionSheetCtrl.h; sourceTree = "<group>"; };
 		1717470C208F20B100460A87 /* LCActionSheetCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCActionSheetCtrl.m; sourceTree = "<group>"; };
 		1717470E208F20D900460A87 /* LCActionSheetCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCActionSheetCtrl.xib; sourceTree = "<group>"; };
+		17174711208F259F00460A87 /* DQAlertViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DQAlertViewCtrl.h; sourceTree = "<group>"; };
+		17174712208F259F00460A87 /* DQAlertViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DQAlertViewCtrl.m; sourceTree = "<group>"; };
+		17174715208F25EA00460A87 /* DQAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAlertView.m; sourceTree = "<group>"; };
+		17174716208F25EA00460A87 /* DQAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAlertView.h; sourceTree = "<group>"; };
+		17174718208F266800460A87 /* DQAlertViewCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DQAlertViewCtrl.xib; sourceTree = "<group>"; };
+		1717471A208F278500460A87 /* alert-box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-box.png"; sourceTree = "<group>"; };
+		1717471B208F278500460A87 /* alert-box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-box@2x.png"; sourceTree = "<group>"; };
 		172998F22085DB6A0026B1E9 /* Tool For OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tool For OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		172998F52085DB6A0026B1E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		172998F62085DB6A0026B1E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -296,6 +312,14 @@
 		174CC1AC2087BDA500B41FA2 /* FastForwardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastForwardView.m; sourceTree = "<group>"; };
 		174CC1AD2087BDA500B41FA2 /* WMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPlayer.m; sourceTree = "<group>"; };
 		174CC1B32087BF2E00B41FA2 /* WMPlayerCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMPlayerCtrl.xib; sourceTree = "<group>"; };
+		17B48D10209320FE0018B6EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LanguageBaba.strings"; sourceTree = "<group>"; };
+		17B48D12209321030018B6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LanguageBaba.strings; sourceTree = "<group>"; };
+		17B48D13209321070018B6EF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LanguageBaba.strings"; sourceTree = "<group>"; };
+		17BADEFE20931AB8004D1312 /* LanguageManagerCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManagerCtrl.h; sourceTree = "<group>"; };
+		17BADEFF20931AB8004D1312 /* LanguageManagerCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManagerCtrl.m; sourceTree = "<group>"; };
+		17BADF0020931AB8004D1312 /* LanguageManagerCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageManagerCtrl.xib; sourceTree = "<group>"; };
+		17BADF0620931D81004D1312 /* HXLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXLanguageManager.m; sourceTree = "<group>"; };
+		17BADF0720931D81004D1312 /* HXLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXLanguageManager.h; sourceTree = "<group>"; };
 		49BAF9A2AB65E95B15E4C11D /* Pods-Tool For OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool For OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC.release.xcconfig"; sourceTree = "<group>"; };
 		588BEE0581593BCF4595B9CF /* libPods-Tool For OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tool For OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57F235E2EECD715D7BBCA01 /* Pods-Tool For OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool For OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -326,6 +350,7 @@
 		17174709208F208C00460A87 /* 对话框 */ = {
 			isa = PBXGroup;
 			children = (
+				17174710208F259000460A87 /* DQAlertView */,
 				1717470A208F20A100460A87 /* LCActionSheet */,
 			);
 			path = "对话框";
@@ -339,6 +364,28 @@
 				1717470E208F20D900460A87 /* LCActionSheetCtrl.xib */,
 			);
 			path = LCActionSheet;
+			sourceTree = "<group>";
+		};
+		17174710208F259000460A87 /* DQAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				17174711208F259F00460A87 /* DQAlertViewCtrl.h */,
+				17174712208F259F00460A87 /* DQAlertViewCtrl.m */,
+				17174718208F266800460A87 /* DQAlertViewCtrl.xib */,
+				1717471A208F278500460A87 /* alert-box.png */,
+				1717471B208F278500460A87 /* alert-box@2x.png */,
+				17174714208F25EA00460A87 /* DQAlertView */,
+			);
+			path = DQAlertView;
+			sourceTree = "<group>";
+		};
+		17174714208F25EA00460A87 /* DQAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				17174715208F25EA00460A87 /* DQAlertView.m */,
+				17174716208F25EA00460A87 /* DQAlertView.h */,
+			);
+			path = DQAlertView;
 			sourceTree = "<group>";
 		};
 		172998E92085DB6A0026B1E9 = {
@@ -371,6 +418,7 @@
 				172998F62085DB6A0026B1E9 /* AppDelegate.m */,
 				172998F82085DB6A0026B1E9 /* ViewController.h */,
 				172998F92085DB6A0026B1E9 /* ViewController.m */,
+				17B48D11209320FE0018B6EF /* LanguageBaba.strings */,
 				172998FB2085DB6A0026B1E9 /* Main.storyboard */,
 				17174707208EBA3000460A87 /* Assets.xcassets */,
 				172999032085DB6A0026B1E9 /* Info.plist */,
@@ -390,6 +438,7 @@
 				1729996320871B210026B1E9 /* MainFunctionList.plist */,
 				1729996A208724F10026B1E9 /* FunctionListController.h */,
 				1729996B208724F10026B1E9 /* FunctionListController.m */,
+				17BADEFD20931A88004D1312 /* 多语言 */,
 				17174709208F208C00460A87 /* 对话框 */,
 				1729996D20872CF40026B1E9 /* 图片 */,
 				174CC18E2087B92F00B41FA2 /* 视频 */,
@@ -776,6 +825,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		17BADEFD20931A88004D1312 /* 多语言 */ = {
+			isa = PBXGroup;
+			children = (
+				17BADEFE20931AB8004D1312 /* LanguageManagerCtrl.h */,
+				17BADEFF20931AB8004D1312 /* LanguageManagerCtrl.m */,
+				17BADF0020931AB8004D1312 /* LanguageManagerCtrl.xib */,
+				17BADF0520931D81004D1312 /* XHInternationalization */,
+			);
+			path = "多语言";
+			sourceTree = "<group>";
+		};
+		17BADF0520931D81004D1312 /* XHInternationalization */ = {
+			isa = PBXGroup;
+			children = (
+				17BADF0720931D81004D1312 /* HXLanguageManager.h */,
+				17BADF0620931D81004D1312 /* HXLanguageManager.m */,
+			);
+			path = XHInternationalization;
+			sourceTree = "<group>";
+		};
 		2F736BBB3FA1947E26E558AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -875,6 +944,7 @@
 				1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */,
 				172999CD208752360026B1E9 /* ShowNoteViewController.xib in Resources */,
 				174CC1AF2087BDA500B41FA2 /* FastForwardView.xib in Resources */,
+				17BADF0220931AB8004D1312 /* LanguageManagerCtrl.xib in Resources */,
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
 				174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
@@ -885,6 +955,7 @@
 				172999EE208761930026B1E9 /* 5号线.png in Resources */,
 				174CC1AE2087BDA500B41FA2 /* WMPlayer.bundle in Resources */,
 				172999CE208752360026B1E9 /* NoteListCell.xib in Resources */,
+				17B48D0F209320FE0018B6EF /* LanguageBaba.strings in Resources */,
 				1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */,
 				172999EB208761930026B1E9 /* 4号线.png in Resources */,
 				17299959208630610026B1E9 /* 简特细等线.ttf in Resources */,
@@ -897,7 +968,9 @@
 				174CC19F2087B98200B41FA2 /* HSDownloadManagerCtrl.xib in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
 				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
+				17174719208F266800460A87 /* DQAlertViewCtrl.xib in Resources */,
 				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
+				1717471D208F278500460A87 /* alert-box@2x.png in Resources */,
 				172999EC208761930026B1E9 /* 2号线.png in Resources */,
 				17174706208EB9E200460A87 /* guaiqiao.gif in Resources */,
 				172999622086F5E10026B1E9 /* MainCCell.xib in Resources */,
@@ -906,6 +979,7 @@
 				172999EF208761930026B1E9 /* 1号线.png in Resources */,
 				172999A9208738C50026B1E9 /* TOCropViewControllerLocalizable.strings in Resources */,
 				172999D5208752360026B1E9 /* NoteSearchViewController.xib in Resources */,
+				1717471C208F278500460A87 /* alert-box.png in Resources */,
 				174CC1B42087BF2E00B41FA2 /* WMPlayerCtrl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -979,6 +1053,7 @@
 				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,
 				174CC1B12087BDA500B41FA2 /* FastForwardView.m in Sources */,
 				172999B920874C590026B1E9 /* CodeViewController.m in Sources */,
+				17BADF0820931D81004D1312 /* HXLanguageManager.m in Sources */,
 				172999AC208738C50026B1E9 /* TOCropViewControllerTransitioning.m in Sources */,
 				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
 				172999D3208752360026B1E9 /* NoteListCell.m in Sources */,
@@ -992,6 +1067,7 @@
 				172999132085E0240026B1E9 /* BaseController.m in Sources */,
 				174CC1A32087BD8C00B41FA2 /* WMPlayerCtrl.m in Sources */,
 				1729994F20862C2C0026B1E9 /* SelectColorController.m in Sources */,
+				17174717208F25EA00460A87 /* DQAlertView.m in Sources */,
 				1729997120872D210026B1E9 /* YQPanoramaViewCtrl.m in Sources */,
 				1729996C208724F10026B1E9 /* FunctionListController.m in Sources */,
 				172999CC208752360026B1E9 /* AddNoteViewController.m in Sources */,
@@ -1004,6 +1080,7 @@
 				172999292085E2DE0026B1E9 /* LeftController.m in Sources */,
 				1729997520872D930026B1E9 /* TOCropViewCtrl.m in Sources */,
 				172999B1208738C50026B1E9 /* TOCropOverlayView.m in Sources */,
+				17174713208F259F00460A87 /* DQAlertViewCtrl.m in Sources */,
 				17299A0C2087A1C90026B1E9 /* JFPhotoView.m in Sources */,
 				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
 				172999B2208738C50026B1E9 /* TOCropToolbar.m in Sources */,
@@ -1023,6 +1100,7 @@
 				172999AB208738C50026B1E9 /* UIImage+CropRotate.m in Sources */,
 				174CC1B02087BDA500B41FA2 /* WMLightView.m in Sources */,
 				17299A0A2087A1C90026B1E9 /* JFImageCollectionViewController.m in Sources */,
+				17BADF0120931AB8004D1312 /* LanguageManagerCtrl.m in Sources */,
 				174CC1B22087BDA500B41FA2 /* WMPlayer.m in Sources */,
 				172999232085E1840026B1E9 /* MMDrawerController.m in Sources */,
 				17299A092087A1C90026B1E9 /* JFImageManager.m in Sources */,
@@ -1073,6 +1151,16 @@
 				1729999D208738C50026B1E9 /* pt */,
 			);
 			name = TOCropViewControllerLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		17B48D11209320FE0018B6EF /* LanguageBaba.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17B48D10209320FE0018B6EF /* zh-Hans */,
+				17B48D12209321030018B6EF /* en */,
+				17B48D13209321070018B6EF /* zh-Hant */,
+			);
+			name = LanguageBaba.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

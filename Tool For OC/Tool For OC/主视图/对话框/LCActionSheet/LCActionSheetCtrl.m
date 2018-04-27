@@ -53,20 +53,12 @@
     [textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(10.0);
         make.right.equalTo(self.view).offset(-10.0);
-        make.top.equalTo(self.view).offset(30.0 + ([[UIDevice currentDevice] lc_isX] ? 14.0 : 0));
+        make.top.equalTo(self.view).offset(Nav_Height + 10);
         make.height.offset(44.0);
     }];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    //    [UIApplication sharedApplication].statusBarHidden = YES;
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
-    
-    NSLog(@"App's keyWindow: %p", KEY_WINDOW);
-}
+
 
 - (IBAction)showDefaultActionSheet {
     LCActionSheet *actionSheet = [LCActionSheet sheetWithTitle:@""
