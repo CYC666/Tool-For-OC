@@ -32,11 +32,13 @@
                        ];
     _mainController.maximumLeftDrawerWidth = LeftWidth;
 //    _mainController.maximumRightDrawerWidth = rightWidth;
-    _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
-    _mainController.closeDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModeNone;
+    _mainController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
     self.window.rootViewController = _mainController;
     
-    
+    UILongPressGestureRecognizer *openLeftPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(openLeftAction:)];
+    openLeftPress.minimumPressDuration = 2;
+    [self.window addGestureRecognizer:openLeftPress];
     
     
     
@@ -44,6 +46,14 @@
     return YES;
 }
 
+#pragma mark - 打开侧滑
+- (void)openLeftAction:(UILongPressGestureRecognizer *)press {
+    
+    if (press.state == UIGestureRecognizerStateBegan) {
+        [_mainController openDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    }
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

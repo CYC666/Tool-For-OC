@@ -1,4 +1,5 @@
 PODS:
+  - ContextMenu.iOS (1.1.0)
   - LCActionSheet (3.4.0):
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
@@ -7,15 +8,17 @@ PODS:
   - SDWebImage/Core (4.2.3)
 
 DEPENDENCIES:
+  - ContextMenu.iOS (~> 1.1.0)
   - LCActionSheet
   - Masonry
   - SDWebImage
 
 SPEC CHECKSUMS:
+  ContextMenu.iOS: 7f3b63915e660f51aada2c4285c40a837b2c9737
   LCActionSheet: af918d2f3f1c4c97f5f6f62cb099e745447aff96
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
 
-PODFILE CHECKSUM: 463e0e6e5fb42f787c4ce9f1ff49f41cc162b6eb
+PODFILE CHECKSUM: c6948df4641b387fdf0bcbdab3b7db142435509b
 
 COCOAPODS: 1.4.0

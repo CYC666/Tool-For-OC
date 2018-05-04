@@ -18,31 +18,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="212" height="156"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4Z-ZZ-f20">
-                        <rect key="frame" x="0.0" y="0.0" width="212" height="156"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="照片" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVn-gV-oGX">
-                        <rect key="frame" x="10" y="0.0" width="192" height="156"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="10" y="0.0" width="71" height="156"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="t4Z-ZZ-f20" secondAttribute="bottom" id="KE6-r0-YCn"/>
                 <constraint firstAttribute="bottom" secondItem="EVn-gV-oGX" secondAttribute="bottom" id="PAo-WI-AtP"/>
-                <constraint firstItem="EVn-gV-oGX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Qi6-Os-abq"/>
-                <constraint firstAttribute="trailing" secondItem="EVn-gV-oGX" secondAttribute="trailing" constant="10" id="VEq-sE-Hrr"/>
-                <constraint firstAttribute="trailing" secondItem="t4Z-ZZ-f20" secondAttribute="trailing" id="YxI-sr-kwC"/>
-                <constraint firstItem="t4Z-ZZ-f20" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iH0-KB-K1U"/>
+                <constraint firstAttribute="bottom" secondItem="EVn-gV-oGX" secondAttribute="bottom" id="hTt-2I-QOt"/>
+                <constraint firstItem="EVn-gV-oGX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="l7k-op-JFO"/>
                 <constraint firstItem="EVn-gV-oGX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mUZ-ZB-rdZ"/>
-                <constraint firstItem="t4Z-ZZ-f20" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wmC-62-302"/>
+                <constraint firstItem="EVn-gV-oGX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sQc-FE-aRf"/>
             </constraints>
             <size key="customSize" width="212" height="156"/>
             <connections>
-                <outlet property="colorView" destination="t4Z-ZZ-f20" id="Cxo-bE-UgD"/>
                 <outlet property="nameLabel" destination="EVn-gV-oGX" id="AQH-kG-D2j"/>
             </connections>
             <point key="canvasLocation" x="-6" y="-74"/>

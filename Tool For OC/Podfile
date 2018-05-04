@@ -3,4 +3,5 @@ target 'Tool For OC' do
     pod 'SDWebImage'
     pod 'Masonry'
     pod 'LCActionSheet'
+    pod 'ContextMenu.iOS', '~> 1.1.0'
 end

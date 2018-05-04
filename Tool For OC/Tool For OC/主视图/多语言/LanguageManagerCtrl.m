@@ -97,9 +97,9 @@
 #pragma mark ========================================通知=============================================
 - (void)changeLanguage {
     
-    _labelA.text = kLocalizedString(@"Obama", @"奥巴马");
+    _labelA.text = kLocalizedString(@"Delevan", @"德莱文");
     _labelB.text = kLocalizedString(@"Oh my God", @"我的天");
-    _labelC.text = kLocalizedString(@"Obama", @"奥巴马");
+    _labelC.text = kLocalizedString(@"Delevan", @"德莱文");
     _labelD.text = kLocalizedString(@"Oh my God", @"我的天");
     
 }

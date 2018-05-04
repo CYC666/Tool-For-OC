@@ -29,7 +29,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Bk-eb-D3w">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                     <subviews>
                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="aTq-3S-kxc">
                             <rect key="frame" x="10" y="96" width="120" height="2"/>
@@ -155,7 +155,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="4Bk-eb-D3w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3YY-DU-MUh"/>
-                <constraint firstItem="4Bk-eb-D3w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NAH-5D-i4d"/>
+                <constraint firstItem="4Bk-eb-D3w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="NAH-5D-i4d"/>
                 <constraint firstAttribute="trailing" secondItem="4Bk-eb-D3w" secondAttribute="trailing" id="Why-bu-lQ3"/>
                 <constraint firstAttribute="bottom" secondItem="4Bk-eb-D3w" secondAttribute="bottom" id="oAT-mM-fXl"/>
             </constraints>

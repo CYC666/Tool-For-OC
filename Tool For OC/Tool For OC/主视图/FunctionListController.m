@@ -61,16 +61,7 @@
 }
 
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:YES];
-    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
-}
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-}
+
 
 
 
@@ -98,13 +89,7 @@
     
     MainCCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainCCell" forIndexPath:indexPath];
     
-    if (indexPath.row % 2) {
-        cell.colorView.backgroundColor = Background_Color;
-        cell.nameLabel.textColor = Publie_Color_B;
-    } else {
-        cell.colorView.backgroundColor = Publie_Color_B;
-        cell.nameLabel.textColor = Background_Color;
-    }
+
     
     NSDictionary *dic = funcArray[indexPath.row];
     cell.nameLabel.text = dic[@"name"];
