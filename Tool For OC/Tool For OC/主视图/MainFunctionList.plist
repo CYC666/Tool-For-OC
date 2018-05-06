@@ -166,11 +166,11 @@
 				<key>status</key>
 				<false/>
 				<key>name</key>
-				<string></string>
+				<string>DGActivityIndicatorView</string>
 				<key>func</key>
-				<string></string>
+				<string>DGActivityIndicatorView</string>
 				<key>url</key>
-				<string>https://github.com/CYC666</string>
+				<string>https://github.com/gontovnik/DGActivityIndicatorView</string>
 			</dict>
 		</array>
 	</dict>

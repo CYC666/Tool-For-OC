@@ -1,5 +1,6 @@
 PODS:
   - ContextMenu.iOS (1.1.0)
+  - DGActivityIndicatorView (2.1.1)
   - LCActionSheet (3.4.0):
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
@@ -9,16 +10,18 @@ PODS:
 
 DEPENDENCIES:
   - ContextMenu.iOS (~> 1.1.0)
+  - DGActivityIndicatorView
   - LCActionSheet
   - Masonry
   - SDWebImage
 
 SPEC CHECKSUMS:
   ContextMenu.iOS: 7f3b63915e660f51aada2c4285c40a837b2c9737
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   LCActionSheet: af918d2f3f1c4c97f5f6f62cb099e745447aff96
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
 
-PODFILE CHECKSUM: c6948df4641b387fdf0bcbdab3b7db142435509b
+PODFILE CHECKSUM: 4eba1ea366b8b8e4490507f27e968960b5bc3064
 
 COCOAPODS: 1.4.0

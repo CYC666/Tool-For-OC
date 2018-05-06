@@ -36,7 +36,7 @@
     
     // 集合视图
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(kScreenWidth, (kScreenHeight - Nav_Height) * 0.1);
+    layout.itemSize = CGSizeMake(kScreenWidth, 40);
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     
