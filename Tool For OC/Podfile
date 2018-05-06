@@ -5,4 +5,5 @@ target 'Tool For OC' do
     pod 'LCActionSheet'
     pod 'ContextMenu.iOS', '~> 1.1.0'
     pod 'DGActivityIndicatorView'
+    pod 'JQFMDB'
 end
