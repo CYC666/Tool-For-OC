@@ -36,3 +36,4 @@
 1、CollectionViewClassifyMenu
 2、DGActivityIndicatorView
 3、JQFMDB
+4、YYText

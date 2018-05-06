@@ -200,11 +200,11 @@
 				<key>status</key>
 				<false/>
 				<key>name</key>
-				<string></string>
+				<string>YYText</string>
 				<key>func</key>
-				<string></string>
+				<string>YYText</string>
 				<key>url</key>
-				<string>https://github.com/CYC666</string>
+				<string>https://github.com/ibireme/YYText</string>
 			</dict>
 		</array>
 	</dict>
@@ -217,7 +217,7 @@
 				<key>status</key>
 				<false/>
 				<key>name</key>
-				<string></string>
+				<string>敬请期待</string>
 				<key>func</key>
 				<string></string>
 				<key>url</key>
