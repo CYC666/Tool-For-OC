@@ -31,3 +31,6 @@
 05.04
 1、修改了侧滑
 2、ContextMenu
+
+05-06
+1、CollectionViewClassifyMenu

@@ -118,6 +118,28 @@
 		17AF1B05209C653200C7287E /* ContextMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B03209C653200C7287E /* ContextMenuCell.m */; };
 		17AF1B06209C653200C7287E /* ContextMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AF1B04209C653200C7287E /* ContextMenuCell.xib */; };
 		17AF1B09209C656800C7287E /* YALNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B08209C656800C7287E /* YALNavigationBar.m */; };
+		17AF1B0D209EA44500C7287E /* CYLMenuCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B0C209EA44500C7287E /* CYLMenuCtrl.m */; };
+		17AF1B47209EA5B300C7287E /* NSDictionary+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B11209EA5B200C7287E /* NSDictionary+log.m */; };
+		17AF1B48209EA5B300C7287E /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B14209EA5B200C7287E /* NSArray+log.m */; };
+		17AF1B49209EA5B300C7287E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 17AF1B15209EA5B200C7287E /* data.json */; };
+		17AF1B4A209EA5B300C7287E /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B19209EA5B200C7287E /* UICollectionViewLeftAlignedLayout.m */; };
+		17AF1B4B209EA5B300C7287E /* CYLDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B1B209EA5B200C7287E /* CYLDBManager.m */; };
+		17AF1B4C209EA5B300C7287E /* UIButton+CollectionCellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B21209EA5B200C7287E /* UIButton+CollectionCellStyle.m */; };
+		17AF1B4D209EA5B300C7287E /* CYLClassifyMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B26209EA5B200C7287E /* CYLClassifyMenuViewController.m */; };
+		17AF1B4E209EA5B300C7287E /* CYLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B27209EA5B200C7287E /* CYLMainViewController.m */; };
+		17AF1B4F209EA5B300C7287E /* CYLFilterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B2A209EA5B200C7287E /* CYLFilterHeaderView.m */; };
+		17AF1B50209EA5B300C7287E /* CYLIndexPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B2C209EA5B200C7287E /* CYLIndexPathButton.m */; };
+		17AF1B51209EA5B300C7287E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B2D209EA5B200C7287E /* CollectionViewCell.m */; };
+		17AF1B52209EA5B300C7287E /* CYLRightImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B2F209EA5B200C7287E /* CYLRightImageButton.m */; };
+		17AF1B53209EA5B300C7287E /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B34209EA5B200C7287E /* UIImage+Blur.m */; };
+		17AF1B54209EA5B300C7287E /* UIView+General.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B35209EA5B200C7287E /* UIView+General.m */; };
+		17AF1B55209EA5B300C7287E /* CYLFilterParamsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B39209EA5B200C7287E /* CYLFilterParamsTool.m */; };
+		17AF1B56209EA5B300C7287E /* FilterBaseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AF1B3D209EA5B200C7287E /* FilterBaseController.xib */; };
+		17AF1B57209EA5B300C7287E /* CYLMultipleFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B3F209EA5B200C7287E /* CYLMultipleFilterController.m */; };
+		17AF1B58209EA5B300C7287E /* FilterBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B40209EA5B200C7287E /* FilterBaseController.m */; };
+		17AF1B59209EA5B300C7287E /* CYLMultipleFilterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AF1B43209EA5B200C7287E /* CYLMultipleFilterHeaderView.xib */; };
+		17AF1B5A209EA5B300C7287E /* FilterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B44209EA5B200C7287E /* FilterCollectionCell.m */; };
+		17AF1B5B209EA5B300C7287E /* CYLMultipleFilterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B45209EA5B200C7287E /* CYLMultipleFilterHeaderView.m */; };
 		17B48D0F209320FE0018B6EF /* LanguageBaba.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B48D11209320FE0018B6EF /* LanguageBaba.strings */; };
 		17BADF0120931AB8004D1312 /* LanguageManagerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BADEFF20931AB8004D1312 /* LanguageManagerCtrl.m */; };
 		17BADF0220931AB8004D1312 /* LanguageManagerCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BADF0020931AB8004D1312 /* LanguageManagerCtrl.xib */; };
@@ -325,6 +347,48 @@
 		17AF1B04209C653200C7287E /* ContextMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContextMenuCell.xib; sourceTree = "<group>"; };
 		17AF1B07209C656800C7287E /* YALNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALNavigationBar.h; sourceTree = "<group>"; };
 		17AF1B08209C656800C7287E /* YALNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALNavigationBar.m; sourceTree = "<group>"; };
+		17AF1B0B209EA44500C7287E /* CYLMenuCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLMenuCtrl.h; sourceTree = "<group>"; };
+		17AF1B0C209EA44500C7287E /* CYLMenuCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLMenuCtrl.m; sourceTree = "<group>"; };
+		17AF1B11209EA5B200C7287E /* NSDictionary+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+log.m"; sourceTree = "<group>"; };
+		17AF1B12209EA5B200C7287E /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
+		17AF1B13209EA5B200C7287E /* NSDictionary+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+log.h"; sourceTree = "<group>"; };
+		17AF1B14209EA5B200C7287E /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
+		17AF1B15209EA5B200C7287E /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		17AF1B18209EA5B200C7287E /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		17AF1B19209EA5B200C7287E /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		17AF1B1B209EA5B200C7287E /* CYLDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLDBManager.m; sourceTree = "<group>"; };
+		17AF1B1C209EA5B200C7287E /* CYLParameterConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLParameterConfiguration.h; sourceTree = "<group>"; };
+		17AF1B1D209EA5B200C7287E /* CYLDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLDBManager.h; sourceTree = "<group>"; };
+		17AF1B21209EA5B200C7287E /* UIButton+CollectionCellStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CollectionCellStyle.m"; sourceTree = "<group>"; };
+		17AF1B22209EA5B200C7287E /* UIButton+CollectionCellStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CollectionCellStyle.h"; sourceTree = "<group>"; };
+		17AF1B24209EA5B200C7287E /* CYLClassifyMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLClassifyMenuViewController.h; sourceTree = "<group>"; };
+		17AF1B25209EA5B200C7287E /* CYLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMainViewController.h; sourceTree = "<group>"; };
+		17AF1B26209EA5B200C7287E /* CYLClassifyMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLClassifyMenuViewController.m; sourceTree = "<group>"; };
+		17AF1B27209EA5B200C7287E /* CYLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLMainViewController.m; sourceTree = "<group>"; };
+		17AF1B29209EA5B200C7287E /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		17AF1B2A209EA5B200C7287E /* CYLFilterHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLFilterHeaderView.m; sourceTree = "<group>"; };
+		17AF1B2B209EA5B200C7287E /* CYLRightImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRightImageButton.h; sourceTree = "<group>"; };
+		17AF1B2C209EA5B200C7287E /* CYLIndexPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLIndexPathButton.m; sourceTree = "<group>"; };
+		17AF1B2D209EA5B200C7287E /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		17AF1B2E209EA5B200C7287E /* CYLFilterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLFilterHeaderView.h; sourceTree = "<group>"; };
+		17AF1B2F209EA5B200C7287E /* CYLRightImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRightImageButton.m; sourceTree = "<group>"; };
+		17AF1B30209EA5B200C7287E /* CYLIndexPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLIndexPathButton.h; sourceTree = "<group>"; };
+		17AF1B34209EA5B200C7287E /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		17AF1B35209EA5B200C7287E /* UIView+General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+General.m"; sourceTree = "<group>"; };
+		17AF1B36209EA5B200C7287E /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		17AF1B37209EA5B200C7287E /* UIView+General.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+General.h"; sourceTree = "<group>"; };
+		17AF1B39209EA5B200C7287E /* CYLFilterParamsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLFilterParamsTool.m; sourceTree = "<group>"; };
+		17AF1B3A209EA5B200C7287E /* CYLFilterParamsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLFilterParamsTool.h; sourceTree = "<group>"; };
+		17AF1B3C209EA5B200C7287E /* CYLMultipleFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMultipleFilterController.h; sourceTree = "<group>"; };
+		17AF1B3D209EA5B200C7287E /* FilterBaseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterBaseController.xib; sourceTree = "<group>"; };
+		17AF1B3E209EA5B200C7287E /* FilterBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterBaseController.h; sourceTree = "<group>"; };
+		17AF1B3F209EA5B200C7287E /* CYLMultipleFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLMultipleFilterController.m; sourceTree = "<group>"; };
+		17AF1B40209EA5B200C7287E /* FilterBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterBaseController.m; sourceTree = "<group>"; };
+		17AF1B42209EA5B200C7287E /* CYLMultipleFilterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLMultipleFilterHeaderView.h; sourceTree = "<group>"; };
+		17AF1B43209EA5B200C7287E /* CYLMultipleFilterHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYLMultipleFilterHeaderView.xib; sourceTree = "<group>"; };
+		17AF1B44209EA5B200C7287E /* FilterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionCell.m; sourceTree = "<group>"; };
+		17AF1B45209EA5B200C7287E /* CYLMultipleFilterHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLMultipleFilterHeaderView.m; sourceTree = "<group>"; };
+		17AF1B46209EA5B200C7287E /* FilterCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionCell.h; sourceTree = "<group>"; };
 		17B48D10209320FE0018B6EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LanguageBaba.strings"; sourceTree = "<group>"; };
 		17B48D12209321030018B6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LanguageBaba.strings; sourceTree = "<group>"; };
 		17B48D13209321070018B6EF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LanguageBaba.strings"; sourceTree = "<group>"; };
@@ -842,6 +906,7 @@
 		17AF1AFA209C62FD00C7287E /* 菜单 */ = {
 			isa = PBXGroup;
 			children = (
+				17AF1B0A209EA3B200C7287E /* CYLMenu */,
 				17AF1AFB209C630400C7287E /* ContextMenu */,
 			);
 			path = "菜单";
@@ -868,6 +933,191 @@
 				17AF1B04209C653200C7287E /* ContextMenuCell.xib */,
 			);
 			path = ContextMenuCell;
+			sourceTree = "<group>";
+		};
+		17AF1B0A209EA3B200C7287E /* CYLMenu */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B0B209EA44500C7287E /* CYLMenuCtrl.h */,
+				17AF1B0C209EA44500C7287E /* CYLMenuCtrl.m */,
+				17AF1B0E209EA5B200C7287E /* Class */,
+			);
+			path = CYLMenu;
+			sourceTree = "<group>";
+		};
+		17AF1B0E209EA5B200C7287E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B0F209EA5B200C7287E /* Other */,
+				17AF1B1E209EA5B200C7287E /* ClassifyMenu */,
+				17AF1B31209EA5B200C7287E /* MultipleFilter */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		17AF1B0F209EA5B200C7287E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B10209EA5B200C7287E /* Category */,
+				17AF1B15209EA5B200C7287E /* data.json */,
+				17AF1B16209EA5B200C7287E /* Lib */,
+				17AF1B1A209EA5B200C7287E /* Tool */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		17AF1B10209EA5B200C7287E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B11209EA5B200C7287E /* NSDictionary+log.m */,
+				17AF1B12209EA5B200C7287E /* NSArray+log.h */,
+				17AF1B13209EA5B200C7287E /* NSDictionary+log.h */,
+				17AF1B14209EA5B200C7287E /* NSArray+log.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		17AF1B16209EA5B200C7287E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B17209EA5B200C7287E /* UICollectionViewLeftAlignedLayout */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		17AF1B17209EA5B200C7287E /* UICollectionViewLeftAlignedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B18209EA5B200C7287E /* UICollectionViewLeftAlignedLayout.h */,
+				17AF1B19209EA5B200C7287E /* UICollectionViewLeftAlignedLayout.m */,
+			);
+			path = UICollectionViewLeftAlignedLayout;
+			sourceTree = "<group>";
+		};
+		17AF1B1A209EA5B200C7287E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B1B209EA5B200C7287E /* CYLDBManager.m */,
+				17AF1B1C209EA5B200C7287E /* CYLParameterConfiguration.h */,
+				17AF1B1D209EA5B200C7287E /* CYLDBManager.h */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		17AF1B1E209EA5B200C7287E /* ClassifyMenu */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B1F209EA5B200C7287E /* Other */,
+				17AF1B23209EA5B200C7287E /* Controller */,
+				17AF1B28209EA5B200C7287E /* View */,
+			);
+			path = ClassifyMenu;
+			sourceTree = "<group>";
+		};
+		17AF1B1F209EA5B200C7287E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B20209EA5B200C7287E /* Category */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		17AF1B20209EA5B200C7287E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B21209EA5B200C7287E /* UIButton+CollectionCellStyle.m */,
+				17AF1B22209EA5B200C7287E /* UIButton+CollectionCellStyle.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		17AF1B23209EA5B200C7287E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B24209EA5B200C7287E /* CYLClassifyMenuViewController.h */,
+				17AF1B25209EA5B200C7287E /* CYLMainViewController.h */,
+				17AF1B26209EA5B200C7287E /* CYLClassifyMenuViewController.m */,
+				17AF1B27209EA5B200C7287E /* CYLMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17AF1B28209EA5B200C7287E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B29209EA5B200C7287E /* CollectionViewCell.h */,
+				17AF1B2A209EA5B200C7287E /* CYLFilterHeaderView.m */,
+				17AF1B2B209EA5B200C7287E /* CYLRightImageButton.h */,
+				17AF1B2C209EA5B200C7287E /* CYLIndexPathButton.m */,
+				17AF1B2D209EA5B200C7287E /* CollectionViewCell.m */,
+				17AF1B2E209EA5B200C7287E /* CYLFilterHeaderView.h */,
+				17AF1B2F209EA5B200C7287E /* CYLRightImageButton.m */,
+				17AF1B30209EA5B200C7287E /* CYLIndexPathButton.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17AF1B31209EA5B200C7287E /* MultipleFilter */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B32209EA5B200C7287E /* Other */,
+				17AF1B3B209EA5B200C7287E /* Controller */,
+				17AF1B41209EA5B200C7287E /* View */,
+			);
+			path = MultipleFilter;
+			sourceTree = "<group>";
+		};
+		17AF1B32209EA5B200C7287E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B33209EA5B200C7287E /* Category */,
+				17AF1B38209EA5B200C7287E /* Tool */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		17AF1B33209EA5B200C7287E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B34209EA5B200C7287E /* UIImage+Blur.m */,
+				17AF1B35209EA5B200C7287E /* UIView+General.m */,
+				17AF1B36209EA5B200C7287E /* UIImage+Blur.h */,
+				17AF1B37209EA5B200C7287E /* UIView+General.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		17AF1B38209EA5B200C7287E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B39209EA5B200C7287E /* CYLFilterParamsTool.m */,
+				17AF1B3A209EA5B200C7287E /* CYLFilterParamsTool.h */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		17AF1B3B209EA5B200C7287E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B3C209EA5B200C7287E /* CYLMultipleFilterController.h */,
+				17AF1B3D209EA5B200C7287E /* FilterBaseController.xib */,
+				17AF1B3E209EA5B200C7287E /* FilterBaseController.h */,
+				17AF1B3F209EA5B200C7287E /* CYLMultipleFilterController.m */,
+				17AF1B40209EA5B200C7287E /* FilterBaseController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17AF1B41209EA5B200C7287E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17AF1B42209EA5B200C7287E /* CYLMultipleFilterHeaderView.h */,
+				17AF1B43209EA5B200C7287E /* CYLMultipleFilterHeaderView.xib */,
+				17AF1B44209EA5B200C7287E /* FilterCollectionCell.m */,
+				17AF1B45209EA5B200C7287E /* CYLMultipleFilterHeaderView.m */,
+				17AF1B46209EA5B200C7287E /* FilterCollectionCell.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		17BADEFD20931A88004D1312 /* 多语言 */ = {
@@ -987,6 +1237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */,
+				17AF1B59209EA5B300C7287E /* CYLMultipleFilterHeaderView.xib in Resources */,
 				172999CD208752360026B1E9 /* ShowNoteViewController.xib in Resources */,
 				174CC1AF2087BDA500B41FA2 /* FastForwardView.xib in Resources */,
 				17BADF0220931AB8004D1312 /* LanguageManagerCtrl.xib in Resources */,
@@ -996,6 +1247,7 @@
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
 				17174708208EBA3000460A87 /* Assets.xcassets in Resources */,
 				172999ED208761930026B1E9 /* 7号线.png in Resources */,
+				17AF1B56209EA5B300C7287E /* FilterBaseController.xib in Resources */,
 				172999D0208752360026B1E9 /* AddNoteViewController.xib in Resources */,
 				172999EA208761930026B1E9 /* 9号线.png in Resources */,
 				172999EE208761930026B1E9 /* 5号线.png in Resources */,
@@ -1003,6 +1255,7 @@
 				172999CE208752360026B1E9 /* NoteListCell.xib in Resources */,
 				17B48D0F209320FE0018B6EF /* LanguageBaba.strings in Resources */,
 				1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */,
+				17AF1B49209EA5B300C7287E /* data.json in Resources */,
 				172999EB208761930026B1E9 /* 4号线.png in Resources */,
 				17299959208630610026B1E9 /* 简特细等线.ttf in Resources */,
 				172999E6208761930026B1E9 /* WCLineCell.xib in Resources */,
@@ -1100,6 +1353,7 @@
 				172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */,
 				174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */,
 				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
+				17AF1B0D209EA44500C7287E /* CYLMenuCtrl.m in Sources */,
 				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,
 				174CC1B12087BDA500B41FA2 /* FastForwardView.m in Sources */,
 				172999B920874C590026B1E9 /* CodeViewController.m in Sources */,
@@ -1108,17 +1362,22 @@
 				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
 				172999D3208752360026B1E9 /* NoteListCell.m in Sources */,
 				17299A0D2087A1C90026B1E9 /* JFPhotoBrowserViewController.m in Sources */,
+				17AF1B48209EA5B300C7287E /* NSArray+log.m in Sources */,
 				1729994820862B370026B1E9 /* FontFlowShowViewController.m in Sources */,
 				1729994620862B370026B1E9 /* SelectFontSizeViewController.m in Sources */,
 				172999F42087A1310026B1E9 /* JFImagePickerCtrl.m in Sources */,
 				172999AE208738C50026B1E9 /* TOCropViewController.m in Sources */,
+				17AF1B57209EA5B300C7287E /* CYLMultipleFilterController.m in Sources */,
+				17AF1B4B209EA5B300C7287E /* CYLDBManager.m in Sources */,
 				172999102085DFF40026B1E9 /* MainController.m in Sources */,
 				174CC19B2087B95500B41FA2 /* HSSessionModel.m in Sources */,
+				17AF1B5B209EA5B300C7287E /* CYLMultipleFilterHeaderView.m in Sources */,
 				172999132085E0240026B1E9 /* BaseController.m in Sources */,
 				174CC1A32087BD8C00B41FA2 /* WMPlayerCtrl.m in Sources */,
 				1729994F20862C2C0026B1E9 /* SelectColorController.m in Sources */,
 				17174717208F25EA00460A87 /* DQAlertView.m in Sources */,
 				1729997120872D210026B1E9 /* YQPanoramaViewCtrl.m in Sources */,
+				17AF1B4E209EA5B300C7287E /* CYLMainViewController.m in Sources */,
 				1729996C208724F10026B1E9 /* FunctionListController.m in Sources */,
 				172999CC208752360026B1E9 /* AddNoteViewController.m in Sources */,
 				172999D4208752360026B1E9 /* NoteSearchViewController.m in Sources */,
@@ -1127,9 +1386,11 @@
 				172999CF208752360026B1E9 /* NoteModel.m in Sources */,
 				172999AA208738C50026B1E9 /* TOActivityCroppedImageProvider.m in Sources */,
 				1729994720862B370026B1E9 /* FontViewController.m in Sources */,
+				17AF1B5A209EA5B300C7287E /* FilterCollectionCell.m in Sources */,
 				172999292085E2DE0026B1E9 /* LeftController.m in Sources */,
 				1729997520872D930026B1E9 /* TOCropViewCtrl.m in Sources */,
 				172999B1208738C50026B1E9 /* TOCropOverlayView.m in Sources */,
+				17AF1B54209EA5B300C7287E /* UIView+General.m in Sources */,
 				17174713208F259F00460A87 /* DQAlertViewCtrl.m in Sources */,
 				17299A0C2087A1C90026B1E9 /* JFPhotoView.m in Sources */,
 				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
@@ -1137,9 +1398,16 @@
 				174CC19D2087B95500B41FA2 /* HSDownloadManager.m in Sources */,
 				172999312085F9830026B1E9 /* RightController.m in Sources */,
 				172998FA2085DB6A0026B1E9 /* ViewController.m in Sources */,
+				17AF1B4C209EA5B300C7287E /* UIButton+CollectionCellStyle.m in Sources */,
 				172999B0208738C50026B1E9 /* TOCropView.m in Sources */,
 				17AF1B05209C653200C7287E /* ContextMenuCell.m in Sources */,
+				17AF1B58209EA5B300C7287E /* FilterBaseController.m in Sources */,
+				17AF1B53209EA5B300C7287E /* UIImage+Blur.m in Sources */,
+				17AF1B52209EA5B300C7287E /* CYLRightImageButton.m in Sources */,
 				17299935208621330026B1E9 /* LeftCell.m in Sources */,
+				17AF1B55209EA5B300C7287E /* CYLFilterParamsTool.m in Sources */,
+				17AF1B4A209EA5B300C7287E /* UICollectionViewLeftAlignedLayout.m in Sources */,
+				17AF1B51209EA5B300C7287E /* CollectionViewCell.m in Sources */,
 				17299A082087A1C90026B1E9 /* JFImagePickerController.m in Sources */,
 				172999D1208752360026B1E9 /* NoteViewController.m in Sources */,
 				172999AD208738C50026B1E9 /* TOCroppedImageAttributes.m in Sources */,
@@ -1155,15 +1423,19 @@
 				17BADF0120931AB8004D1312 /* LanguageManagerCtrl.m in Sources */,
 				174CC1B22087BDA500B41FA2 /* WMPlayer.m in Sources */,
 				172999232085E1840026B1E9 /* MMDrawerController.m in Sources */,
+				17AF1B4D209EA5B300C7287E /* CYLClassifyMenuViewController.m in Sources */,
 				17299A092087A1C90026B1E9 /* JFImageManager.m in Sources */,
 				17299A072087A1C90026B1E9 /* JFAssetHelper.m in Sources */,
+				17AF1B4F209EA5B300C7287E /* CYLFilterHeaderView.m in Sources */,
 				1729993A208626B60026B1E9 /* RightCell.m in Sources */,
 				172999AF208738C50026B1E9 /* TOCropScrollView.m in Sources */,
+				17AF1B47209EA5B300C7287E /* NSDictionary+log.m in Sources */,
 				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
 				1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */,
 				17AF1B09209C656800C7287E /* YALNavigationBar.m in Sources */,
 				17174704208EB96A00460A87 /* GIFCtrl.m in Sources */,
 				174CC1922087B94A00B41FA2 /* HSDownloadManagerCtrl.m in Sources */,
+				17AF1B50209EA5B300C7287E /* CYLIndexPathButton.m in Sources */,
 				1729997A20872E650026B1E9 /* YQPanoramaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

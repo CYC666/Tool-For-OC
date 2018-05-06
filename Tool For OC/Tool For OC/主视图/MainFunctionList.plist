@@ -145,6 +145,16 @@
 				<key>url</key>
 				<string>https://github.com/Yalantis/Context-Menu.iOS</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>CYLMenu</string>
+				<key>func</key>
+				<string>CYLMenu</string>
+				<key>url</key>
+				<string>https://github.com/ChenYilong/CollectionViewClassifyMenu</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
