@@ -8,7 +8,6 @@
 
 #import "LeftController.h"
 #import "LeftCell.h"
-#import "MMDrawerController.h"
 
 @interface LeftController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -30,15 +29,16 @@
     self.title = @"应用";
     self.view.backgroundColor = White_Color;
     funcArray = @[@"字幕",
-                  @"取色",
                   @"二维码",
                   @"笔记",
-                  @"地铁厕所"];
+                  @"地铁厕所",
+                  @"日历"];
+    
     funcControllerArray = @[@"FontViewController",
-                            @"SelectColorController",
                             @"CodeViewController",
                             @"NoteViewController",
-                            @"WCViewController"];
+                            @"WCViewController",
+                            @"CalendarViewController"];
     
     
     // 创建视图
@@ -54,15 +54,18 @@
 #pragma mark - 创建视图
 - (void)creatSubViewsAction {
     
+    
+    
     // 表视图
     _listTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, Nav_Height, LeftWidth, kScreenHeight - Nav_Height)
                                                   style:UITableViewStylePlain];
     _listTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _listTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    _listTableView.backgroundColor = [UIColor clearColor];
+    _listTableView.backgroundColor = Background_Color;
     _listTableView.pagingEnabled = YES;
     _listTableView.delegate = self;
     _listTableView.dataSource = self;
+    _listTableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, LeftWidth -7);
     [_listTableView registerNib:[UINib nibWithNibName:@"LeftCell" bundle:[NSBundle mainBundle]]
          forCellReuseIdentifier:@"LeftCell"];
     [self.view addSubview:_listTableView];
@@ -138,13 +141,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UIViewController *ctrl = [[NSClassFromString(funcControllerArray[indexPath.row]) alloc] init];
-    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    
-    [drawCtrl closeDrawerAnimated:YES completion:^(BOOL finished) {
-        UINavigationController *center = (UINavigationController *)drawCtrl.centerViewController;
-        [center pushViewController:ctrl animated:YES];
-    }];
+    if (_delegate) {
+        [_delegate LeftControllerIndexChange:funcControllerArray[indexPath.row]];
+    }
     
     
     

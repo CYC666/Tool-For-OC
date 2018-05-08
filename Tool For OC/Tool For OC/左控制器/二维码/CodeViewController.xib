@@ -47,22 +47,38 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KOb-0q-6ye">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-6f-EZf">
                     <rect key="frame" x="10" y="110" width="355" height="355"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KOb-0q-6ye">
+                            <rect key="frame" x="10" y="10" width="335" height="335"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="KOb-0q-6ye" secondAttribute="height" id="7ws-fZ-8zw"/>
+                        <constraint firstAttribute="trailing" secondItem="KOb-0q-6ye" secondAttribute="trailing" constant="10" id="9FU-yY-Nrq"/>
+                        <constraint firstItem="KOb-0q-6ye" firstAttribute="leading" secondItem="Prn-6f-EZf" secondAttribute="leading" constant="10" id="CYe-ir-KpF"/>
+                        <constraint firstAttribute="width" secondItem="Prn-6f-EZf" secondAttribute="height" id="NoA-B5-dvk"/>
+                        <constraint firstItem="KOb-0q-6ye" firstAttribute="top" secondItem="Prn-6f-EZf" secondAttribute="top" constant="10" id="UgZ-qk-LWU"/>
+                        <constraint firstAttribute="bottom" secondItem="KOb-0q-6ye" secondAttribute="bottom" constant="10" id="Uo9-70-Tvh"/>
                     </constraints>
-                </imageView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="KOb-0q-6ye" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="0zS-io-mnf"/>
                 <constraint firstItem="DAe-Ft-yCD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="6U0-JZ-ytU"/>
                 <constraint firstItem="DAe-Ft-yCD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="7a4-7R-trb"/>
-                <constraint firstItem="KOb-0q-6ye" firstAttribute="top" secondItem="DAe-Ft-yCD" secondAttribute="bottom" constant="10" id="E3D-Vo-zLA"/>
+                <constraint firstItem="Prn-6f-EZf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="8CG-dP-7W8"/>
+                <constraint firstAttribute="trailing" secondItem="Prn-6f-EZf" secondAttribute="trailing" constant="10" id="dyt-mV-H5w"/>
                 <constraint firstAttribute="trailing" secondItem="DAe-Ft-yCD" secondAttribute="trailing" constant="10" id="kNH-0C-eny"/>
-                <constraint firstAttribute="trailing" secondItem="KOb-0q-6ye" secondAttribute="trailing" constant="10" id="ukA-r7-Jbh"/>
+                <constraint firstItem="Prn-6f-EZf" firstAttribute="top" secondItem="DAe-Ft-yCD" secondAttribute="bottom" constant="10" id="yGS-Zi-jPg"/>
             </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
 </document>

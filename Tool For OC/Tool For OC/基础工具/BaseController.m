@@ -7,7 +7,6 @@
 //
 
 #import "BaseController.h"
-#import "MMDrawerController.h"
 
 @interface BaseController ()
 
@@ -30,12 +29,6 @@
     [rightItem addTarget:self action:@selector(detialsAction) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
     self.navigationItem.rightBarButtonItem = rightBarItem;
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:YES];
-    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
 }
 
 #pragma mark - 查看详情

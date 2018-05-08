@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LeftControllerDlegate
+// 点击单元格
+-(void)LeftControllerIndexChange:(NSString *)ctrl;
+@end
+
+
 @interface LeftController : UIViewController
+
+// 代理
+@property (weak, nonatomic) id<LeftControllerDlegate> delegate;
 
 @end

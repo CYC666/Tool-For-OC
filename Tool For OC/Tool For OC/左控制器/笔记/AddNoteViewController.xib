@@ -62,7 +62,7 @@
                             <rect key="frame" x="8" y="8" width="339" height="184"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="continue"/>
                         </textView>
                     </subviews>
                     <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

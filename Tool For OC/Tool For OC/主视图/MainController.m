@@ -7,14 +7,15 @@
 //
 
 #import "MainController.h"
-#import "MMDrawerController.h"
 #import "MainCCell.h"
 #import "FunctionListController.h"
+#import "LeftController.h"
 
-@interface MainController () <UICollectionViewDelegate, UICollectionViewDataSource> {
+@interface MainController () <UICollectionViewDelegate, UICollectionViewDataSource, LeftControllerDlegate> {
     
     UICollectionView *_listCollectionView;
     NSArray *funcArray;
+    LeftController *left;
     
 }
 
@@ -29,6 +30,14 @@
     
     self.navigationItem.title = @"功能列表";
     self.view.backgroundColor = Background_Color;
+    
+    // 导航栏右边的添加按钮
+    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightItem setTitle:@"左" forState:UIControlStateNormal];
+    [rightItem setTintColor:[UIColor whiteColor]];
+    [rightItem addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
+    self.navigationItem.leftBarButtonItem = rightBarItem;
     
     funcArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"MainFunctionList.plist" ofType:nil]];
     
@@ -57,6 +66,9 @@
 #endif
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    UISwipeGestureRecognizer *rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSwipeAction:)];
+    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:rightSwipe];
     
 }
 
@@ -67,6 +79,60 @@
 
 #pragma mark ========================================动作响应=============================================
 
+#pragma mark - 左边菜单
+- (void)leftButtonAction:(UIButton *)button {
+    
+    if (!left) {
+        left = [[LeftController alloc] init];
+        left.view.frame = CGRectMake(-kScreenWidth, 0, kScreenWidth, kScreenHeight);
+        left.view.backgroundColor = [UIColor clearColor];
+        left.delegate = self;
+        [self.view addSubview:left.view];
+        [self addChildViewController:left];
+        
+        UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
+        leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+        [left.view addGestureRecognizer:leftSwipe];
+        
+    }
+    
+    [UIView animateWithDuration:.35 animations:^{
+        left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
+    }];
+    
+}
+
+#pragma mark - 展左边菜单
+- (void)rightSwipeAction:(UISwipeGestureRecognizer *)swipe {
+    
+    if (!left) {
+        left = [[LeftController alloc] init];
+        left.view.frame = CGRectMake(-kScreenWidth, 0, kScreenWidth, kScreenHeight);
+        left.view.backgroundColor = [UIColor clearColor];
+        left.delegate = self;
+        [self.view addSubview:left.view];
+        [self addChildViewController:left];
+        
+        UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
+        leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+        [left.view addGestureRecognizer:leftSwipe];
+        
+    }
+    
+    [UIView animateWithDuration:.35 animations:^{
+        left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
+    }];
+    
+}
+
+#pragma mark - 隐藏左边菜单
+- (void)leftSwipeAction:(UISwipeGestureRecognizer *)swipe {
+    
+    [UIView animateWithDuration:.35 animations:^{
+        left.view.transform = CGAffineTransformMakeTranslation(0, 0);
+    }];
+    
+}
 
 #pragma mark ========================================网络请求=============================================
 
@@ -107,7 +173,16 @@
 }
 
 
-
+#pragma mark - 左控制器代理方法
+- (void)LeftControllerIndexChange:(NSString *)ctrl {
+    
+    UIViewController *viewCtrl = [[NSClassFromString(ctrl) alloc] init];
+    [self.navigationController pushViewController:viewCtrl animated:YES];
+    
+    [UIView animateWithDuration:.35 animations:^{
+        left.view.transform = CGAffineTransformMakeTranslation(0, 0);
+    }];
+}
 
 
 

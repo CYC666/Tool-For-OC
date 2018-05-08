@@ -7,7 +7,6 @@
 //
 
 #import "AddNoteViewController.h"
-#import "MMDrawerController.h"
 
 @interface AddNoteViewController () <UITextViewDelegate>
 
@@ -22,7 +21,6 @@
     self.navigationItem.title = @"添加";
     
     _top.constant = Nav_Height + 10;
-    _contentView.delegate = self;
     
     // 导航栏右边的添加按钮
     UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -37,23 +35,6 @@
     
 }
 
-
-//（1）、视图将要出现的时候,禁用MMDrawCtrls
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:YES];
-    //获取根视图控制器
-    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    //设置一下打开的区域
-    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
-}
-//（2）、视图将要消失的时候,还原一下
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    //设置一下打开的区域
-    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-}
-
 #pragma mark - 下一步
 - (IBAction)nextAction:(UITextField *)sender {
     
@@ -61,13 +42,6 @@
     
 }
 
-#pragma mark - 完成
-- (void)textViewDidEndEditing:(UITextView *)textView {
-    
-//    [self sureButtonAction:nil];
-    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
-    
-}
 
 #pragma mark - 确定
 - (void)sureButtonAction:(UIButton *)button {

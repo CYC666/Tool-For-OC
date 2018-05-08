@@ -12,7 +12,7 @@
 #import "AddNoteViewController.h"
 #import "ShowNoteViewController.h"
 #import "NoteSearchViewController.h"
-#import "MMDrawerController.h"
+
 
 @interface NoteViewController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -87,22 +87,6 @@
     
 }
 
-//（1）、视图将要出现的时候,禁用MMDrawCtrls
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:YES];
-    //获取根视图控制器
-    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    //设置一下打开的区域
-    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
-}
-//（2）、视图将要消失的时候,还原一下
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    MMDrawerController *drawCtrl= (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    //设置一下打开的区域
-    [drawCtrl setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-}
-
 #pragma mark - 获取数据
 - (NSMutableArray *)loadListAction {
     
@@ -122,6 +106,21 @@
             model.noteContent = dic[@"content"];
             [tempArray addObject:model];
         }
+    } else {
+        // 储存，返回
+        NSMutableArray *list = [NSMutableArray array];
+        [list addObject:@{@"title" : @"Hello",
+                          @"content" : @"Welcome to TFOC"
+                          }];
+        
+        // 1、获取应用程序沙盒下的Documents目录（购物车列表）
+        [list writeToFile:filePath atomically:YES];
+        
+        NoteModel *model = [[NoteModel alloc] init];
+        model.noteTitle = @"Hello";
+        model.noteContent = @"Welcome to TFOC";
+        [tempArray addObject:model];
+        
     }
     
     return tempArray;

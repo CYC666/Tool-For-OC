@@ -7,4 +7,5 @@ target 'Tool For OC' do
     pod 'DGActivityIndicatorView'
     pod 'JQFMDB'
     pod 'YYText'
+    pod 'AFNetworking'
 end

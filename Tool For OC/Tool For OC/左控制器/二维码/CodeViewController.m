@@ -35,27 +35,39 @@
 #pragma mark - 保存二维码
 - (void)saveAction:(UITapGestureRecognizer *)tap {
     
-    if (_iconImageView.image) {
-        // 弹框提示是否执行
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
-                                                                       message:@"保存此二维码？"
-                                                                preferredStyle:UIAlertControllerStyleAlert];
-        
-        [alert addAction:[UIAlertAction actionWithTitle:@"取消"
-                                                  style:UIAlertActionStyleDefault
-                                                handler:^(UIAlertAction * _Nonnull action) {
-                                                    
-                                                }]];
-        [alert addAction:[UIAlertAction actionWithTitle:@"确定"
-                                                  style:UIAlertActionStyleDefault
-                                                handler:^(UIAlertAction * _Nonnull action) {
-                                                    
-                                                    UIImageWriteToSavedPhotosAlbum(_iconImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
-                                                    
-                                                }]];
-        
-        [self presentViewController:alert animated:YES completion:nil];
-    }
+    [UIView animateWithDuration:.1 animations:^{
+        _iconImageView.transform = CGAffineTransformMakeScale(0.9, 0.9);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:.2 animations:^{
+            _iconImageView.transform = CGAffineTransformMakeScale(1, 1);
+        } completion:^(BOOL finished) {
+            
+            if (_iconImageView.image) {
+                // 弹框提示是否执行
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                               message:@"保存此二维码？"
+                                                                        preferredStyle:UIAlertControllerStyleAlert];
+                
+                [alert addAction:[UIAlertAction actionWithTitle:@"取消"
+                                                          style:UIAlertActionStyleDefault
+                                                        handler:^(UIAlertAction * _Nonnull action) {
+                                                            
+                                                        }]];
+                [alert addAction:[UIAlertAction actionWithTitle:@"确定"
+                                                          style:UIAlertActionStyleDefault
+                                                        handler:^(UIAlertAction * _Nonnull action) {
+                                                            
+                                                            UIImageWriteToSavedPhotosAlbum(_iconImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+                                                            
+                                                        }]];
+                
+                [self presentViewController:alert animated:YES completion:nil];
+            }
+            
+        }];
+    }];
+    
+    
     
     
     
@@ -96,7 +108,7 @@
         [filter setValue:infoData forKey:@"inputMessage"];
         // 4.生成二维码
         CIImage *outputImage = [filter outputImage];
-        _iconImageView.image = [self createNonInterpolatedUIIamgeFormCIImage:outputImage withSize:kScreenWidth - 20];
+        _iconImageView.image = [self createNonInterpolatedUIIamgeFormCIImage:outputImage withSize:kScreenWidth - 40];
     
     }
     

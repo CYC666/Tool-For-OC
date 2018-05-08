@@ -8,10 +8,10 @@
 
 #import "AppDelegate.h"
 #import "MainController.h"
-#import "LeftController.h"
-#import "RightController.h"
+//#import "LeftController.h"
+//#import "RightController.h"
 #import "BaseNavigationController.h"
-#import "MMDrawerController.h"
+//#import "MMDrawerController.h"
 
 @interface AppDelegate ()
 
@@ -22,23 +22,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    BaseNavigationController *left = [[BaseNavigationController alloc] initWithRootViewController:[[LeftController alloc] init]];
+//    BaseNavigationController *left = [[BaseNavigationController alloc] initWithRootViewController:[[LeftController alloc] init]];
     BaseNavigationController *center = [[BaseNavigationController alloc] initWithRootViewController:[[MainController alloc] init]];
 //    BaseNavigationController *right = [[BaseNavigationController alloc] initWithRootViewController:[[RightController alloc] init]];
     
-    _mainController = [[MMDrawerController alloc] initWithCenterViewController:center
-                                                      leftDrawerViewController:left
+//    _mainController = [[MMDrawerController alloc] initWithCenterViewController:center
+//                                                      leftDrawerViewController:left
 //                                                     rightDrawerViewController:right
-                       ];
-    _mainController.maximumLeftDrawerWidth = LeftWidth;
+//                       ];
+//    _mainController.maximumLeftDrawerWidth = LeftWidth;
 //    _mainController.maximumRightDrawerWidth = rightWidth;
-    _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModeNone;
-    _mainController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
-    self.window.rootViewController = _mainController;
+//    _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModePanningNavigationBar;
+//    _mainController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+    self.window.rootViewController = center;
     
-    UILongPressGestureRecognizer *openLeftPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(openLeftAction:)];
-    openLeftPress.minimumPressDuration = 2;
-    [self.window addGestureRecognizer:openLeftPress];
+
     
     
     
@@ -46,14 +44,6 @@
     return YES;
 }
 
-#pragma mark - 打开侧滑
-- (void)openLeftAction:(UILongPressGestureRecognizer *)press {
-    
-    if (press.state == UIGestureRecognizerStateBegan) {
-        [_mainController openDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
-    }
-    
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

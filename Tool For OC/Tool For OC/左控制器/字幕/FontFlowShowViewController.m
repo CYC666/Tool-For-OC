@@ -30,7 +30,7 @@
     [self.view addSubview:_mainScrollView];
     
     // 文本+旋转
-    CGFloat width = _textFont.pointSize * (_showText.length) + kScreenHeight*2;
+    CGFloat width = _textFont.pointSize * (_showText.length) + kScreenHeight;
     UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, kScreenWidth)];
     textLabel.text = _showText;
     textLabel.textColor = _textColor;
