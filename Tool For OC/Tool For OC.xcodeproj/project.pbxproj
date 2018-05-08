@@ -119,6 +119,17 @@
 		176DBA0A20A05D650057D69F /* CalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DBA0320A05D640057D69F /* CalendarCell.m */; };
 		176DBA0B20A05D650057D69F /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DBA0520A05D640057D69F /* NSDate+Calendar.m */; };
 		176DBA0C20A05D650057D69F /* CalendarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DBA0620A05D650057D69F /* CalendarScrollView.m */; };
+		179B947120A14828009418D6 /* F3HTileAppearanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */; };
+		179B947220A14828009418D6 /* F3HNumberTileGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947020A14828009418D6 /* F3HNumberTileGameViewController.m */; };
+		179B947E20A14833009418D6 /* F3HQueueCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947420A14833009418D6 /* F3HQueueCommand.m */; };
+		179B947F20A14833009418D6 /* F3HMergeTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947520A14833009418D6 /* F3HMergeTile.m */; };
+		179B948020A14833009418D6 /* F3HTileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947620A14833009418D6 /* F3HTileModel.m */; };
+		179B948120A14833009418D6 /* F3HGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947C20A14833009418D6 /* F3HGameModel.m */; };
+		179B948220A14833009418D6 /* F3HMoveOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947D20A14833009418D6 /* F3HMoveOrder.m */; };
+		179B948C20A1483B009418D6 /* F3HGameboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B948620A1483B009418D6 /* F3HGameboardView.m */; };
+		179B948D20A1483B009418D6 /* F3HTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B948720A1483B009418D6 /* F3HTileView.m */; };
+		179B948E20A1483B009418D6 /* F3HScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B948820A1483B009418D6 /* F3HScoreView.m */; };
+		179B948F20A1483B009418D6 /* F3HControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B948920A1483B009418D6 /* F3HControlView.m */; };
 		17AF1AFF209C632300C7287E /* ContextMenuCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1AFD209C632300C7287E /* ContextMenuCtrl.m */; };
 		17AF1B00209C632300C7287E /* ContextMenuCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AF1AFE209C632300C7287E /* ContextMenuCtrl.xib */; };
 		17AF1B05209C653200C7287E /* ContextMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF1B03209C653200C7287E /* ContextMenuCell.m */; };
@@ -399,6 +410,28 @@
 		176DBA0420A05D640057D69F /* CalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
 		176DBA0520A05D640057D69F /* NSDate+Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Calendar.m"; sourceTree = "<group>"; };
 		176DBA0620A05D650057D69F /* CalendarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarScrollView.m; sourceTree = "<group>"; };
+		179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HTileAppearanceProvider.m; sourceTree = "<group>"; };
+		179B946E20A14827009418D6 /* F3HNumberTileGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HNumberTileGameViewController.h; sourceTree = "<group>"; };
+		179B946F20A14828009418D6 /* F3HTileAppearanceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HTileAppearanceProvider.h; sourceTree = "<group>"; };
+		179B947020A14828009418D6 /* F3HNumberTileGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HNumberTileGameViewController.m; sourceTree = "<group>"; };
+		179B947420A14833009418D6 /* F3HQueueCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HQueueCommand.m; sourceTree = "<group>"; };
+		179B947520A14833009418D6 /* F3HMergeTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HMergeTile.m; sourceTree = "<group>"; };
+		179B947620A14833009418D6 /* F3HTileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HTileModel.m; sourceTree = "<group>"; };
+		179B947720A14833009418D6 /* F3HMoveOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HMoveOrder.h; sourceTree = "<group>"; };
+		179B947820A14833009418D6 /* F3HGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HGameModel.h; sourceTree = "<group>"; };
+		179B947920A14833009418D6 /* F3HQueueCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HQueueCommand.h; sourceTree = "<group>"; };
+		179B947A20A14833009418D6 /* F3HMergeTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HMergeTile.h; sourceTree = "<group>"; };
+		179B947B20A14833009418D6 /* F3HTileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HTileModel.h; sourceTree = "<group>"; };
+		179B947C20A14833009418D6 /* F3HGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HGameModel.m; sourceTree = "<group>"; };
+		179B947D20A14833009418D6 /* F3HMoveOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HMoveOrder.m; sourceTree = "<group>"; };
+		179B948420A1483B009418D6 /* F3HScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HScoreView.h; sourceTree = "<group>"; };
+		179B948520A1483B009418D6 /* F3HControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HControlView.h; sourceTree = "<group>"; };
+		179B948620A1483B009418D6 /* F3HGameboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HGameboardView.m; sourceTree = "<group>"; };
+		179B948720A1483B009418D6 /* F3HTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HTileView.m; sourceTree = "<group>"; };
+		179B948820A1483B009418D6 /* F3HScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HScoreView.m; sourceTree = "<group>"; };
+		179B948920A1483B009418D6 /* F3HControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HControlView.m; sourceTree = "<group>"; };
+		179B948A20A1483B009418D6 /* F3HTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HTileView.h; sourceTree = "<group>"; };
+		179B948B20A1483B009418D6 /* F3HGameboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F3HGameboardView.h; sourceTree = "<group>"; };
 		17AF1AFC209C632300C7287E /* ContextMenuCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContextMenuCtrl.h; sourceTree = "<group>"; };
 		17AF1AFD209C632300C7287E /* ContextMenuCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContextMenuCtrl.m; sourceTree = "<group>"; };
 		17AF1AFE209C632300C7287E /* ContextMenuCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextMenuCtrl.xib; sourceTree = "<group>"; };
@@ -709,6 +742,7 @@
 				17299932208621330026B1E9 /* LeftCell.h */,
 				17299933208621330026B1E9 /* LeftCell.m */,
 				17299934208621330026B1E9 /* LeftCell.xib */,
+				179B946C20A147BB009418D6 /* 2048 */,
 				176DB9F920A05D570057D69F /* 日历 */,
 				1729993D20862B360026B1E9 /* 字幕 */,
 				1729994B20862C2C0026B1E9 /* 取色 */,
@@ -1061,6 +1095,51 @@
 				176DBA0520A05D640057D69F /* NSDate+Calendar.m */,
 			);
 			path = "日历";
+			sourceTree = "<group>";
+		};
+		179B946C20A147BB009418D6 /* 2048 */ = {
+			isa = PBXGroup;
+			children = (
+				179B946E20A14827009418D6 /* F3HNumberTileGameViewController.h */,
+				179B947020A14828009418D6 /* F3HNumberTileGameViewController.m */,
+				179B946F20A14828009418D6 /* F3HTileAppearanceProvider.h */,
+				179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */,
+				179B948320A1483B009418D6 /* Views */,
+				179B947320A14833009418D6 /* Models */,
+			);
+			path = 2048;
+			sourceTree = "<group>";
+		};
+		179B947320A14833009418D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				179B947420A14833009418D6 /* F3HQueueCommand.m */,
+				179B947520A14833009418D6 /* F3HMergeTile.m */,
+				179B947620A14833009418D6 /* F3HTileModel.m */,
+				179B947720A14833009418D6 /* F3HMoveOrder.h */,
+				179B947820A14833009418D6 /* F3HGameModel.h */,
+				179B947920A14833009418D6 /* F3HQueueCommand.h */,
+				179B947A20A14833009418D6 /* F3HMergeTile.h */,
+				179B947B20A14833009418D6 /* F3HTileModel.h */,
+				179B947C20A14833009418D6 /* F3HGameModel.m */,
+				179B947D20A14833009418D6 /* F3HMoveOrder.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		179B948320A1483B009418D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				179B948420A1483B009418D6 /* F3HScoreView.h */,
+				179B948520A1483B009418D6 /* F3HControlView.h */,
+				179B948620A1483B009418D6 /* F3HGameboardView.m */,
+				179B948720A1483B009418D6 /* F3HTileView.m */,
+				179B948820A1483B009418D6 /* F3HScoreView.m */,
+				179B948920A1483B009418D6 /* F3HControlView.m */,
+				179B948A20A1483B009418D6 /* F3HTileView.h */,
+				179B948B20A1483B009418D6 /* F3HGameboardView.h */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		17AF1AFA209C62FD00C7287E /* 菜单 */ = {
@@ -1660,7 +1739,11 @@
 				17AF1BB5209EB87800C7287E /* UIView+YYAdd.m in Sources */,
 				17AF1BBE209EB87800C7287E /* YYTextExample.m in Sources */,
 				17AF1BEA209EBD5E00C7287E /* YYImage.m in Sources */,
+				179B948E20A1483B009418D6 /* F3HScoreView.m in Sources */,
+				179B947220A14828009418D6 /* F3HNumberTileGameViewController.m in Sources */,
+				179B948D20A1483B009418D6 /* F3HTileView.m in Sources */,
 				172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */,
+				179B948220A14833009418D6 /* F3HMoveOrder.m in Sources */,
 				176DBA0720A05D650057D69F /* CalendarViewController.m in Sources */,
 				174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */,
 				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
@@ -1669,13 +1752,16 @@
 				176DBA0A20A05D650057D69F /* CalendarCell.m in Sources */,
 				1729995D208630AD0026B1E9 /* DFW_WW7.TTF in Sources */,
 				174CC1B12087BDA500B41FA2 /* FastForwardView.m in Sources */,
+				179B948F20A1483B009418D6 /* F3HControlView.m in Sources */,
 				172999B920874C590026B1E9 /* CodeViewController.m in Sources */,
 				17BADF0820931D81004D1312 /* HXLanguageManager.m in Sources */,
 				172999AC208738C50026B1E9 /* TOCropViewControllerTransitioning.m in Sources */,
 				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
+				179B947E20A14833009418D6 /* F3HQueueCommand.m in Sources */,
 				172999D3208752360026B1E9 /* NoteListCell.m in Sources */,
 				17AF1B70209EB43700C7287E /* Person.m in Sources */,
 				17299A0D2087A1C90026B1E9 /* JFPhotoBrowserViewController.m in Sources */,
+				179B948120A14833009418D6 /* F3HGameModel.m in Sources */,
 				17AF1B48209EA5B300C7287E /* NSArray+log.m in Sources */,
 				176DBA0B20A05D650057D69F /* NSDate+Calendar.m in Sources */,
 				1729994820862B370026B1E9 /* FontFlowShowViewController.m in Sources */,
@@ -1703,6 +1789,7 @@
 				1729997120872D210026B1E9 /* YQPanoramaViewCtrl.m in Sources */,
 				17AF1B4E209EA5B300C7287E /* CYLMainViewController.m in Sources */,
 				1729996C208724F10026B1E9 /* FunctionListController.m in Sources */,
+				179B947120A14828009418D6 /* F3HTileAppearanceProvider.m in Sources */,
 				17AF1BB9209EB87800C7287E /* UIGestureRecognizer+YYAdd.m in Sources */,
 				172999CC208752360026B1E9 /* AddNoteViewController.m in Sources */,
 				172999D4208752360026B1E9 /* NoteSearchViewController.m in Sources */,
@@ -1744,6 +1831,7 @@
 				17AF1B55209EA5B300C7287E /* CYLFilterParamsTool.m in Sources */,
 				17AF1B4A209EA5B300C7287E /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				17AF1BBB209EB87800C7287E /* YYTextBindingExample.m in Sources */,
+				179B947F20A14833009418D6 /* F3HMergeTile.m in Sources */,
 				17AF1B51209EA5B300C7287E /* CollectionViewCell.m in Sources */,
 				17299A082087A1C90026B1E9 /* JFImagePickerController.m in Sources */,
 				176DBA0C20A05D650057D69F /* CalendarScrollView.m in Sources */,
@@ -1776,6 +1864,8 @@
 				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
 				1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */,
 				17AF1B09209C656800C7287E /* YALNavigationBar.m in Sources */,
+				179B948C20A1483B009418D6 /* F3HGameboardView.m in Sources */,
+				179B948020A14833009418D6 /* F3HTileModel.m in Sources */,
 				176DBA0920A05D650057D69F /* CalendarMonth.m in Sources */,
 				17AF1B75209EB7D300C7287E /* YYTextCtrl.m in Sources */,
 				17174704208EB96A00460A87 /* GIFCtrl.m in Sources */,

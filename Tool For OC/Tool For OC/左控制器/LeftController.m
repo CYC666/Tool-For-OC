@@ -28,13 +28,15 @@
     
     self.title = @"应用";
     self.view.backgroundColor = White_Color;
-    funcArray = @[@"字幕",
+    funcArray = @[@"2048",
+                  @"字幕",
                   @"二维码",
                   @"笔记",
                   @"地铁厕所",
                   @"日历"];
     
-    funcControllerArray = @[@"FontViewController",
+    funcControllerArray = @[@"F3HNumberTileGameViewController",
+                            @"FontViewController",
                             @"CodeViewController",
                             @"NoteViewController",
                             @"WCViewController",

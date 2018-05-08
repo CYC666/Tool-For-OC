@@ -10,12 +10,14 @@
 #import "MainCCell.h"
 #import "FunctionListController.h"
 #import "LeftController.h"
+#import "F3HNumberTileGameViewController.h"
 
 @interface MainController () <UICollectionViewDelegate, UICollectionViewDataSource, LeftControllerDlegate> {
     
     UICollectionView *_listCollectionView;
     NSArray *funcArray;
     LeftController *left;
+    F3HNumberTileGameViewController *ctrl2048;
     
 }
 
@@ -33,7 +35,7 @@
     
     // 导航栏右边的添加按钮
     UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightItem setTitle:@"左" forState:UIControlStateNormal];
+    [rightItem setImage:[UIImage imageNamed:@"菜单"] forState:UIControlStateNormal];
     [rightItem setTintColor:[UIColor whiteColor]];
     [rightItem addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
@@ -70,6 +72,43 @@
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:rightSwipe];
     
+    
+    // 第一次打开，动一下左边的菜单
+    left = [[LeftController alloc] init];
+    left.view.frame = CGRectMake(-kScreenWidth, 0, kScreenWidth, kScreenHeight);
+    left.view.backgroundColor = [UIColor clearColor];
+    left.delegate = self;
+    [self.view addSubview:left.view];
+    [self addChildViewController:left];
+    
+    UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
+    leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+    [left.view addGestureRecognizer:leftSwipe];
+    
+    NSString *didShowEnum = [[NSUserDefaults standardUserDefaults] objectForKey:@"didShowEnum"];
+    if (didShowEnum == nil || [didShowEnum isEqualToString:@""]) {
+        [UIView animateWithDuration:1 animations:^{
+            left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:.35 animations:^{
+                left.view.transform = CGAffineTransformMakeTranslation(0, 0);
+            } completion:^(BOOL finished) {
+                [UIView animateWithDuration:1 animations:^{
+                    left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
+                } completion:^(BOOL finished) {
+                    [UIView animateWithDuration:.35 animations:^{
+                        left.view.transform = CGAffineTransformMakeTranslation(0, 0);
+                    } completion:^(BOOL finished) {
+                        
+                    }];
+                }];
+            }];
+        }];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:@"Done" forKey:@"didShowEnum"];
+    }
+    
+    
 }
 
 
@@ -82,20 +121,6 @@
 #pragma mark - 左边菜单
 - (void)leftButtonAction:(UIButton *)button {
     
-    if (!left) {
-        left = [[LeftController alloc] init];
-        left.view.frame = CGRectMake(-kScreenWidth, 0, kScreenWidth, kScreenHeight);
-        left.view.backgroundColor = [UIColor clearColor];
-        left.delegate = self;
-        [self.view addSubview:left.view];
-        [self addChildViewController:left];
-        
-        UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
-        leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
-        [left.view addGestureRecognizer:leftSwipe];
-        
-    }
-    
     [UIView animateWithDuration:.35 animations:^{
         left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
     }];
@@ -104,20 +129,6 @@
 
 #pragma mark - 展左边菜单
 - (void)rightSwipeAction:(UISwipeGestureRecognizer *)swipe {
-    
-    if (!left) {
-        left = [[LeftController alloc] init];
-        left.view.frame = CGRectMake(-kScreenWidth, 0, kScreenWidth, kScreenHeight);
-        left.view.backgroundColor = [UIColor clearColor];
-        left.delegate = self;
-        [self.view addSubview:left.view];
-        [self addChildViewController:left];
-        
-        UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
-        leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
-        [left.view addGestureRecognizer:leftSwipe];
-        
-    }
     
     [UIView animateWithDuration:.35 animations:^{
         left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
@@ -176,12 +187,32 @@
 #pragma mark - 左控制器代理方法
 - (void)LeftControllerIndexChange:(NSString *)ctrl {
     
-    UIViewController *viewCtrl = [[NSClassFromString(ctrl) alloc] init];
-    [self.navigationController pushViewController:viewCtrl animated:YES];
+    if ([ctrl isEqualToString:@"F3HNumberTileGameViewController"]) {
+        // 2048
+        if (!ctrl2048) {
+            ctrl2048 = [F3HNumberTileGameViewController numberTileGameWithDimension:4
+                                                                       winThreshold:2048
+                                                                    backgroundColor:[UIColor whiteColor]
+                                                                        scoreModule:YES
+                                                                     buttonControls:NO
+                                                                      swipeControls:YES];
+        }
+        
+        [self presentViewController:ctrl2048 animated:YES completion:nil];
+        
+    } else {
+        
+        UIViewController *viewCtrl = [[NSClassFromString(ctrl) alloc] init];
+        [self.navigationController pushViewController:viewCtrl animated:YES];
+        
+    }
+    
     
     [UIView animateWithDuration:.35 animations:^{
         left.view.transform = CGAffineTransformMakeTranslation(0, 0);
     }];
+    
+    
 }
 
 
