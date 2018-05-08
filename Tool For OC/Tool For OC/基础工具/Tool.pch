@@ -9,9 +9,27 @@
 #ifndef Tool_pch
 #define Tool_pch
 
+#ifdef __OBJC__
+
 //-----------------类---------------------
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "FadeAlertView.h"
 #import "HXLanguageManager.h"
+#import "Networking.h"
+#import "AppColor.h"
+#import "UIView+SetRect.h"
+#import "FontInfomation.h"
+#import "AddedFont.h"
+#import "GCD.h"
+#import "YXEasing.h"
+#import "POP.h"
+#import "NSString+File.h"
+#import "SimpleNSLog.h"
+
+
+#endif
+
 
 
 //-----------------长度---------------------

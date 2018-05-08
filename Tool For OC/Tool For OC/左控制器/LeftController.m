@@ -29,18 +29,22 @@
     self.title = @"应用";
     self.view.backgroundColor = White_Color;
     funcArray = @[@"2048",
-                  @"字幕",
+                  @"天气",
                   @"二维码",
                   @"笔记",
-                  @"地铁厕所",
-                  @"日历"];
+                  @"日历",
+                  @"字幕",
+                  @"地铁厕所"
+                  ];
     
     funcControllerArray = @[@"F3HNumberTileGameViewController",
-                            @"FontViewController",
+                            @"CweatherViewController",
                             @"CodeViewController",
                             @"NoteViewController",
-                            @"WCViewController",
-                            @"CalendarViewController"];
+                            @"CalendarViewController",
+                            @"FontViewController",
+                            @"WCViewController"
+                            ];
     
     
     // 创建视图
