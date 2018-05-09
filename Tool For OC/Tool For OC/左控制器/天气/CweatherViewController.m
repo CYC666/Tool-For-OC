@@ -53,6 +53,8 @@ static CweatherViewController *stanceWeather;
     self.navigationItem.title = @"天气";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
 //    // 返回按钮
 //    UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
 //    closeButton.frame = CGRectMake(0, 0, 40, 40);

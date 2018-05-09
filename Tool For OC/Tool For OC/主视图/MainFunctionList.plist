@@ -84,6 +84,16 @@
 				<key>url</key>
 				<string>https://github.com/zhengwenming/WMPlayer</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>人脸识别</string>
+				<key>func</key>
+				<string>JudgeFace</string>
+				<key>url</key>
+				<string>https://github.com/fuzheng0301/FaceRecognition</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
