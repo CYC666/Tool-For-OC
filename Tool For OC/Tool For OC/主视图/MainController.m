@@ -45,7 +45,7 @@
     
     // 集合视图
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(kScreenWidth, 40);
+    layout.itemSize = CGSizeMake(kScreenWidth, 60);
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     
@@ -165,7 +165,7 @@
     
     MainCCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainCCell" forIndexPath:indexPath];
     
-
+    cell.numberLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row + 1];
     
     NSDictionary *dic = funcArray[indexPath.row];
     cell.nameLabel.text = dic[@"name"];

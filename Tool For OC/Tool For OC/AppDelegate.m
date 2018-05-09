@@ -10,7 +10,7 @@
 #import "MainController.h"
 //#import "LeftController.h"
 //#import "RightController.h"
-#import "BaseNavigationController.h"
+//#import "BaseNavigationController.h"
 //#import "MMDrawerController.h"
 
 @interface AppDelegate ()
@@ -23,7 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
 //    BaseNavigationController *left = [[BaseNavigationController alloc] initWithRootViewController:[[LeftController alloc] init]];
-    BaseNavigationController *center = [[BaseNavigationController alloc] initWithRootViewController:[[MainController alloc] init]];
+//    BaseNavigationController *center = [[BaseNavigationController alloc] initWithRootViewController:[[MainController alloc] init]];
 //    BaseNavigationController *right = [[BaseNavigationController alloc] initWithRootViewController:[[RightController alloc] init]];
     
 //    _mainController = [[MMDrawerController alloc] initWithCenterViewController:center
@@ -34,7 +34,7 @@
 //    _mainController.maximumRightDrawerWidth = rightWidth;
 //    _mainController.openDrawerGestureModeMask = MMOpenDrawerGestureModePanningNavigationBar;
 //    _mainController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
-    self.window.rootViewController = center;
+//    self.window.rootViewController = center;
     
 
     

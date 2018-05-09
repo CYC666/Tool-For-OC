@@ -24,28 +24,32 @@
                                                NSForegroundColorAttributeName:[UIColor whiteColor]};
     
     
-}
-
-//封装导航栏返回方法
--(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
-    if (self.childViewControllers.count>0) {
-        UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
-        [button setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-        [button sizeToFit];
-        [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:button];
-        viewController.hidesBottomBarWhenPushed=YES;
-    }
-    [super pushViewController:viewController animated:animated];
     
 }
 
--(void)back {
-    
-    [self popViewControllerAnimated:YES];
-    
-}
+
+// 会导致侧滑返回失效
+
+////封装导航栏返回方法
+//-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//
+//    if (self.childViewControllers.count>0) {
+//        UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+//        [button setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+//        [button sizeToFit];
+//        [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+//        viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:button];
+//        viewController.hidesBottomBarWhenPushed=YES;
+//    }
+//    [super pushViewController:viewController animated:animated];
+//
+//}
+
+//-(void)back {
+//
+//    [self popViewControllerAnimated:YES];
+//
+//}
 
 
 

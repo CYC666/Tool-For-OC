@@ -10,6 +10,7 @@
 
 @interface MainCCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 

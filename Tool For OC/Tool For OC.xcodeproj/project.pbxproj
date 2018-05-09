@@ -24,10 +24,6 @@
 		172999102085DFF40026B1E9 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729990F2085DFF40026B1E9 /* MainController.m */; };
 		172999132085E0240026B1E9 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999122085E0240026B1E9 /* BaseController.m */; };
 		172999162085E03C0026B1E9 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999152085E03C0026B1E9 /* BaseNavigationController.m */; };
-		172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999182085E1840026B1E9 /* MMDrawerBarButtonItem.m */; };
-		172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999192085E1840026B1E9 /* UIViewController+MMDrawerController.m */; };
-		172999232085E1840026B1E9 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729991A2085E1840026B1E9 /* MMDrawerController.m */; };
-		172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729991F2085E1840026B1E9 /* MMDrawerVisualState.m */; };
 		172999292085E2DE0026B1E9 /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999282085E2DE0026B1E9 /* LeftController.m */; };
 		172999312085F9830026B1E9 /* RightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172999302085F9830026B1E9 /* RightController.m */; };
 		17299935208621330026B1E9 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17299933208621330026B1E9 /* LeftCell.m */; };
@@ -395,15 +391,6 @@
 		172999122085E0240026B1E9 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		172999142085E03C0026B1E9 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		172999152085E03C0026B1E9 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		172999182085E1840026B1E9 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
-		172999192085E1840026B1E9 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		1729991A2085E1840026B1E9 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
-		1729991B2085E1840026B1E9 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		1729991C2085E1840026B1E9 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
-		1729991D2085E1840026B1E9 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		1729991E2085E1840026B1E9 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		1729991F2085E1840026B1E9 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
-		172999202085E1840026B1E9 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
 		172999272085E2DE0026B1E9 /* LeftController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
 		172999282085E2DE0026B1E9 /* LeftController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
 		1729992A2085E5B10026B1E9 /* Tool.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.pch; sourceTree = "<group>"; };
@@ -1152,7 +1139,6 @@
 				1729990B2085DF680026B1E9 /* 主视图 */,
 				1729992E2085F9560026B1E9 /* 右控制器 */,
 				1729990D2085DF8D0026B1E9 /* 基础工具 */,
-				1729990C2085DF7D0026B1E9 /* 插件 */,
 				172998F52085DB6A0026B1E9 /* AppDelegate.h */,
 				172998F62085DB6A0026B1E9 /* AppDelegate.m */,
 				172998F82085DB6A0026B1E9 /* ViewController.h */,
@@ -1189,14 +1175,6 @@
 			path = "主视图";
 			sourceTree = "<group>";
 		};
-		1729990C2085DF7D0026B1E9 /* 插件 */ = {
-			isa = PBXGroup;
-			children = (
-				172999172085E1840026B1E9 /* MMDrawerController */,
-			);
-			path = "插件";
-			sourceTree = "<group>";
-		};
 		1729990D2085DF8D0026B1E9 /* 基础工具 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1209,22 +1187,6 @@
 				1729992A2085E5B10026B1E9 /* Tool.pch */,
 			);
 			path = "基础工具";
-			sourceTree = "<group>";
-		};
-		172999172085E1840026B1E9 /* MMDrawerController */ = {
-			isa = PBXGroup;
-			children = (
-				172999182085E1840026B1E9 /* MMDrawerBarButtonItem.m */,
-				172999192085E1840026B1E9 /* UIViewController+MMDrawerController.m */,
-				1729991A2085E1840026B1E9 /* MMDrawerController.m */,
-				1729991B2085E1840026B1E9 /* MMDrawerController+Subclass.h */,
-				1729991C2085E1840026B1E9 /* MMDrawerVisualState.h */,
-				1729991D2085E1840026B1E9 /* MMDrawerBarButtonItem.h */,
-				1729991E2085E1840026B1E9 /* UIViewController+MMDrawerController.h */,
-				1729991F2085E1840026B1E9 /* MMDrawerVisualState.m */,
-				172999202085E1840026B1E9 /* MMDrawerController.h */,
-			);
-			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
 		172999262085E2B80026B1E9 /* 左控制器 */ = {
@@ -2795,7 +2757,6 @@
 				179B962420A19E8F009418D6 /* TransformationMatrix.cpp in Sources */,
 				17BADF0820931D81004D1312 /* HXLanguageManager.m in Sources */,
 				172999AC208738C50026B1E9 /* TOCropViewControllerTransitioning.m in Sources */,
-				172999242085E1840026B1E9 /* MMDrawerVisualState.m in Sources */,
 				179B95A320A19E63009418D6 /* WeatherIconView.m in Sources */,
 				179B959620A19E63009418D6 /* SearchView.m in Sources */,
 				179B947E20A14833009418D6 /* F3HQueueCommand.m in Sources */,
@@ -2918,7 +2879,6 @@
 				179B958620A19E63009418D6 /* AlphaView.m in Sources */,
 				17174713208F259F00460A87 /* DQAlertViewCtrl.m in Sources */,
 				17299A0C2087A1C90026B1E9 /* JFPhotoView.m in Sources */,
-				172999222085E1840026B1E9 /* UIViewController+MMDrawerController.m in Sources */,
 				179B957A20A19E63009418D6 /* HumidityCountLabel.m in Sources */,
 				179B957E20A19E63009418D6 /* HumidityCount.m in Sources */,
 				172999B2208738C50026B1E9 /* TOCropToolbar.m in Sources */,
@@ -2982,7 +2942,6 @@
 				179B96A120A19F17009418D6 /* DismissingAnimator.m in Sources */,
 				17BADF0120931AB8004D1312 /* LanguageManagerCtrl.m in Sources */,
 				174CC1B22087BDA500B41FA2 /* WMPlayer.m in Sources */,
-				172999232085E1840026B1E9 /* MMDrawerController.m in Sources */,
 				179BA4F420A2DD0A009418D6 /* CanvasView.m in Sources */,
 				179B96A520A19F17009418D6 /* ForecastController.m in Sources */,
 				17AF1B4D209EA5B300C7287E /* CYLClassifyMenuViewController.m in Sources */,
@@ -3007,7 +2966,6 @@
 				179B962120A19E8F009418D6 /* POPAnimation.mm in Sources */,
 				179B96A820A19F17009418D6 /* WeatherNumberMeaningTransform.m in Sources */,
 				179B959220A19E63009418D6 /* MaxTempView.m in Sources */,
-				172999212085E1840026B1E9 /* MMDrawerBarButtonItem.m in Sources */,
 				1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */,
 				179B958120A19E63009418D6 /* LoadingView.m in Sources */,
 				179B94F920A19E2B009418D6 /* Easing.m in Sources */,

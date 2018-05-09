@@ -19,27 +19,48 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="照片" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVn-gV-oGX">
-                        <rect key="frame" x="10" y="0.0" width="35" height="156"/>
+                        <rect key="frame" x="40" y="0.0" width="35" height="156"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-MB-Mln">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="156"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="lPZ-QE-8n0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTw-Gq-EQG">
+                        <rect key="frame" x="0.0" y="155.5" width="212" height="0.5"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="4Je-lw-pnV"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="EVn-gV-oGX" secondAttribute="bottom" id="PAo-WI-AtP"/>
-                <constraint firstAttribute="bottom" secondItem="EVn-gV-oGX" secondAttribute="bottom" id="hTt-2I-QOt"/>
-                <constraint firstItem="EVn-gV-oGX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="l7k-op-JFO"/>
-                <constraint firstItem="EVn-gV-oGX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mUZ-ZB-rdZ"/>
-                <constraint firstItem="EVn-gV-oGX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sQc-FE-aRf"/>
+                <constraint firstItem="NTw-Gq-EQG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="18y-IV-qwt"/>
+                <constraint firstAttribute="trailing" secondItem="NTw-Gq-EQG" secondAttribute="trailing" id="77s-eC-6qR"/>
+                <constraint firstItem="jpx-MB-Mln" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IdR-zl-eyZ"/>
+                <constraint firstItem="EVn-gV-oGX" firstAttribute="leading" secondItem="jpx-MB-Mln" secondAttribute="trailing" id="Jdj-XZ-lBO"/>
+                <constraint firstItem="jpx-MB-Mln" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MDG-nS-dwl"/>
+                <constraint firstItem="EVn-gV-oGX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b2H-lE-6DN"/>
+                <constraint firstAttribute="bottom" secondItem="EVn-gV-oGX" secondAttribute="bottom" id="btc-3G-tP4"/>
+                <constraint firstAttribute="bottom" secondItem="jpx-MB-Mln" secondAttribute="bottom" id="gi9-h3-a6z"/>
+                <constraint firstAttribute="bottom" secondItem="NTw-Gq-EQG" secondAttribute="bottom" id="gjU-Lh-Yh2"/>
             </constraints>
             <size key="customSize" width="212" height="156"/>
             <connections>
                 <outlet property="nameLabel" destination="EVn-gV-oGX" id="AQH-kG-D2j"/>
+                <outlet property="numberLabel" destination="jpx-MB-Mln" id="WrJ-cM-nnF"/>
             </connections>
-            <point key="canvasLocation" x="-6" y="-74"/>
+            <point key="canvasLocation" x="-187" y="-150"/>
         </collectionViewCell>
     </objects>
 </document>
