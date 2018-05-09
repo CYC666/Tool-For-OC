@@ -227,9 +227,9 @@
 				<key>status</key>
 				<false/>
 				<key>name</key>
-				<string>敬请期待</string>
+				<string>通讯列表</string>
 				<key>func</key>
-				<string></string>
+				<string>FriendsList</string>
 				<key>url</key>
 				<string>https://github.com/CYC666</string>
 			</dict>
