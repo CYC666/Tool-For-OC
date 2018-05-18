@@ -26,6 +26,9 @@
 #import "POP.h"
 #import "NSString+File.h"
 #import "SimpleNSLog.h"
+#import "UIButton+click.h"
+#import <Masonry.h>
+#import <SDCycleScrollView.h>
 
 
 #endif

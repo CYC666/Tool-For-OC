@@ -8,4 +8,5 @@ target 'Tool For OC' do
     pod 'JQFMDB'
     pod 'YYText'
     pod 'AFNetworking'
+    pod 'SDCycleScrollView'
 end

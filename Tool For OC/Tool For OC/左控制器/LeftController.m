@@ -33,17 +33,18 @@
                   @"二维码",
                   @"笔记",
                   @"日历",
-                  @"字幕",
-                  @"地铁厕所"
+                  @"字幕"
+//                  @"地铁厕所"
                   ];
     
-    funcControllerArray = @[@"F3HNumberTileGameViewController",
+    funcControllerArray = @[
+//                            @"F3HNumberTileGameViewController",
                             @"CweatherViewController",
-                            @"CodeViewController",
-                            @"NoteViewController",
-                            @"CalendarViewController",
-                            @"FontViewController",
-                            @"WCViewController"
+//                            @"CodeViewController",
+//                            @"NoteViewController",
+//                            @"CalendarViewController",
+//                            @"FontViewController"
+//                            @"WCViewController"
                             ];
     
     

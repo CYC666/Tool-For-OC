@@ -24,6 +24,8 @@ PODS:
   - LCActionSheet (3.4.0):
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
@@ -36,6 +38,7 @@ DEPENDENCIES:
   - JQFMDB
   - LCActionSheet
   - Masonry
+  - SDCycleScrollView
   - SDWebImage
   - YYText
 
@@ -47,9 +50,10 @@ SPEC CHECKSUMS:
   JQFMDB: 39ab0d6d7c26fd30e51c4dd92edcb27506a34c3a
   LCActionSheet: af918d2f3f1c4c97f5f6f62cb099e745447aff96
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 288d24512ec4847753210cdd483e692cf5ae7351
+PODFILE CHECKSUM: f2b4f672d4c4b6cd816b6617850464da267ce387
 
 COCOAPODS: 1.4.0

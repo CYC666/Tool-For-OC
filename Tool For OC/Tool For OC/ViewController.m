@@ -16,7 +16,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundColor:[UIColor orangeColor]];
+    
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(self.view).offset(10);
+        make.left.equalTo(self.view).offset(10);
+        make.right.equalTo(self.view).offset(10);
+        make.bottom.equalTo(self.view).offset(10);
+        
+    }];
+    
+    [button setClickBlock:^{
+        
+        FadeAlertView *showMessage = [[FadeAlertView alloc] init];
+        [showMessage showAlertWith:@"真棒"];
+        
+    }];
+    
+    
+    
+    
+    
+    [self.view addSubview:button];
+    
 }
 
 

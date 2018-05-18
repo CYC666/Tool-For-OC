@@ -11,13 +11,15 @@
 #import "FunctionListController.h"
 #import "LeftController.h"
 #import "F3HNumberTileGameViewController.h"
+#import "MainCHeader.h"
 
-@interface MainController () <UICollectionViewDelegate, UICollectionViewDataSource, LeftControllerDlegate> {
+@interface MainController () <UICollectionViewDelegate, UICollectionViewDataSource, LeftControllerDlegate, SDCycleScrollViewDelegate> {
     
     UICollectionView *_listCollectionView;
     NSArray *funcArray;
     LeftController *left;
     F3HNumberTileGameViewController *ctrl2048;
+    NSArray *funcControllerArray;
     
 }
 
@@ -33,19 +35,30 @@
     self.navigationItem.title = @"功能列表";
     self.view.backgroundColor = Background_Color;
     
-    // 导航栏右边的添加按钮
-    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightItem setImage:[UIImage imageNamed:@"菜单"] forState:UIControlStateNormal];
-    [rightItem setTintColor:[UIColor whiteColor]];
-    [rightItem addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
-    self.navigationItem.leftBarButtonItem = rightBarItem;
+    funcControllerArray = @[
+                            @"F3HNumberTileGameViewController",
+                            @"CweatherViewController",
+                            @"CodeViewController",
+                            @"NoteViewController",
+                            @"CalendarViewController",
+                            @"FontViewController"
+                            //                            @"WCViewController"
+                            ];
+    
+//    // 导航栏右边的添加按钮
+//    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [rightItem setImage:[UIImage imageNamed:@"菜单"] forState:UIControlStateNormal];
+//    [rightItem setTintColor:[UIColor whiteColor]];
+//    [rightItem addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
+//    self.navigationItem.leftBarButtonItem = rightBarItem;
     
     funcArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"MainFunctionList.plist" ofType:nil]];
     
     // 集合视图
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.itemSize = CGSizeMake(kScreenWidth, 60);
+    layout.headerReferenceSize = CGSizeMake(kScreenWidth, kScreenWidth * 0.5);
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     
@@ -54,6 +67,7 @@
     _listCollectionView.backgroundColor = [UIColor clearColor];
     [_listCollectionView registerNib:[UINib nibWithNibName:@"MainCCell" bundle:[NSBundle mainBundle]]
           forCellWithReuseIdentifier:@"MainCCell"];
+    [_listCollectionView registerNib:[UINib nibWithNibName:@"MainCHeader" bundle:[NSBundle mainBundle]] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MainCHeader"];
     _listCollectionView.delegate = self;
     _listCollectionView.dataSource = self;
     _listCollectionView.alwaysBounceVertical = YES;
@@ -68,45 +82,45 @@
 #endif
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    UISwipeGestureRecognizer *rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSwipeAction:)];
-    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:rightSwipe];
-    
-    
-    // 第一次打开，动一下左边的菜单
-    left = [[LeftController alloc] init];
-    left.view.frame = CGRectMake(-kScreenWidth, 0, kScreenWidth, kScreenHeight);
-    left.view.backgroundColor = [UIColor clearColor];
-    left.delegate = self;
-    [self.view addSubview:left.view];
-    [self addChildViewController:left];
-    
-    UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
-    leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
-    [left.view addGestureRecognizer:leftSwipe];
-    
-    NSString *didShowEnum = [[NSUserDefaults standardUserDefaults] objectForKey:@"didShowEnum"];
-    if (didShowEnum == nil || [didShowEnum isEqualToString:@""]) {
-        [UIView animateWithDuration:1 animations:^{
-            left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
-        } completion:^(BOOL finished) {
-            [UIView animateWithDuration:.35 animations:^{
-                left.view.transform = CGAffineTransformMakeTranslation(0, 0);
-            } completion:^(BOOL finished) {
-                [UIView animateWithDuration:1 animations:^{
-                    left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
-                } completion:^(BOOL finished) {
-                    [UIView animateWithDuration:.35 animations:^{
-                        left.view.transform = CGAffineTransformMakeTranslation(0, 0);
-                    } completion:^(BOOL finished) {
-                        
-                    }];
-                }];
-            }];
-        }];
-        
-        [[NSUserDefaults standardUserDefaults] setObject:@"Done" forKey:@"didShowEnum"];
-    }
+//    UISwipeGestureRecognizer *rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSwipeAction:)];
+//    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+//    [self.view addGestureRecognizer:rightSwipe];
+//    
+//    
+//    // 第一次打开，动一下左边的菜单
+//    left = [[LeftController alloc] init];
+//    left.view.frame = CGRectMake(-kScreenWidth, 0, kScreenWidth, kScreenHeight);
+//    left.view.backgroundColor = [UIColor clearColor];
+//    left.delegate = self;
+//    [self.view addSubview:left.view];
+//    [self addChildViewController:left];
+//    
+//    UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
+//    leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+//    [left.view addGestureRecognizer:leftSwipe];
+//    
+//    NSString *didShowEnum = [[NSUserDefaults standardUserDefaults] objectForKey:@"didShowEnum"];
+//    if (didShowEnum == nil || [didShowEnum isEqualToString:@""]) {
+//        [UIView animateWithDuration:1 animations:^{
+//            left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
+//        } completion:^(BOOL finished) {
+//            [UIView animateWithDuration:.35 animations:^{
+//                left.view.transform = CGAffineTransformMakeTranslation(0, 0);
+//            } completion:^(BOOL finished) {
+//                [UIView animateWithDuration:1 animations:^{
+//                    left.view.transform = CGAffineTransformMakeTranslation(kScreenWidth, 0);
+//                } completion:^(BOOL finished) {
+//                    [UIView animateWithDuration:.35 animations:^{
+//                        left.view.transform = CGAffineTransformMakeTranslation(0, 0);
+//                    } completion:^(BOOL finished) {
+//                        
+//                    }];
+//                }];
+//            }];
+//        }];
+//        
+//        [[NSUserDefaults standardUserDefaults] setObject:@"Done" forKey:@"didShowEnum"];
+//    }
     
     
 }
@@ -159,6 +173,17 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
     return funcArray.count;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    MainCHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MainCHeader" forIndexPath:indexPath];
+    
+    header.bannerView.imageURLStringsGroup = funcControllerArray;
+    header.bannerView.delegate = self;
+    
+    return header;
+    
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -216,7 +241,32 @@
 }
 
 
-
+#pragma mark - 轮播图点击事件
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
+    
+    NSString *ctrl = funcControllerArray[index];
+    
+    if ([ctrl isEqualToString:@"F3HNumberTileGameViewController"]) {
+        // 2048
+        if (!ctrl2048) {
+            ctrl2048 = [F3HNumberTileGameViewController numberTileGameWithDimension:4
+                                                                       winThreshold:2048
+                                                                    backgroundColor:[UIColor whiteColor]
+                                                                        scoreModule:YES
+                                                                     buttonControls:NO
+                                                                      swipeControls:YES];
+        }
+        
+        [self presentViewController:ctrl2048 animated:YES completion:nil];
+        
+    } else {
+        
+        UIViewController *viewCtrl = [[NSClassFromString(ctrl) alloc] init];
+        [self.navigationController pushViewController:viewCtrl animated:YES];
+        
+    }
+    
+}
 
 
 
