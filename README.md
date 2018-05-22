@@ -63,7 +63,7 @@
 
 ## 首页预览
 
-![living](首页.png)
+![living](images/首页.png)
 
 
 
