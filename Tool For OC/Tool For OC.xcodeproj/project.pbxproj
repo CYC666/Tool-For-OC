@@ -139,6 +139,10 @@
 		17500C6320A2FC1000A9E2CB /* FollowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17500C6120A2FC1000A9E2CB /* FollowModel.m */; };
 		17500C6820A2FC1900A9E2CB /* FollwTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17500C6420A2FC1900A9E2CB /* FollwTableViewCell.m */; };
 		17500C6A20A2FC1900A9E2CB /* FollwTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17500C6720A2FC1900A9E2CB /* FollwTableViewCell.xib */; };
+		1768F08C20B3A74F00CFA09F /* BlueTalkCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1768F08B20B3A74F00CFA09F /* BlueTalkCtrl.m */; };
+		1768F09620B3A7A000CFA09F /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1768F08F20B3A79F00CFA09F /* ChatCell.m */; };
+		1768F09720B3A7A000CFA09F /* BlueSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1768F09120B3A7A000CFA09F /* BlueSessionManager.m */; };
+		1768F09820B3A7A000CFA09F /* ChatItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1768F09520B3A7A000CFA09F /* ChatItem.m */; };
 		176DBA0720A05D650057D69F /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DB9FA20A05D630057D69F /* CalendarViewController.m */; };
 		176DBA0820A05D650057D69F /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DB9FC20A05D630057D69F /* CalendarView.m */; };
 		176DBA0920A05D650057D69F /* CalendarMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DB9FD20A05D640057D69F /* CalendarMonth.m */; };
@@ -619,6 +623,14 @@
 		17500C6420A2FC1900A9E2CB /* FollwTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollwTableViewCell.m; sourceTree = "<group>"; };
 		17500C6520A2FC1900A9E2CB /* FollwTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollwTableViewCell.h; sourceTree = "<group>"; };
 		17500C6720A2FC1900A9E2CB /* FollwTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollwTableViewCell.xib; sourceTree = "<group>"; };
+		1768F08A20B3A74F00CFA09F /* BlueTalkCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueTalkCtrl.h; sourceTree = "<group>"; };
+		1768F08B20B3A74F00CFA09F /* BlueTalkCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueTalkCtrl.m; sourceTree = "<group>"; };
+		1768F08E20B3A79F00CFA09F /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		1768F08F20B3A79F00CFA09F /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		1768F09120B3A7A000CFA09F /* BlueSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSessionManager.m; sourceTree = "<group>"; };
+		1768F09220B3A7A000CFA09F /* BlueSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueSessionManager.h; sourceTree = "<group>"; };
+		1768F09420B3A7A000CFA09F /* ChatItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatItem.h; sourceTree = "<group>"; };
+		1768F09520B3A7A000CFA09F /* ChatItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatItem.m; sourceTree = "<group>"; };
 		176DB9FA20A05D630057D69F /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		176DB9FB20A05D630057D69F /* CalendarMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarMonth.h; sourceTree = "<group>"; };
 		176DB9FC20A05D630057D69F /* CalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
@@ -1639,6 +1651,7 @@
 		17500C3920A2FB9200A9E2CB /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
+				1768F08920B3A6B300CFA09F /* 蓝牙聊天 */,
 				17500C3A20A2FB9900A9E2CB /* 通讯列表 */,
 			);
 			path = "其他";
@@ -1694,6 +1707,45 @@
 				17500C5B20A2FC0100A9E2CB /* UIView+MHCommon.h */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		1768F08920B3A6B300CFA09F /* 蓝牙聊天 */ = {
+			isa = PBXGroup;
+			children = (
+				1768F08A20B3A74F00CFA09F /* BlueTalkCtrl.h */,
+				1768F08B20B3A74F00CFA09F /* BlueTalkCtrl.m */,
+				1768F09320B3A7A000CFA09F /* Model */,
+				1768F09020B3A7A000CFA09F /* MyClass */,
+				1768F08D20B3A79F00CFA09F /* View */,
+			);
+			path = "蓝牙聊天";
+			sourceTree = "<group>";
+		};
+		1768F08D20B3A79F00CFA09F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1768F08E20B3A79F00CFA09F /* ChatCell.h */,
+				1768F08F20B3A79F00CFA09F /* ChatCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1768F09020B3A7A000CFA09F /* MyClass */ = {
+			isa = PBXGroup;
+			children = (
+				1768F09120B3A7A000CFA09F /* BlueSessionManager.m */,
+				1768F09220B3A7A000CFA09F /* BlueSessionManager.h */,
+			);
+			path = MyClass;
+			sourceTree = "<group>";
+		};
+		1768F09320B3A7A000CFA09F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1768F09420B3A7A000CFA09F /* ChatItem.h */,
+				1768F09520B3A7A000CFA09F /* ChatItem.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		176DB9F920A05D570057D69F /* 日历 */ = {
@@ -2895,6 +2947,7 @@
 				179B948220A14833009418D6 /* F3HMoveOrder.m in Sources */,
 				179BA4FA20A2DD0A009418D6 /* UIImage+Extensions.m in Sources */,
 				176DBA0720A05D650057D69F /* CalendarViewController.m in Sources */,
+				1768F09820B3A7A000CFA09F /* ChatItem.m in Sources */,
 				174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */,
 				179B969C20A19F17009418D6 /* CGRectStoreValue.m in Sources */,
 				1729995C208630AD0026B1E9 /* 简特细等线.ttf in Sources */,
@@ -2985,6 +3038,7 @@
 				1736627F20A2E0D90086BEEC /* YYSpriteSheetImage.m in Sources */,
 				179B961A20A19E8F009418D6 /* POPMath.mm in Sources */,
 				179B94E420A19E0A009418D6 /* CweatherViewController.m in Sources */,
+				1768F08C20B3A74F00CFA09F /* BlueTalkCtrl.m in Sources */,
 				179B947120A14828009418D6 /* F3HTileAppearanceProvider.m in Sources */,
 				179B958B20A19E63009418D6 /* WindSpeedCount.m in Sources */,
 				17AF1BB9209EB87800C7287E /* UIGestureRecognizer+YYAdd.m in Sources */,
@@ -3017,6 +3071,7 @@
 				179B962020A19E8F009418D6 /* POPPropertyAnimation.mm in Sources */,
 				179B959F20A19E63009418D6 /* LongTapAnimationView.m in Sources */,
 				179BA4F920A2DD0A009418D6 /* CalculatorTools.m in Sources */,
+				1768F09720B3A7A000CFA09F /* BlueSessionManager.m in Sources */,
 				1729994720862B370026B1E9 /* FontViewController.m in Sources */,
 				179B958F20A19E63009418D6 /* Sun.m in Sources */,
 				179B95D820A19E88009418D6 /* Sys.m in Sources */,
@@ -3133,6 +3188,7 @@
 				179B959220A19E63009418D6 /* MaxTempView.m in Sources */,
 				1729995320862CED0026B1E9 /* FadeAlertView.m in Sources */,
 				179B958120A19E63009418D6 /* LoadingView.m in Sources */,
+				1768F09620B3A7A000CFA09F /* ChatCell.m in Sources */,
 				179B94F920A19E2B009418D6 /* Easing.m in Sources */,
 				179B96A420A19F17009418D6 /* ResponseDataManager.m in Sources */,
 				179B961B20A19E8F009418D6 /* POPSpringAnimation.mm in Sources */,

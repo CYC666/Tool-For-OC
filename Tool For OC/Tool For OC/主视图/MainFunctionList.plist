@@ -233,6 +233,16 @@
 				<key>url</key>
 				<string>https://github.com/CYC666</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>蓝牙聊天</string>
+				<key>func</key>
+				<string>BlueTalk</string>
+				<key>url</key>
+				<string>https://github.com/iodefog/BlueTalk</string>
+			</dict>
 		</array>
 	</dict>
 </array>
