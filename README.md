@@ -63,8 +63,9 @@
 
 ## 首页预览
 
-![living](images/首页.png)
+![](images/首页.png)
 
+![](images/98k警告.png)
 
 
 
