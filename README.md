@@ -65,7 +65,7 @@
 
 ![](images/首页.png)
 
-![](images/98k警告.png)
+![](images/98k警告.jpg)
 
 
 
