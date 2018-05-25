@@ -16,12 +16,13 @@ PODS:
     - AFNetworking/NSURLSession
   - ContextMenu.iOS (1.1.0)
   - DGActivityIndicatorView (2.1.1)
+  - FLAnimatedImage (1.0.12)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
   - JQFMDB (1.1.6):
     - FMDB
-  - LCActionSheet (3.4.0):
+  - LCActionSheet (3.5.0):
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
   - SDCycleScrollView (1.75):
@@ -29,31 +30,38 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - YBImageBrowser (1.0.7):
+    - FLAnimatedImage (~> 1.0.12)
+    - SDWebImage (~> 4.3.3)
   - YYText (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking
   - ContextMenu.iOS (~> 1.1.0)
   - DGActivityIndicatorView
+  - FLAnimatedImage
   - JQFMDB
   - LCActionSheet
   - Masonry
   - SDCycleScrollView
   - SDWebImage
+  - YBImageBrowser
   - YYText
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   ContextMenu.iOS: 7f3b63915e660f51aada2c4285c40a837b2c9737
   DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   JQFMDB: 39ab0d6d7c26fd30e51c4dd92edcb27506a34c3a
-  LCActionSheet: af918d2f3f1c4c97f5f6f62cb099e745447aff96
+  LCActionSheet: b30611ab20290fc830976b7ae90ea2dd4142fb1c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  YBImageBrowser: 0dc55d55ddf6d4a71519787dd8261b652e56ad11
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: f2b4f672d4c4b6cd816b6617850464da267ce387
+PODFILE CHECKSUM: a143d83718f7316303860ee5647ce34ad49b4db1
 
 COCOAPODS: 1.4.0

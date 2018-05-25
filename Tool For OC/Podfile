@@ -9,4 +9,6 @@ target 'Tool For OC' do
     pod 'YYText'
     pod 'AFNetworking'
     pod 'SDCycleScrollView'
+    pod 'FLAnimatedImage'
+    pod 'YBImageBrowser'
 end

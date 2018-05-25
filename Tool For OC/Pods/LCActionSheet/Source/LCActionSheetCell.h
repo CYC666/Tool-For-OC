@@ -1,8 +1,8 @@
 //
-//  LCActionSheetViewController.m
+//  LCActionSheetCell.h
 //  LCActionSheet
 //
-//  Created by Leo on 12/05/2017.
+//  Created by Leo on 2016/7/15.
 //
 //  Copyright (c) 2015-2017 Leo <leodaxia@gmail.com>
 //
@@ -25,16 +25,36 @@
 //  SOFTWARE.
 
 
-#import "LCActionSheetViewController.h"
+#import <UIKit/UIKit.h>
 
-@implementation LCActionSheetViewController
 
-- (BOOL)prefersStatusBarHidden {
-    return self.statusBarHidden;
-}
-    
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return self.statusBarStyle;
-}
+#define LC_ACTION_SHEET_CELL_NO_HIDDE_LINE_TAG  100
+#define LC_ACTION_SHEET_CELL_HIDDE_LINE_TAG     101
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface LCActionSheetCell : UITableViewCell
+
+/**
+ Title label.
+ */
+@property (nonatomic, weak) UILabel *titleLabel;
+
+/**
+ Line.
+ */
+@property (nonatomic, weak) UIView *lineView;
+
+/**
+ Button's edge insets. Default is `UIEdgeInsetsMake(8.0, 15.0, 8.0f, 15.0f)`.
+ */
+@property (nonatomic, assign) UIEdgeInsets buttonEdgeInsets;
+
+/**
+ Cell's separator color.
+ */
+@property (nonatomic, strong) UIColor *cellSeparatorColor;
 
 @end
+
+NS_ASSUME_NONNULL_END

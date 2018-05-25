@@ -57,6 +57,16 @@
 				<key>url</key>
 				<string>https://github.com/rs/SDWebImage</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>图片浏览</string>
+				<key>func</key>
+				<string>YBImageBrowser</string>
+				<key>url</key>
+				<string>https://github.com/indulgeIn/YBImageBrowser</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

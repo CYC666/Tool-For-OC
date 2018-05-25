@@ -133,15 +133,34 @@ typedef void(^LCActionSheetDidDismissHandler)(LCActionSheet *actionSheet, NSInte
  Destructive button's color. Default is RGB(254, 67, 37).
  */
 @property (nonatomic, strong) UIColor *destructiveButtonColor;
+/**
+ Destructive button's background color. Default is `[UIColor clearColor]`.
+ */
+@property (nonatomic, strong) UIColor *destructiveButtonBgColor;
 
 /**
  Title's color. Default is `[UIColor blackColor]`.
  */
 @property (nonatomic, strong) UIColor *titleColor;
+
+/**
+ Cancel button's color. Default is `buttonColor`.
+ */
+@property (nonatomic, strong) UIColor *cancelButtonColor;
+/**
+ Cancel button's backgroundColor, without destructive buttons. Default is `[UIColor clarColor]`.
+ */
+@property (nonatomic, strong) UIColor *cancelButtonBgColor;
+
 /**
  Buttons' color, without destructive buttons. Default is `[UIColor blackColor]`.
  */
 @property (nonatomic, strong) UIColor *buttonColor;
+/**
+ Buttons' backgroundColor, without destructive buttons. Default is `[UIColor clarColor]`.
+ */
+@property (nonatomic, strong) UIColor *buttonBgColor;
+
 /**
  Title's font. Default is `[UIFont systemFontOfSize:14.0f]`.
  */
@@ -154,6 +173,11 @@ typedef void(^LCActionSheetDidDismissHandler)(LCActionSheet *actionSheet, NSInte
  All buttons' height. Default is 49.0f;
  */
 @property (nonatomic, assign) CGFloat buttonHeight;
+
+/**
+ All buttons' corner. Default is 0.0f;
+ */
+@property (nonatomic, assign) CGFloat buttonCornerRadius;
 
 /**
  If buttons' bottom view can scrolling. Default is NO.
@@ -194,6 +218,14 @@ typedef void(^LCActionSheetDidDismissHandler)(LCActionSheet *actionSheet, NSInte
  Title's edge insets. Default is `UIEdgeInsetsMake(15.0f, 15.0f, 15.0f, 15.0f)`.
  */
 @property (nonatomic, assign) UIEdgeInsets titleEdgeInsets;
+/**
+ Button's edge insets. Default is `UIEdgeInsetsMake(8.0, 15.0, 8.0f, 15.0f)`.
+ */
+@property (nonatomic, assign) UIEdgeInsets buttonEdgeInsets;
+///**
+// ActionSheet's edge insets. Default is `UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f)`.
+// */
+//@property (nonatomic, assign) UIEdgeInsets actionSheetEdgeInsets;
 
 /**
  Cell's separator color. Default is `RGBA(170/255.0f, 170/255.0f, 170/255.0f, 0.5f)`.

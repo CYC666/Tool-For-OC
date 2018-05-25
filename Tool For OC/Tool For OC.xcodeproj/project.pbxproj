@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170A8EAA20B6C5CF006676AF /* YBImageBrowserCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 170A8EA920B6C5CF006676AF /* YBImageBrowserCtrl.m */; };
+		170A8EBF20B79D00006676AF /* YBImageBrowser1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EB620B79CFE006676AF /* YBImageBrowser1.jpg */; };
+		170A8EC020B79D00006676AF /* YBImageBrowser8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EB720B79CFE006676AF /* YBImageBrowser8.jpg */; };
+		170A8EC120B79D00006676AF /* YBImageBrowser5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EB820B79CFF006676AF /* YBImageBrowser5.jpg */; };
+		170A8EC220B79D00006676AF /* YBImageBrowser4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EB920B79CFF006676AF /* YBImageBrowser4.jpg */; };
+		170A8EC320B79D00006676AF /* YBImageBrowser7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EBA20B79CFF006676AF /* YBImageBrowser7.jpg */; };
+		170A8EC420B79D00006676AF /* YBImageBrowser0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EBB20B79CFF006676AF /* YBImageBrowser0.jpg */; };
+		170A8EC520B79D00006676AF /* YBImageBrowser3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EBC20B79CFF006676AF /* YBImageBrowser3.jpg */; };
+		170A8EC620B79D00006676AF /* YBImageBrowser2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EBD20B79D00006676AF /* YBImageBrowser2.jpg */; };
+		170A8EC720B79D00006676AF /* YBImageBrowser6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 170A8EBE20B79D00006676AF /* YBImageBrowser6.jpg */; };
 		17174704208EB96A00460A87 /* GIFCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17174703208EB96A00460A87 /* GIFCtrl.m */; };
 		17174706208EB9E200460A87 /* guaiqiao.gif in Resources */ = {isa = PBXBuildFile; fileRef = 17174705208EB9E200460A87 /* guaiqiao.gif */; };
 		17174708208EBA3000460A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17174707208EBA3000460A87 /* Assets.xcassets */; };
@@ -391,6 +401,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170A8EA820B6C5CF006676AF /* YBImageBrowserCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBImageBrowserCtrl.h; sourceTree = "<group>"; };
+		170A8EA920B6C5CF006676AF /* YBImageBrowserCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBImageBrowserCtrl.m; sourceTree = "<group>"; };
+		170A8EB620B79CFE006676AF /* YBImageBrowser1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser1.jpg; sourceTree = "<group>"; };
+		170A8EB720B79CFE006676AF /* YBImageBrowser8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser8.jpg; sourceTree = "<group>"; };
+		170A8EB820B79CFF006676AF /* YBImageBrowser5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser5.jpg; sourceTree = "<group>"; };
+		170A8EB920B79CFF006676AF /* YBImageBrowser4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser4.jpg; sourceTree = "<group>"; };
+		170A8EBA20B79CFF006676AF /* YBImageBrowser7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser7.jpg; sourceTree = "<group>"; };
+		170A8EBB20B79CFF006676AF /* YBImageBrowser0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser0.jpg; sourceTree = "<group>"; };
+		170A8EBC20B79CFF006676AF /* YBImageBrowser3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser3.jpg; sourceTree = "<group>"; };
+		170A8EBD20B79D00006676AF /* YBImageBrowser2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser2.jpg; sourceTree = "<group>"; };
+		170A8EBE20B79D00006676AF /* YBImageBrowser6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YBImageBrowser6.jpg; sourceTree = "<group>"; };
 		17174702208EB96A00460A87 /* GIFCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFCtrl.h; sourceTree = "<group>"; };
 		17174703208EB96A00460A87 /* GIFCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFCtrl.m; sourceTree = "<group>"; };
 		17174705208EB9E200460A87 /* guaiqiao.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = guaiqiao.gif; sourceTree = "<group>"; };
@@ -1139,6 +1160,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170A8EA720B6C59C006676AF /* 图片浏览 */ = {
+			isa = PBXGroup;
+			children = (
+				170A8EAB20B6C61B006676AF /* LocalImages */,
+				170A8EA820B6C5CF006676AF /* YBImageBrowserCtrl.h */,
+				170A8EA920B6C5CF006676AF /* YBImageBrowserCtrl.m */,
+			);
+			path = "图片浏览";
+			sourceTree = "<group>";
+		};
+		170A8EAB20B6C61B006676AF /* LocalImages */ = {
+			isa = PBXGroup;
+			children = (
+				170A8EBB20B79CFF006676AF /* YBImageBrowser0.jpg */,
+				170A8EB620B79CFE006676AF /* YBImageBrowser1.jpg */,
+				170A8EBD20B79D00006676AF /* YBImageBrowser2.jpg */,
+				170A8EBC20B79CFF006676AF /* YBImageBrowser3.jpg */,
+				170A8EB920B79CFF006676AF /* YBImageBrowser4.jpg */,
+				170A8EB820B79CFF006676AF /* YBImageBrowser5.jpg */,
+				170A8EBE20B79D00006676AF /* YBImageBrowser6.jpg */,
+				170A8EBA20B79CFF006676AF /* YBImageBrowser7.jpg */,
+				170A8EB720B79CFE006676AF /* YBImageBrowser8.jpg */,
+			);
+			path = LocalImages;
+			sourceTree = "<group>";
+		};
 		17174701208EB95100460A87 /* GIF */ = {
 			isa = PBXGroup;
 			children = (
@@ -1356,6 +1403,7 @@
 		1729996D20872CF40026B1E9 /* 图片 */ = {
 			isa = PBXGroup;
 			children = (
+				170A8EA720B6C59C006676AF /* 图片浏览 */,
 				17174701208EB95100460A87 /* GIF */,
 				174CC1822087AC8400B41FA2 /* 图片缩放 */,
 				172999F12087A1150026B1E9 /* 图片选取 */,
@@ -2791,6 +2839,8 @@
 				1736628020A2E0D90086BEEC /* Animated image support.txt in Resources */,
 				174CC1AF2087BDA500B41FA2 /* FastForwardView.xib in Resources */,
 				17BADF0220931AB8004D1312 /* LanguageManagerCtrl.xib in Resources */,
+				170A8EC420B79D00006676AF /* YBImageBrowser0.jpg in Resources */,
+				170A8EBF20B79D00006676AF /* YBImageBrowser1.jpg in Resources */,
 				179BA50120A2DD0A009418D6 /* openMouth0.png in Resources */,
 				17AF1B06209C653200C7287E /* ContextMenuCell.xib in Resources */,
 				179BA4FD20A2DD0A009418D6 /* shakeHead2.png in Resources */,
@@ -2802,12 +2852,15 @@
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
 				174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
+				170A8EC220B79D00006676AF /* YBImageBrowser4.jpg in Resources */,
 				179BA50020A2DD0A009418D6 /* shakeHead0.png in Resources */,
 				17174708208EBA3000460A87 /* Assets.xcassets in Resources */,
 				172999ED208761930026B1E9 /* 7号线.png in Resources */,
 				179B969020A19F17009418D6 /* Weather&Time.ttf in Resources */,
+				170A8EC720B79D00006676AF /* YBImageBrowser6.jpg in Resources */,
 				17AF1B56209EA5B300C7287E /* FilterBaseController.xib in Resources */,
 				172999D0208752360026B1E9 /* AddNoteViewController.xib in Resources */,
+				170A8EC020B79D00006676AF /* YBImageBrowser8.jpg in Resources */,
 				172999EA208761930026B1E9 /* 9号线.png in Resources */,
 				172999EE208761930026B1E9 /* 5号线.png in Resources */,
 				174CC1AE2087BDA500B41FA2 /* WMPlayer.bundle in Resources */,
@@ -2817,6 +2870,7 @@
 				17B48D0F209320FE0018B6EF /* LanguageBaba.strings in Resources */,
 				1729996420871B210026B1E9 /* MainFunctionList.plist in Resources */,
 				17AF1B49209EA5B300C7287E /* data.json in Resources */,
+				170A8EC620B79D00006676AF /* YBImageBrowser2.jpg in Resources */,
 				17AF1BC2209EB87800C7287E /* pia@2x.png in Resources */,
 				172999EB208761930026B1E9 /* 4号线.png in Resources */,
 				179BA50220A2DD0A009418D6 /* openMouth1.png in Resources */,
@@ -2831,6 +2885,7 @@
 				172999BA20874C590026B1E9 /* CodeViewController.xib in Resources */,
 				17500C6A20A2FC1900A9E2CB /* FollwTableViewCell.xib in Resources */,
 				17AF1B6F209EB43700C7287E /* bg.jpg in Resources */,
+				170A8EC120B79D00006676AF /* YBImageBrowser5.jpg in Resources */,
 				174CC19F2087B98200B41FA2 /* HSDownloadManagerCtrl.xib in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
 				179B969D20A19F17009418D6 /* Lato-Thin.ttf in Resources */,
@@ -2844,10 +2899,12 @@
 				179BA4FF20A2DD0A009418D6 /* shakeHead1.png in Resources */,
 				171D30BF20AEC46D00A0CC50 /* CalendarViewController.png in Resources */,
 				179B969F20A19F17009418D6 /* Lato-ThinItalic.ttf in Resources */,
+				170A8EC520B79D00006676AF /* YBImageBrowser3.jpg in Resources */,
 				172999622086F5E10026B1E9 /* MainCCell.xib in Resources */,
 				1729994920862B370026B1E9 /* FontViewController.xib in Resources */,
 				17AF1B00209C632300C7287E /* ContextMenuCtrl.xib in Resources */,
 				172999E9208761930026B1E9 /* 11号线.png in Resources */,
+				170A8EC320B79D00006676AF /* YBImageBrowser7.jpg in Resources */,
 				172999EF208761930026B1E9 /* 1号线.png in Resources */,
 				172999A9208738C50026B1E9 /* TOCropViewControllerLocalizable.strings in Resources */,
 				171D30B220AEB34700A0CC50 /* MainCHeader.xib in Resources */,
@@ -2868,11 +2925,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC-resources.sh",
-				"${PODS_ROOT}/AutoLayoutDSL/Assets",
+				"${PODS_ROOT}/YBImageBrowser/YBImageBrowser/YBImageBrowser.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YBImageBrowser.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3125,6 +3182,7 @@
 				17500C6320A2FC1000A9E2CB /* FollowModel.m in Sources */,
 				17AF1BBB209EB87800C7287E /* YYTextBindingExample.m in Sources */,
 				17500C4F20A2FBF900A9E2CB /* NSString+PinYin4Cocoa.m in Sources */,
+				170A8EAA20B6C5CF006676AF /* YBImageBrowserCtrl.m in Sources */,
 				179B959C20A19E63009418D6 /* LineBackgroundView.m in Sources */,
 				179B95DC20A19E88009418D6 /* CurrentWeatherData.m in Sources */,
 				179B947F20A14833009418D6 /* F3HMergeTile.m in Sources */,

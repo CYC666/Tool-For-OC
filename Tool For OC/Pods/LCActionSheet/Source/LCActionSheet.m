@@ -277,11 +277,19 @@
     _unBlur                    = config.unBlur;
     _blurEffectStyle           = config.blurEffectStyle;
     _titleEdgeInsets           = config.titleEdgeInsets;
+//    _actionSheetEdgeInsets     = config.actionSheetEdgeInsets;
     _separatorColor            = config.separatorColor;
     _blurBackgroundColor       = config.blurBackgroundColor;
     _autoHideWhenDeviceRotated = config.autoHideWhenDeviceRotated;
     _numberOfTitleLines        = config.numberOfTitleLines;
-    
+
+    _buttonEdgeInsets          = config.buttonEdgeInsets;
+    _destructiveButtonBgColor  = config.destructiveButtonBgColor;
+    _cancelButtonColor         = config.cancelButtonColor;
+    _cancelButtonBgColor       = config.cancelButtonBgColor;
+    _buttonBgColor             = config.buttonBgColor;
+    _buttonCornerRadius        = config.buttonCornerRadius;
+
     return self;
 }
 
@@ -362,7 +370,6 @@
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(bottomView);
         make.top.equalTo(titleLabel.mas_bottom).offset(self.title.length > 0 ? self.titleEdgeInsets.bottom : 0);
-        
         CGFloat height = self.otherButtonTitles.count * self.buttonHeight;
         make.height.equalTo(@(height));
     }];
@@ -402,7 +409,7 @@
     cancelButton.backgroundColor = [UIColor clearColor];
     cancelButton.titleLabel.font = self.buttonFont;
     [cancelButton setTitle:self.cancelButtonTitle forState:UIControlStateNormal];
-    [cancelButton setTitleColor:self.buttonColor forState:UIControlStateNormal];
+    [cancelButton setTitleColor:self.cancelButtonColor forState:UIControlStateNormal];
     [cancelButton setBackgroundImage:[UIImage lc_imageWithColor:self.separatorColor]
                             forState:UIControlStateHighlighted];
     [cancelButton addTarget:self
@@ -535,22 +542,7 @@
 
 - (void)setDestructiveButtonIndexSet:(NSIndexSet *)destructiveButtonIndexSet {
     _destructiveButtonIndexSet = destructiveButtonIndexSet;
-    
-    if ([destructiveButtonIndexSet containsIndex:0]) {
-        [self.cancelButton setTitleColor:self.destructiveButtonColor forState:UIControlStateNormal];
-    } else {
-        [self.cancelButton setTitleColor:self.buttonColor forState:UIControlStateNormal];
-    }
-    
     [self.tableView reloadData];
-}
-
-- (void)setRedButtonIndexSet:(NSIndexSet *)redButtonIndexSet {
-    self.destructiveButtonIndexSet = redButtonIndexSet;
-}
-
-- (NSIndexSet *)redButtonIndexSet {
-    return self.destructiveButtonIndexSet;
 }
 
 - (void)setUnBlur:(BOOL)unBlur {
@@ -608,6 +600,10 @@
     
     [self.cancelButton setTitleColor:aButtonColor forState:UIControlStateNormal];
     [self.tableView reloadData];
+}
+
+- (void)setCancelButtonColor:(UIColor *)aButtonColor {
+    [self.cancelButton setTitleColor:aButtonColor forState:UIControlStateNormal];
 }
 
 - (void)setButtonHeight:(CGFloat)aButtonHeight {
@@ -706,7 +702,11 @@
 
 - (void)updateBottomView {
     [self.bottomView mas_updateConstraints:^(MASConstraintMaker *make) {
-        CGFloat height = (self.title.length > 0 ? self.titleTextSize.height + 2.0f + (self.titleEdgeInsets.top + self.titleEdgeInsets.bottom) : 0) + (self.otherButtonTitles.count > 0 ? (self.canScrolling ? MIN(self.visibleButtonCount, self.otherButtonTitles.count) : self.otherButtonTitles.count) * self.buttonHeight : 0) + (self.cancelButtonTitle.length > 0 ? 5.0f + self.buttonHeight : 0) + ([[UIDevice currentDevice] lc_isX] ? 34.0 : 0);
+        CGFloat height =
+        (self.title.length > 0 ? self.titleTextSize.height + 2.0f + (self.titleEdgeInsets.top + self.titleEdgeInsets.bottom) : 0) +
+        (self.otherButtonTitles.count > 0 ? (self.canScrolling ? MIN(self.visibleButtonCount, self.otherButtonTitles.count) : self.otherButtonTitles.count) * self.buttonHeight : 0) +
+        (self.cancelButtonTitle.length > 0 ? 5.0f + self.buttonHeight : 0) +
+        ([[UIDevice currentDevice] lc_isX] ? 34.0 : 0);
         make.height.equalTo(@(height));
     }];
 }
@@ -897,12 +897,16 @@
         cell = [[LCActionSheetCell alloc] initWithStyle:UITableViewCellStyleDefault
                                         reuseIdentifier:cellID];
     }
-    
+
+    [cell setButtonEdgeInsets:self.buttonEdgeInsets];
     cell.titleLabel.font      = self.buttonFont;
     cell.titleLabel.textColor = self.buttonColor;
-    
+    cell.titleLabel.backgroundColor = self.buttonBgColor;
+
     cell.titleLabel.text = self.otherButtonTitles[indexPath.row];
-    
+    cell.titleLabel.layer.cornerRadius = self.buttonCornerRadius;
+    [cell.titleLabel.layer setMasksToBounds:YES];
+
     cell.cellSeparatorColor = self.separatorColor;
     
 //    cell.lineView.hidden = indexPath.row == MAX(self.otherButtonTitles.count - 1, 0);
@@ -916,6 +920,7 @@
     if (self.destructiveButtonIndexSet) {
         if ([self.destructiveButtonIndexSet containsIndex:indexPath.row + 1]) {
             cell.titleLabel.textColor = self.destructiveButtonColor;
+            cell.titleLabel.backgroundColor = self.destructiveButtonBgColor;
         } else {
             cell.titleLabel.textColor = self.buttonColor;
         }
