@@ -121,7 +121,6 @@
 		1736628420A2E0D90086BEEC /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1736627D20A2E0D90086BEEC /* YYAnimatedImageView.m */; };
 		174CC1852087AC9900B41FA2 /* VIPhotoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1842087AC9900B41FA2 /* VIPhotoViewCtrl.m */; };
 		174CC1892087ACA900B41FA2 /* VIPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1872087ACA800B41FA2 /* VIPhotoView.m */; };
-		174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 174CC18C2087AE3E00B41FA2 /* test.JPG */; };
 		174CC1922087B94A00B41FA2 /* HSDownloadManagerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1912087B94A00B41FA2 /* HSDownloadManagerCtrl.m */; };
 		174CC19B2087B95500B41FA2 /* HSSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1942087B95500B41FA2 /* HSSessionModel.m */; };
 		174CC19C2087B95500B41FA2 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 174CC1962087B95500B41FA2 /* NSString+Hash.m */; };
@@ -159,6 +158,7 @@
 		176DBA0A20A05D650057D69F /* CalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DBA0320A05D640057D69F /* CalendarCell.m */; };
 		176DBA0B20A05D650057D69F /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DBA0520A05D640057D69F /* NSDate+Calendar.m */; };
 		176DBA0C20A05D650057D69F /* CalendarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DBA0620A05D650057D69F /* CalendarScrollView.m */; };
+		178A993720BFE348002E3B70 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 178A993620BFE347002E3B70 /* test.JPG */; };
 		17918C5020A9372C00366197 /* UIButton+click.m in Sources */ = {isa = PBXBuildFile; fileRef = 17918C4F20A9372C00366197 /* UIButton+click.m */; };
 		179B947120A14828009418D6 /* F3HTileAppearanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */; };
 		179B947220A14828009418D6 /* F3HNumberTileGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947020A14828009418D6 /* F3HNumberTileGameViewController.m */; };
@@ -594,7 +594,6 @@
 		174CC1842087AC9900B41FA2 /* VIPhotoViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPhotoViewCtrl.m; sourceTree = "<group>"; };
 		174CC1872087ACA800B41FA2 /* VIPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPhotoView.m; sourceTree = "<group>"; };
 		174CC1882087ACA800B41FA2 /* VIPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPhotoView.h; sourceTree = "<group>"; };
-		174CC18C2087AE3E00B41FA2 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
 		174CC1902087B94A00B41FA2 /* HSDownloadManagerCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSDownloadManagerCtrl.h; sourceTree = "<group>"; };
 		174CC1912087B94A00B41FA2 /* HSDownloadManagerCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSDownloadManagerCtrl.m; sourceTree = "<group>"; };
 		174CC1942087B95500B41FA2 /* HSSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSSessionModel.m; sourceTree = "<group>"; };
@@ -665,6 +664,7 @@
 		176DBA0420A05D640057D69F /* CalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
 		176DBA0520A05D640057D69F /* NSDate+Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Calendar.m"; sourceTree = "<group>"; };
 		176DBA0620A05D650057D69F /* CalendarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarScrollView.m; sourceTree = "<group>"; };
+		178A993620BFE347002E3B70 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
 		17918C4E20A9372C00366197 /* UIButton+click.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+click.h"; sourceTree = "<group>"; };
 		17918C4F20A9372C00366197 /* UIButton+click.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+click.m"; sourceTree = "<group>"; };
 		179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HTileAppearanceProvider.m; sourceTree = "<group>"; };
@@ -1613,7 +1613,7 @@
 		174CC1862087ACA800B41FA2 /* VIPhotoView */ = {
 			isa = PBXGroup;
 			children = (
-				174CC18C2087AE3E00B41FA2 /* test.JPG */,
+				178A993620BFE347002E3B70 /* test.JPG */,
 				174CC1872087ACA800B41FA2 /* VIPhotoView.m */,
 				174CC1882087ACA800B41FA2 /* VIPhotoView.h */,
 			);
@@ -2850,9 +2850,9 @@
 				17AF1BC0209EB87800C7287E /* dribbble256_imageio.png in Resources */,
 				171D30C120AEC4B900A0CC50 /* FontViewController.png in Resources */,
 				1729994A20862B370026B1E9 /* SelectFontSizeViewController.xib in Resources */,
-				174CC18D2087AE3F00B41FA2 /* test.JPG in Resources */,
 				1729993B208626B60026B1E9 /* RightCell.xib in Resources */,
 				170A8EC220B79D00006676AF /* YBImageBrowser4.jpg in Resources */,
+				178A993720BFE348002E3B70 /* test.JPG in Resources */,
 				179BA50020A2DD0A009418D6 /* shakeHead0.png in Resources */,
 				17174708208EBA3000460A87 /* Assets.xcassets in Resources */,
 				172999ED208761930026B1E9 /* 7号线.png in Resources */,
