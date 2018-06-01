@@ -159,6 +159,9 @@
 		176DBA0B20A05D650057D69F /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DBA0520A05D640057D69F /* NSDate+Calendar.m */; };
 		176DBA0C20A05D650057D69F /* CalendarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DBA0620A05D650057D69F /* CalendarScrollView.m */; };
 		178A993720BFE348002E3B70 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 178A993620BFE347002E3B70 /* test.JPG */; };
+		178A995520C14B49002E3B70 /* CalcularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178A995320C14B49002E3B70 /* CalcularViewController.m */; };
+		178A995620C14B49002E3B70 /* CalcularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178A995420C14B49002E3B70 /* CalcularViewController.xib */; };
+		178A995820C164A3002E3B70 /* CalcularViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = 178A995720C164A3002E3B70 /* CalcularViewController.png */; };
 		17918C5020A9372C00366197 /* UIButton+click.m in Sources */ = {isa = PBXBuildFile; fileRef = 17918C4F20A9372C00366197 /* UIButton+click.m */; };
 		179B947120A14828009418D6 /* F3HTileAppearanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */; };
 		179B947220A14828009418D6 /* F3HNumberTileGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947020A14828009418D6 /* F3HNumberTileGameViewController.m */; };
@@ -665,6 +668,10 @@
 		176DBA0520A05D640057D69F /* NSDate+Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Calendar.m"; sourceTree = "<group>"; };
 		176DBA0620A05D650057D69F /* CalendarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarScrollView.m; sourceTree = "<group>"; };
 		178A993620BFE347002E3B70 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
+		178A995220C14B49002E3B70 /* CalcularViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcularViewController.h; sourceTree = "<group>"; };
+		178A995320C14B49002E3B70 /* CalcularViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcularViewController.m; sourceTree = "<group>"; };
+		178A995420C14B49002E3B70 /* CalcularViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalcularViewController.xib; sourceTree = "<group>"; };
+		178A995720C164A3002E3B70 /* CalcularViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalcularViewController.png; sourceTree = "<group>"; };
 		17918C4E20A9372C00366197 /* UIButton+click.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+click.h"; sourceTree = "<group>"; };
 		17918C4F20A9372C00366197 /* UIButton+click.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+click.m"; sourceTree = "<group>"; };
 		179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HTileAppearanceProvider.m; sourceTree = "<group>"; };
@@ -1240,6 +1247,7 @@
 		171D30B320AEBB9800A0CC50 /* 头视图 */ = {
 			isa = PBXGroup;
 			children = (
+				178A995720C164A3002E3B70 /* CalcularViewController.png */,
 				171D30B620AEBF7D00A0CC50 /* CweatherViewController.png */,
 				171D30B820AEC17800A0CC50 /* F3HNumberTileGameViewController.png */,
 				171D30BA20AEC3CF00A0CC50 /* CodeViewController.png */,
@@ -1340,6 +1348,7 @@
 				17299932208621330026B1E9 /* LeftCell.h */,
 				17299933208621330026B1E9 /* LeftCell.m */,
 				17299934208621330026B1E9 /* LeftCell.xib */,
+				178A995120C14B00002E3B70 /* 计算器 */,
 				179B94E120A19DDC009418D6 /* 天气 */,
 				179B946C20A147BB009418D6 /* 2048 */,
 				176DB9F920A05D570057D69F /* 日历 */,
@@ -1814,6 +1823,16 @@
 				176DBA0520A05D640057D69F /* NSDate+Calendar.m */,
 			);
 			path = "日历";
+			sourceTree = "<group>";
+		};
+		178A995120C14B00002E3B70 /* 计算器 */ = {
+			isa = PBXGroup;
+			children = (
+				178A995220C14B49002E3B70 /* CalcularViewController.h */,
+				178A995320C14B49002E3B70 /* CalcularViewController.m */,
+				178A995420C14B49002E3B70 /* CalcularViewController.xib */,
+			);
+			path = "计算器";
 			sourceTree = "<group>";
 		};
 		179B946C20A147BB009418D6 /* 2048 */ = {
@@ -2888,11 +2907,13 @@
 				170A8EC120B79D00006676AF /* YBImageBrowser5.jpg in Resources */,
 				174CC19F2087B98200B41FA2 /* HSDownloadManagerCtrl.xib in Resources */,
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
+				178A995620C14B49002E3B70 /* CalcularViewController.xib in Resources */,
 				179B969D20A19F17009418D6 /* Lato-Thin.ttf in Resources */,
 				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
 				17174719208F266800460A87 /* DQAlertViewCtrl.xib in Resources */,
 				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
 				1717471D208F278500460A87 /* alert-box@2x.png in Resources */,
+				178A995820C164A3002E3B70 /* CalcularViewController.png in Resources */,
 				179B969720A19F17009418D6 /* Lato-Regular.ttf in Resources */,
 				172999EC208761930026B1E9 /* 2号线.png in Resources */,
 				17174706208EB9E200460A87 /* guaiqiao.gif in Resources */,
@@ -2999,6 +3020,7 @@
 				179B947220A14828009418D6 /* F3HNumberTileGameViewController.m in Sources */,
 				179B948D20A1483B009418D6 /* F3HTileView.m in Sources */,
 				172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */,
+				178A995520C14B49002E3B70 /* CalcularViewController.m in Sources */,
 				179B95DA20A19E88009418D6 /* City.m in Sources */,
 				179BA4F820A2DD0A009418D6 /* UIImage+compress.m in Sources */,
 				179B948220A14833009418D6 /* F3HMoveOrder.m in Sources */,

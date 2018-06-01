@@ -41,7 +41,8 @@
                             @"CodeViewController",
                             @"NoteViewController",
                             @"CalendarViewController",
-                            @"FontViewController"
+                            @"FontViewController",
+                            @"CalcularViewController"
                             //                            @"WCViewController"
                             ];
     
