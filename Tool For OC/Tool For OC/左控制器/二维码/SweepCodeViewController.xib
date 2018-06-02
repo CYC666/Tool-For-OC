@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SweepCodeViewController">
+            <connections>
+                <outlet property="containerHeightConstraint" destination="rzh-Q5-nre" id="LNl-yc-83w"/>
+                <outlet property="customContainerView" destination="TMP-ZK-qPf" id="8NP-Y0-V3I"/>
+                <outlet property="customLabel" destination="UKa-3i-L5O" id="2cd-lO-J1S"/>
+                <outlet property="scanLineImageView" destination="tNQ-yc-XF6" id="y3d-J2-lWh"/>
+                <outlet property="scanLineTopConstraint" destination="9fM-lO-8wq" id="Dlp-vJ-zkx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMP-ZK-qPf" userLabel="容器视图">
+                    <rect key="frame" x="52.5" y="198.5" width="270" height="270"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="扫描边框" translatesAutoresizingMaskIntoConstraints="NO" id="0wk-Hg-Ald" userLabel="边框">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="270"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="扫描冲击波" translatesAutoresizingMaskIntoConstraints="NO" id="tNQ-yc-XF6" userLabel="冲击波">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="270"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="tNQ-yc-XF6" firstAttribute="top" secondItem="TMP-ZK-qPf" secondAttribute="top" id="9fM-lO-8wq"/>
+                        <constraint firstAttribute="trailing" secondItem="tNQ-yc-XF6" secondAttribute="trailing" id="Jk2-Jb-NOD"/>
+                        <constraint firstAttribute="bottom" secondItem="0wk-Hg-Ald" secondAttribute="bottom" id="TDM-wz-P7T"/>
+                        <constraint firstItem="0wk-Hg-Ald" firstAttribute="leading" secondItem="TMP-ZK-qPf" secondAttribute="leading" id="Ug8-8L-CQ6"/>
+                        <constraint firstItem="tNQ-yc-XF6" firstAttribute="leading" secondItem="TMP-ZK-qPf" secondAttribute="leading" id="YD6-yk-eHU"/>
+                        <constraint firstItem="tNQ-yc-XF6" firstAttribute="height" secondItem="TMP-ZK-qPf" secondAttribute="height" id="iwh-qj-HrZ"/>
+                        <constraint firstAttribute="trailing" secondItem="0wk-Hg-Ald" secondAttribute="trailing" id="lKS-0a-U0P"/>
+                        <constraint firstAttribute="height" constant="270" id="rzh-Q5-nre"/>
+                        <constraint firstItem="0wk-Hg-Ald" firstAttribute="top" secondItem="TMP-ZK-qPf" secondAttribute="top" id="zDN-s9-cNV"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-3i-L5O">
+                    <rect key="frame" x="166" y="488.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TMP-ZK-qPf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D8T-S5-aMx"/>
+                <constraint firstItem="TMP-ZK-qPf" firstAttribute="width" secondItem="TMP-ZK-qPf" secondAttribute="height" multiplier="1:1" id="L21-TQ-x1r"/>
+                <constraint firstItem="UKa-3i-L5O" firstAttribute="top" secondItem="TMP-ZK-qPf" secondAttribute="bottom" constant="20" id="bPd-QU-IPi"/>
+                <constraint firstItem="UKa-3i-L5O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nNq-nl-J1C"/>
+                <constraint firstItem="TMP-ZK-qPf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="och-EI-wMe"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="扫描冲击波" width="654" height="510"/>
+        <image name="扫描边框" width="51" height="51"/>
+    </resources>
+</document>

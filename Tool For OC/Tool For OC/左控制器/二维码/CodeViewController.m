@@ -8,8 +8,9 @@
 
 #import "CodeViewController.h"
 #import <CoreImage/CoreImage.h>
+#import "SweepCodeViewController.h"
 
-@interface CodeViewController () <UITextFieldDelegate> {
+@interface CodeViewController () <UITextFieldDelegate, SweepCodeViewControllerDlegate> {
 
 }
 
@@ -29,6 +30,24 @@
     _iconImageView.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(saveAction:)];
     [_iconImageView addGestureRecognizer:tap];
+    
+    // 导航栏右边的添加按钮
+    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightItem setImage:[UIImage imageNamed:@"扫一扫"]  forState:UIControlStateNormal];
+    [rightItem setTintColor:[UIColor whiteColor]];
+    rightItem.frame = CGRectMake(0, 0, 40, 22);
+    [rightItem addTarget:self action:@selector(codeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
+    self.navigationItem.rightBarButtonItem = rightBarItem;
+    
+}
+
+#pragma mark - 扫一扫
+- (void)codeButtonAction:(UIButton *)button {
+    
+    SweepCodeViewController *ctrl = [[SweepCodeViewController alloc] init];
+    ctrl.delegate = self;
+    [self.navigationController pushViewController:ctrl animated:YES];
     
 }
 
@@ -145,7 +164,16 @@
 
 
 
-
+#pragma mark - 扫描回传的值
+- (void)SweepCodeViewControllerResult:(NSString *)result {
+    
+    if (result) {
+        _inputField.text = result;
+    }
+    
+    
+    
+}
 
 
 

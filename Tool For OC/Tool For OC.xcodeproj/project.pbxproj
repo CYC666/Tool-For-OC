@@ -162,6 +162,9 @@
 		178A995520C14B49002E3B70 /* CalcularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178A995320C14B49002E3B70 /* CalcularViewController.m */; };
 		178A995620C14B49002E3B70 /* CalcularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178A995420C14B49002E3B70 /* CalcularViewController.xib */; };
 		178A995820C164A3002E3B70 /* CalcularViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = 178A995720C164A3002E3B70 /* CalcularViewController.png */; };
+		178A995C20C26820002E3B70 /* SweepCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178A995A20C26820002E3B70 /* SweepCodeViewController.m */; };
+		178A995D20C26820002E3B70 /* SweepCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178A995B20C26820002E3B70 /* SweepCodeViewController.xib */; };
+		178A995F20C26B46002E3B70 /* 扫一扫.wav in Resources */ = {isa = PBXBuildFile; fileRef = 178A995E20C26B46002E3B70 /* 扫一扫.wav */; };
 		17918C5020A9372C00366197 /* UIButton+click.m in Sources */ = {isa = PBXBuildFile; fileRef = 17918C4F20A9372C00366197 /* UIButton+click.m */; };
 		179B947120A14828009418D6 /* F3HTileAppearanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */; };
 		179B947220A14828009418D6 /* F3HNumberTileGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B947020A14828009418D6 /* F3HNumberTileGameViewController.m */; };
@@ -672,6 +675,10 @@
 		178A995320C14B49002E3B70 /* CalcularViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcularViewController.m; sourceTree = "<group>"; };
 		178A995420C14B49002E3B70 /* CalcularViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalcularViewController.xib; sourceTree = "<group>"; };
 		178A995720C164A3002E3B70 /* CalcularViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalcularViewController.png; sourceTree = "<group>"; };
+		178A995920C26820002E3B70 /* SweepCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SweepCodeViewController.h; sourceTree = "<group>"; };
+		178A995A20C26820002E3B70 /* SweepCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SweepCodeViewController.m; sourceTree = "<group>"; };
+		178A995B20C26820002E3B70 /* SweepCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SweepCodeViewController.xib; sourceTree = "<group>"; };
+		178A995E20C26B46002E3B70 /* 扫一扫.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "扫一扫.wav"; sourceTree = "<group>"; };
 		17918C4E20A9372C00366197 /* UIButton+click.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+click.h"; sourceTree = "<group>"; };
 		17918C4F20A9372C00366197 /* UIButton+click.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+click.m"; sourceTree = "<group>"; };
 		179B946D20A14827009418D6 /* F3HTileAppearanceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F3HTileAppearanceProvider.m; sourceTree = "<group>"; };
@@ -1503,6 +1510,10 @@
 				172999B720874C590026B1E9 /* CodeViewController.h */,
 				172999B620874C590026B1E9 /* CodeViewController.m */,
 				172999B820874C590026B1E9 /* CodeViewController.xib */,
+				178A995920C26820002E3B70 /* SweepCodeViewController.h */,
+				178A995A20C26820002E3B70 /* SweepCodeViewController.m */,
+				178A995B20C26820002E3B70 /* SweepCodeViewController.xib */,
+				178A995E20C26B46002E3B70 /* 扫一扫.wav */,
 			);
 			path = "二维码";
 			sourceTree = "<group>";
@@ -2852,6 +2863,7 @@
 			files = (
 				1729995A208630610026B1E9 /* DFW_WW7.TTF in Resources */,
 				17AF1B59209EA5B300C7287E /* CYLMultipleFilterHeaderView.xib in Resources */,
+				178A995D20C26820002E3B70 /* SweepCodeViewController.xib in Resources */,
 				172999CD208752360026B1E9 /* ShowNoteViewController.xib in Resources */,
 				171D30B720AEBF7D00A0CC50 /* CweatherViewController.png in Resources */,
 				179B969920A19F17009418D6 /* Lato-Light.ttf in Resources */,
@@ -2909,6 +2921,7 @@
 				172998FD2085DB6A0026B1E9 /* Main.storyboard in Resources */,
 				178A995620C14B49002E3B70 /* CalcularViewController.xib in Resources */,
 				179B969D20A19F17009418D6 /* Lato-Thin.ttf in Resources */,
+				178A995F20C26B46002E3B70 /* 扫一扫.wav in Resources */,
 				17299958208630610026B1E9 /* 迷你简胖娃.ttf in Resources */,
 				17174719208F266800460A87 /* DQAlertViewCtrl.xib in Resources */,
 				1729995020862C2C0026B1E9 /* SelectColorController.xib in Resources */,
@@ -3082,6 +3095,7 @@
 				17500C6820A2FC1900A9E2CB /* FollwTableViewCell.m in Sources */,
 				17AF1B5B209EA5B300C7287E /* CYLMultipleFilterHeaderView.m in Sources */,
 				179B969620A19F17009418D6 /* AbsNetworking.m in Sources */,
+				178A995C20C26820002E3B70 /* SweepCodeViewController.m in Sources */,
 				17500C5120A2FBF900A9E2CB /* PinyinHelper.m in Sources */,
 				1736628320A2E0D90086BEEC /* YYFrameImage.m in Sources */,
 				17AF1BAF209EB87800C7287E /* YYTextAttachmentExample.m in Sources */,
