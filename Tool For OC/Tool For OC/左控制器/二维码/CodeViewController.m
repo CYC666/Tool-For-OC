@@ -35,7 +35,7 @@
     UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
     [rightItem setImage:[UIImage imageNamed:@"扫一扫"]  forState:UIControlStateNormal];
     [rightItem setTintColor:[UIColor whiteColor]];
-    rightItem.frame = CGRectMake(0, 0, 40, 22);
+    rightItem.frame = CGRectMake(0, 0, 25, 25);
     [rightItem addTarget:self action:@selector(codeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
     self.navigationItem.rightBarButtonItem = rightBarItem;

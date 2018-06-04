@@ -12,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SweepCodeViewController">
             <connections>
-                <outlet property="containerHeightConstraint" destination="rzh-Q5-nre" id="LNl-yc-83w"/>
+                <outlet property="containerHeightConstraint" destination="rzh-Q5-nre" id="YTL-2b-XLe"/>
                 <outlet property="customContainerView" destination="TMP-ZK-qPf" id="8NP-Y0-V3I"/>
                 <outlet property="customLabel" destination="UKa-3i-L5O" id="2cd-lO-J1S"/>
                 <outlet property="scanLineImageView" destination="tNQ-yc-XF6" id="y3d-J2-lWh"/>
-                <outlet property="scanLineTopConstraint" destination="9fM-lO-8wq" id="Dlp-vJ-zkx"/>
+                <outlet property="scanLineTopConstraint" destination="9fM-lO-8wq" id="S4w-iX-J5A"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

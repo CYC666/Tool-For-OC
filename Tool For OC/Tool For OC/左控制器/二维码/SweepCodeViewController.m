@@ -10,8 +10,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 @interface SweepCodeViewController () {
-    //需要延时1秒来处理扫描结果，使用标志位来判断是否正在处理
-    BOOL isProcessFlag;
+    
 }
 @end
 
@@ -20,7 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    isProcessFlag = NO;
+    
+    _customLabel.text = @"";
+    self.view.backgroundColor = [UIColor clearColor];
     
     // 3.开始扫描二维码
     [self startScan];
@@ -179,9 +180,6 @@
         
         //获取到数据后，延时0.5秒再跳转到页面
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            //修改标志位
-            isProcessFlag = NO;
-            
             
             //获取的字符串
             NSString *urlString = object.stringValue;
