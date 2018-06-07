@@ -182,6 +182,7 @@
     
     header.bannerView.imageURLStringsGroup = funcControllerArray;
     header.bannerView.delegate = self;
+    header.bannerView.autoScrollTimeInterval = 5;
     
     return header;
     

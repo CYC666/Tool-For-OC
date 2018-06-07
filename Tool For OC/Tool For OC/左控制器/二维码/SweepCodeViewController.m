@@ -129,16 +129,12 @@
     // 1.判断输入能否添加到会话中
     if (![self.session canAddInput:self.input]) return;
     [self.session addInput:self.input];
-    //    if ([self.session canAddInput:self.input]) {
-    //        [self.session addInput:self.input];
-    //    }
+
     
     // 2.判断输出能够添加到会话中
     if (![self.session canAddOutput:self.output]) return;
     [self.session addOutput:self.output];
-    //    if ([self.session canAddOutput:self.output]) {
-    //        [self.session addOutput:self.output];
-    //    }
+
     
     // 4.设置输出能够解析的数据类型
     // 注意点: 设置数据类型一定要在输出对象添加到会话之后才能设置
@@ -150,12 +146,11 @@
     
     // 6.添加预览图层
     [self.view.layer insertSublayer:self.previewLayer atIndex:0];
-    self.previewLayer.frame = self.view.bounds;
-    // self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    self.previewLayer.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     
     // 7.添加容器图层
     [self.view.layer addSublayer:self.containerLayer];
-    self.containerLayer.frame = self.view.bounds;
+    self.containerLayer.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     
     // 8.开始扫描
     [self.session startRunning];
@@ -184,33 +179,12 @@
             //获取的字符串
             NSString *urlString = object.stringValue;
             
-            if ([urlString containsString:@"http"] || [urlString containsString:@"www"]) {
-                
-                //打开网页的弹窗提示
-                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"确定要打开下列网址吗？" message:urlString preferredStyle:UIAlertControllerStyleAlert];
-                UIAlertAction *cancelButton = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-                UIAlertAction *defaultButton = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                    //打开网页，ios10弃用了这个方法
-                    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
-                }];
-                
-                //使用runtime属性，修改默认的系统提示窗的字体(只支持8.4以上版本)
-                CGFloat iOSVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
-                if (iOSVersion >=8.4) {
-                    [cancelButton setValue:[UIColor darkGrayColor] forKey:@"_titleTextColor"];
-                    [defaultButton setValue:Publie_Color_A forKey:@"_titleTextColor"];
-                }
-                
-                [alert addAction:cancelButton];
-                [alert addAction:defaultButton];
-                [self presentViewController:alert animated:YES completion:nil];
-                
-            }
-            
             // 把值传回去
             [_delegate SweepCodeViewControllerResult:urlString];
             
+            [self.session stopRunning];
             
+            [self.navigationController popToViewController:self.navigationController.viewControllers[1] animated:YES];
             
         });
         
@@ -218,17 +192,17 @@
         
         
         
-        // 清除之前的描边
-        [self clearLayers];
+//        // 清除之前的描边
+//        [self clearLayers];
         
-        // 对扫描到的二维码进行描边
-        AVMetadataMachineReadableCodeObject *obj = (AVMetadataMachineReadableCodeObject *)[self.previewLayer transformedMetadataObjectForMetadataObject:object];
+//        // 对扫描到的二维码进行描边
+//        AVMetadataMachineReadableCodeObject *obj = (AVMetadataMachineReadableCodeObject *)[self.previewLayer transformedMetadataObjectForMetadataObject:object];
         
-        // 绘制描边
-        [self drawLine:obj];
+//        // 绘制描边
+//        [self drawLine:obj];
     } else {
-        // 清除之前的描边
-        [self clearLayers];
+//        // 清除之前的描边
+//        [self clearLayers];
     }
     
 }
