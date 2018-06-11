@@ -11,4 +11,5 @@ target 'Tool For OC' do
     pod 'SDCycleScrollView'
     pod 'FLAnimatedImage'
     pod 'YBImageBrowser'
+    pod 'SVProgressHUD'
 end

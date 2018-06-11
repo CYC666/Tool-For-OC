@@ -192,6 +192,16 @@
 				<key>url</key>
 				<string>https://github.com/gontovnik/DGActivityIndicatorView</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>SVProgressHUD</string>
+				<key>func</key>
+				<string>SVProgressHUD</string>
+				<key>url</key>
+				<string>https://github.com/SVProgressHUD/SVProgressHUD</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

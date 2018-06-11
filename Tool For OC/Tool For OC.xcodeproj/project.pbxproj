@@ -403,6 +403,7 @@
 		17BADF0120931AB8004D1312 /* LanguageManagerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BADEFF20931AB8004D1312 /* LanguageManagerCtrl.m */; };
 		17BADF0220931AB8004D1312 /* LanguageManagerCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BADF0020931AB8004D1312 /* LanguageManagerCtrl.xib */; };
 		17BADF0820931D81004D1312 /* HXLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BADF0620931D81004D1312 /* HXLanguageManager.m */; };
+		17BC091620CE1BE700CA310D /* SVProgressHUDCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BC091520CE1BE700CA310D /* SVProgressHUDCtrl.m */; };
 		EDBDDD6772377E47D00DAA7C /* libPods-Tool For OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 588BEE0581593BCF4595B9CF /* libPods-Tool For OC.a */; };
 /* End PBXBuildFile section */
 
@@ -1145,6 +1146,8 @@
 		17BADF0020931AB8004D1312 /* LanguageManagerCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageManagerCtrl.xib; sourceTree = "<group>"; };
 		17BADF0620931D81004D1312 /* HXLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXLanguageManager.m; sourceTree = "<group>"; };
 		17BADF0720931D81004D1312 /* HXLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXLanguageManager.h; sourceTree = "<group>"; };
+		17BC091420CE1BE700CA310D /* SVProgressHUDCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDCtrl.h; sourceTree = "<group>"; };
+		17BC091520CE1BE700CA310D /* SVProgressHUDCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDCtrl.m; sourceTree = "<group>"; };
 		49BAF9A2AB65E95B15E4C11D /* Pods-Tool For OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool For OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC.release.xcconfig"; sourceTree = "<group>"; };
 		588BEE0581593BCF4595B9CF /* libPods-Tool For OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tool For OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57F235E2EECD715D7BBCA01 /* Pods-Tool For OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tool For OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2617,6 +2620,7 @@
 		17AF1B5C209EB0B700C7287E /* 进度 */ = {
 			isa = PBXGroup;
 			children = (
+				17BC091320CE1BD400CA310D /* SVProgressHUD */,
 				17AF1B5D209EB0CA00C7287E /* DGActivityIndicatorView */,
 			);
 			path = "进度";
@@ -2751,6 +2755,15 @@
 				17BADF0620931D81004D1312 /* HXLanguageManager.m */,
 			);
 			path = XHInternationalization;
+			sourceTree = "<group>";
+		};
+		17BC091320CE1BD400CA310D /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				17BC091420CE1BE700CA310D /* SVProgressHUDCtrl.h */,
+				17BC091520CE1BE700CA310D /* SVProgressHUDCtrl.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		2F736BBB3FA1947E26E558AC /* Frameworks */ = {
@@ -2959,10 +2972,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tool For OC/Pods-Tool For OC-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/YBImageBrowser/YBImageBrowser/YBImageBrowser.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YBImageBrowser.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3032,6 +3047,7 @@
 				179B962A20A19E8F009418D6 /* POPVector.mm in Sources */,
 				179B947220A14828009418D6 /* F3HNumberTileGameViewController.m in Sources */,
 				179B948D20A1483B009418D6 /* F3HTileView.m in Sources */,
+				17BC091620CE1BE700CA310D /* SVProgressHUDCtrl.m in Sources */,
 				172999D2208752360026B1E9 /* ShowNoteViewController.m in Sources */,
 				178A995520C14B49002E3B70 /* CalcularViewController.m in Sources */,
 				179B95DA20A19E88009418D6 /* City.m in Sources */,
