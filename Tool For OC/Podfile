@@ -12,4 +12,5 @@ target 'Tool For OC' do
     pod 'FLAnimatedImage'
     pod 'YBImageBrowser'
     pod 'SVProgressHUD'
+    pod 'SWTableViewCell'
 end

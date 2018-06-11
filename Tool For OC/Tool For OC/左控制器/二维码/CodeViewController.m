@@ -31,14 +31,14 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(saveAction:)];
     [_iconImageView addGestureRecognizer:tap];
     
-    // 导航栏右边的添加按钮
-    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightItem setImage:[UIImage imageNamed:@"扫一扫"]  forState:UIControlStateNormal];
-    [rightItem setTintColor:[UIColor whiteColor]];
-    rightItem.frame = CGRectMake(0, 0, 25, 25);
-    [rightItem addTarget:self action:@selector(codeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
-    self.navigationItem.rightBarButtonItem = rightBarItem;
+//    // 导航栏右边的添加按钮
+//    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [rightItem setImage:[UIImage imageNamed:@"扫一扫"]  forState:UIControlStateNormal];
+//    [rightItem setTintColor:[UIColor whiteColor]];
+//    rightItem.frame = CGRectMake(0, 0, 25, 25);
+//    [rightItem addTarget:self action:@selector(codeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
+//    self.navigationItem.rightBarButtonItem = rightBarItem;
     
 }
 

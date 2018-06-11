@@ -31,6 +31,7 @@ PODS:
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
   - SVProgressHUD (2.2.5)
+  - SWTableViewCell (0.3.7)
   - YBImageBrowser (1.0.7):
     - FLAnimatedImage (~> 1.0.12)
     - SDWebImage (~> 4.3.3)
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SDWebImage
   - SVProgressHUD
+  - SWTableViewCell
   - YBImageBrowser
   - YYText
 
@@ -62,9 +64,10 @@ SPEC CHECKSUMS:
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   YBImageBrowser: 0dc55d55ddf6d4a71519787dd8261b652e56ad11
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 11c831ea6dd42eb34d4f05ec26d4582222b789fc
+PODFILE CHECKSUM: 5942cd8cb4b954744be5009407754a1629481e87
 
 COCOAPODS: 1.4.0

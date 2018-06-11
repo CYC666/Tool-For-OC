@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XIXIcell" rowHeight="89" id="KGk-i7-Jjw" customClass="XIXIcell">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYV-Fv-Rbp">
+                        <rect key="frame" x="137.5" y="14" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="6wo-wa-WUb"/>
+                            <constraint firstAttribute="height" constant="60" id="F4R-89-7Zc"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNo-Ko-7sA">
+                        <rect key="frame" x="207.5" y="14.5" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="gKS-7d-CcT"/>
+                            <constraint firstAttribute="width" constant="60" id="yhY-u5-tkk"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUo-at-JYl">
+                        <rect key="frame" x="67.5" y="14" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="cW7-qO-fKn"/>
+                            <constraint firstAttribute="width" constant="60" id="mUg-0T-Oo6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yYV-Fv-Rbp" firstAttribute="leading" secondItem="uUo-at-JYl" secondAttribute="trailing" constant="10" id="2gy-Rl-XEN"/>
+                    <constraint firstItem="vNo-Ko-7sA" firstAttribute="leading" secondItem="yYV-Fv-Rbp" secondAttribute="trailing" constant="10" id="AYV-Fy-6Yv"/>
+                    <constraint firstItem="yYV-Fv-Rbp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Cfi-B8-h8h"/>
+                    <constraint firstItem="vNo-Ko-7sA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KNn-zJ-sDr"/>
+                    <constraint firstItem="yYV-Fv-Rbp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="UfA-SL-cZE"/>
+                    <constraint firstItem="uUo-at-JYl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="upG-Lx-Hfe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="left" destination="2gy-Rl-XEN" id="p7T-7f-5Kh"/>
+                <outlet property="right" destination="AYV-Fy-6Yv" id="AHC-CH-fzB"/>
+            </connections>
+            <point key="canvasLocation" x="41.5" y="41.5"/>
+        </tableViewCell>
+    </objects>
+</document>

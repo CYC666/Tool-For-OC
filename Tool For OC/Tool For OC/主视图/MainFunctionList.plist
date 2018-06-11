@@ -175,6 +175,16 @@
 				<key>url</key>
 				<string>https://github.com/ChenYilong/CollectionViewClassifyMenu</string>
 			</dict>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>SWTableViewCell</string>
+				<key>func</key>
+				<string>SWTableViewCell</string>
+				<key>url</key>
+				<string>https://github.com/CEWendel/SWTableViewCell</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

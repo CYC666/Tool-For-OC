@@ -40,8 +40,8 @@
                             @"CweatherViewController",
                             @"CodeViewController",
                             @"NoteViewController",
-                            @"CalendarViewController",
-                            @"FontViewController",
+//                            @"CalendarViewController",
+//                            @"FontViewController",
                             @"CalcularViewController"
                             //                            @"WCViewController"
                             ];
@@ -183,6 +183,8 @@
     header.bannerView.imageURLStringsGroup = funcControllerArray;
     header.bannerView.delegate = self;
     header.bannerView.autoScrollTimeInterval = 5;
+    header.bannerView.currentPageDotColor = Publie_Color_A;
+    header.bannerView.pageDotColor = White_Color;
     
     return header;
     

@@ -33,14 +33,14 @@
 }
 
 
-- (void)viewWillAppear:(BOOL)animated {
-
-    [super viewWillAppear:animated];
-
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-
-
-}
+//- (void)viewWillAppear:(BOOL)animated {
+//
+//    [super viewWillAppear:animated];
+//
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
+//
+//
+//}
 
 #pragma mark ========================================动作响应=============================================
 
@@ -393,8 +393,36 @@
         return;
     }
     
+    
     // 赋予B值
     _B = _resultLabel.text;
+    
+    
+    {
+        // ============================特殊计算============================
+        if (_A.integerValue == 13 && _B.integerValue == 14) {
+            _resultLabel.text = @"520";
+            return;
+        }
+        
+        if (_A.integerValue == 6 && _B.integerValue == 990721) {
+            _resultLabel.text = @"5201314";
+            return;
+        }
+        
+        if (_A.integerValue == 6 && _B.integerValue == 920801) {
+            _resultLabel.text = @"🌹孙海凌，我喜欢你🌹";
+            return;
+        }
+        
+        if (_A.integerValue == 6 && _B.integerValue == 951124) {
+            _resultLabel.text = @"谢汐晨，你个骗子";
+            return;
+        }
+        
+    }
+    
+    
     
     // 开始计算
     float result = 0;
