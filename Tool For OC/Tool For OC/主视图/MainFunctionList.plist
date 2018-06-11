@@ -240,6 +240,23 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>图表</string>
+		<key>func</key>
+		<array>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>PNChart</string>
+				<key>func</key>
+				<string>PNChart</string>
+				<key>url</key>
+				<string>https://github.com/kevinzhow/PNChart</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>其他</string>
 		<key>func</key>
 		<array>
