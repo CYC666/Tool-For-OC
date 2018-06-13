@@ -29,6 +29,8 @@
 #import "UIButton+click.h"
 #import <Masonry.h>
 #import <SDCycleScrollView.h>
+#import <SVProgressHUD.h>
+
 
 
 #endif

@@ -36,7 +36,7 @@
     self.view.backgroundColor = Background_Color;
     
     funcControllerArray = @[
-                            @"F3HNumberTileGameViewController",
+//                            @"F3HNumberTileGameViewController",
                             @"CweatherViewController",
                             @"CodeViewController",
                             @"NoteViewController",
@@ -47,7 +47,7 @@
                             ];
     
 //    // 导航栏右边的添加按钮
-//    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeCustom];
+//    UIButton *rightItem = [UIButton buttoshinWithType:UIButtonTypeCustom];
 //    [rightItem setImage:[UIImage imageNamed:@"菜单"] forState:UIControlStateNormal];
 //    [rightItem setTintColor:[UIColor whiteColor]];
 //    [rightItem addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
