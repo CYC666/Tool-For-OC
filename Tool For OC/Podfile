@@ -13,4 +13,8 @@ target 'Tool For OC' do
     pod 'YBImageBrowser'
     pod 'SVProgressHUD'
     pod 'SWTableViewCell'
+    pod 'SDAutoLayout'
+    pod 'MJExtension'
+    pod 'MJRefresh'
+    
 end

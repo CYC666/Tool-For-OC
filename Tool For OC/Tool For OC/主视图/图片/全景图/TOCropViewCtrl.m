@@ -216,6 +216,15 @@
         return;
     
     UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:@[self.imageView.image] applicationActivities:nil];
+    activityController.completionWithItemsHandler = ^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
+        if (completed) {
+            NSLog(@"completed");
+            //分享 成功
+        } else  {
+            NSLog(@"cancled");
+            //分享 取消
+        }
+    };
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         [self presentViewController:activityController animated:YES completion:nil];
     }

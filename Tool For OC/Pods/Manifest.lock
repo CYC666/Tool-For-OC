@@ -25,6 +25,9 @@ PODS:
   - LCActionSheet (3.5.0):
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
+  - SDAutoLayout (2.2.1)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.3.3):
@@ -45,6 +48,9 @@ DEPENDENCIES:
   - JQFMDB
   - LCActionSheet
   - Masonry
+  - MJExtension
+  - MJRefresh
+  - SDAutoLayout
   - SDCycleScrollView
   - SDWebImage
   - SVProgressHUD
@@ -61,6 +67,9 @@ SPEC CHECKSUMS:
   JQFMDB: 39ab0d6d7c26fd30e51c4dd92edcb27506a34c3a
   LCActionSheet: b30611ab20290fc830976b7ae90ea2dd4142fb1c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
@@ -68,6 +77,6 @@ SPEC CHECKSUMS:
   YBImageBrowser: 0dc55d55ddf6d4a71519787dd8261b652e56ad11
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 5942cd8cb4b954744be5009407754a1629481e87
+PODFILE CHECKSUM: d54d2cf9c59416114aa9d40fd125e43635f3c93a
 
 COCOAPODS: 1.4.0

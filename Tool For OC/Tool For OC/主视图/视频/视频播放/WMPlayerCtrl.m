@@ -37,7 +37,7 @@
     //关闭音量调节的手势
     //        wmPlayer.enableVolumeGesture = NO;
     wmPlayer.titleLabel.text = @"小黄人";
-    wmPlayer.URLString = @"http://120.25.226.186:32812/resources/videos/minion_01.mp4";
+    wmPlayer.URLString = @"http://betaqnv.villago.cn/videos/lib/1535191368117.mp4";
     [_mainView addSubview:wmPlayer];
     
     
@@ -113,7 +113,7 @@
 }
 -(void)wmplayerFinishedPlay:(WMPlayer *)wmplayer{
     NSLog(@"wmplayerDidFinishedPlay");
-    [self releaseWMPlayer];
+//    [self releaseWMPlayer];
 }
 
 

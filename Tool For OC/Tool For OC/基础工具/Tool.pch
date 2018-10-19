@@ -30,6 +30,9 @@
 #import <Masonry.h>
 #import <SDCycleScrollView.h>
 #import <SVProgressHUD.h>
+#import "PublicDefine.h"
+#import <MJExtension.h>
+#import <SDAutoLayout.h>
 
 
 

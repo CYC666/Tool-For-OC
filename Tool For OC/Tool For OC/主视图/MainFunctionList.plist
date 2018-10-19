@@ -267,6 +267,23 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>K线</string>
+		<key>func</key>
+		<array>
+			<dict>
+				<key>status</key>
+				<false/>
+				<key>name</key>
+				<string>YKLineChartView</string>
+				<key>func</key>
+				<string>YKLineChartView</string>
+				<key>url</key>
+				<string>https://github.com/chenyk0317/YKLineChartView</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>其他</string>
 		<key>func</key>
 		<array>
@@ -278,7 +295,7 @@
 				<key>func</key>
 				<string>FriendsList</string>
 				<key>url</key>
-				<string>https://github.com/CYC666</string>
+				<string>https://github.com/CYC666/Tool-For-OC</string>
 			</dict>
 			<dict>
 				<key>status</key>
