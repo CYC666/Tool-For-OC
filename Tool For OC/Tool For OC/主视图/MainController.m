@@ -73,6 +73,7 @@
     _listCollectionView.dataSource = self;
     _listCollectionView.alwaysBounceVertical = YES;
     [self.view addSubview:_listCollectionView];
+    _listCollectionView.scrollIndicatorInsets = UIEdgeInsetsMake(kScreenWidth * 0.5, 0, 0, 0);
     
 #ifdef __IPHONE_11_0
     if(@available(iOS 11.0, *)){
@@ -127,7 +128,14 @@
 }
 
 
-
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    
+}
 
 
 
